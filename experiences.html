@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cairo Tourism & Guest Experiences - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+    <nav class="bg-slate-900 border-b border-slate-800 py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-lg font-bold text-amber-500">&larr; Back to Property Home</a>
+            <span class="text-sm text-slate-400">Cairo Exploration Guide</span>
+        </div>
+    </nav>
+
+    <header class="py-12 px-4 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl font-extrabold mb-4">Discover Cairo & The Pyramids</h1>
+        <p class="text-lg text-slate-300">Browse through guest experiences, local tours, and regional sights.</p>
+    </header>
+
+    <!-- Complete 47-Photo Tourism Gallery Grid -->
+    <section class="pb-24 px-4 max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold text-amber-500">Complete Tourism Gallery (47 Photos)</h2>
+            <span class="text-sm text-slate-400">Excursions & Historic Vistas</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <script>
+                const photos = [
+                    "20190110_230847.jpg", "20190110_230851.jpg", "20200919_082937.jpg",
+                    "400012100048_533549.jpg", "400015800581_431629.jpg", "400082100734_90402.jpg",
+                    "400084300516_512989.jpg", "400086700986_512380.jpg", "400088300260_65800.jpg",
+                    "400089700290_511909.jpg", "400097000181_76848.jpg", "400097100680_69954.jpg",
+                    "400098000857_511336.jpg", "400100400128_76534.jpg", "400111900343_104576.jpg",
+                    "400111900473_63813.jpg", "400119400072_423467.jpg", "400125800222_467175.jpg",
+                    "400138600175_347651.jpg", "400138800492_347169.jpg", "400149400325_337149.jpg",
+                    "400150100771_306860.jpg", "400159600045_62186.jpg", "400168500758_262390.jpg",
+                    "400168600973_286395.jpg", "400187000242_112512.jpg", "400230100923_7040.jpg",
+                    "ATV SUNSET GWENS GROUP AUG 2021 (3).jpg", "Exclusive Camel Tour Pyramids Nanette (5).jpg",
+                    "Exclusive Camel Tour Pyramids Nanette (6).jpg", "Exclusive Camel Tour Pyramids Nanette (7).jpg",
+                    "IMG-20190808-WA0001.jpg", "IMG-20200919-WA0089.jpg", "IMG-20210526-WA0036.jpg",
+                    "IMG-20210526-WA0037.jpg", "IMG-20220704-WA0009.jpg", "IMG-20220704-WA0013.jpg"
+                ];
+
+                document.write(photos.map(p => `
+                    <div class="overflow-hidden rounded-lg shadow-md aspect-square bg-slate-900 border border-slate-800">
+                        <img src="tourism_gallery/${encodeURIComponent(p)}" alt="Cairo Experience" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+    </section>
+
+</body>
+</html>
