@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maadi Nile View | Luxury Short-Term Rental in Cairo</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0f172a',
+                        darkcanvas: '#121212',
+                        gold: {
+                            DEFAULT: '#d4af37',
+                            light: '#e6ca65',
+                            dark: '#c5a059'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #121212; }
+        ::-webkit-scrollbar-thumb { background: #c5a059; border-radius: 4px; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f8fafc 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#f8fafc] font-sans antialiased selection:bg-gold selection:text-black">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#121212]/90 backdrop-blur-md border-b border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full border border-gold flex items-center justify-center bg-gold/10 text-gold group-hover:bg-gold group-hover:text-black transition-all">
+                    <i class="fa-solid fa-water text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider gold-gradient-text">Maadi Nile View</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-gold/80">Cairo Luxury Sanctuary</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#gallery" class="text-slate-300 hover:text-gold transition-colors">Gallery</a>
+                <a href="#virtual-tour" class="text-slate-300 hover:text-gold transition-colors">Virtual Tour</a>
+                <a href="#services" class="text-slate-300 hover:text-gold transition-colors">Services</a>
+                <a href="#location" class="text-slate-300 hover:text-gold transition-colors">Location</a>
+                <a href="#booking" class="px-5 py-2.5 rounded-full bg-gold text-black font-semibold hover:bg-gold-light transition-all shadow-lg shadow-gold/20">Book Your Stay</a>
+            </nav>
+
+            <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="md:hidden text-slate-300 hover:text-gold focus:outline-none text-xl p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0f172a] border-b border-gold/20 px-6 py-6 space-y-4">
+            <a href="#gallery" class="block text-slate-300 hover:text-gold text-lg font-medium">Gallery</a>
+            <a href="#virtual-tour" class="block text-slate-300 hover:text-gold text-lg font-medium">Virtual Tour</a>
+            <a href="#services" class="block text-slate-300 hover:text-gold text-lg font-medium">Services</a>
+            <a href="#location" class="block text-slate-300 hover:text-gold text-lg font-medium">Location</a>
+            <a href="#booking" class="block text-center w-full py-3 rounded-xl bg-gold text-black font-semibold">Book Your Stay</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Background Video Loop -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover filter brightness-75 scale-105 transform transition-transform duration-1000">
+                    <source src="02_Videos/maadi_nile_view_hero_landing/Nile_view_Website_04_enhanced_2kbs.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/40 to-black/60"></div>
+            </div>
+
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs sm:text-sm uppercase tracking-widest mb-6 font-semibold backdrop-blur-sm">
+                    ★ Top 10% Airbnb Guest Favorite • 4.98 / 5.0 Rating
+                </span>
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
+                    Wake Up to the Nile and <span class="gold-gradient-text italic">Ancient Wonders</span>
+                </h1>
+                <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                    Experience an exclusive panoramic vista of the majestic Nile River, the iconic Giza Pyramids on the horizon, and distant Saqqara views from our fully renovated 3-bedroom luxury sanctuary in Maadi.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold text-black font-semibold tracking-wider hover:bg-gold-light transition-all shadow-xl shadow-gold/30 text-center text-lg">
+                        Reserve Your Dates
+                    </a>
+                    <a href="#virtual-tour" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition-all text-center text-lg">
+                        Explore Virtual Tour <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-24 bg-[#0f172a] relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Visual Masterpiece</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Property Gallery & Carousel</h2>
+                    <p class="text-slate-400">Immerse yourself in our meticulously renovated interiors, spacious bedrooms, and breathtaking river vistas.</p>
+                </div>
+
+                <!-- Main Featured Carousel -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gold/20 bg-[#121212] mb-12 group">
+                    <div class="relative h-[350px] sm:h-[550px] md:h-[650px] overflow-hidden">
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center justify-center">
+                            <img src="01_Photos/apartment/view/view_hero.jpg" alt="Panoramic Nile View" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Living Room Vistas</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Direct Panorama of the Nile River & Pyramids</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                            <img src="01_Photos/apartment/living_dining_area/living_dining_hero.jpg" alt="Living & Dining Area" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Interior Elegance</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Spacious & Bright Living/Dining Sanctuary</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                            <img src="01_Photos/apartment/master_bedroom/master_bedroom_hero.jpg" alt="Master Bedroom" class="w-full h-full object-cover">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Restful Suites</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Luxurious King Bed Master Suite</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="prev-slide" aria-label="Previous slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 hover:bg-gold hover:text-black text-white flex items-center justify-center transition-all border border-white/20">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="next-slide" aria-label="Next slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 hover:bg-gold hover:text-black text-white flex items-center justify-center transition-all border border-white/20">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Grid Photos with robust fallback protection -->
+                <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800 cursor-pointer" data-category="view" onclick="openLightbox(0)">
+                        <img src="01_Photos/apartment/view/view_hero_01.jpg" alt="Nile River Panorama" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Views</span>
+                                <h4 class="font-serif text-lg font-bold text-white">Golden Nile Sunset Panorama</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800 cursor-pointer" data-category="interior" onclick="openLightbox(1)">
+                        <img src="01_Photos/apartment/living_dining_area/living_dining_01.jpg" alt="Living Area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Interior</span>
+                                <h4 class="font-serif text-lg font-bold text-white">Sophisticated Sitting Area</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800 cursor-pointer" data-category="interior" onclick="openLightbox(2)">
+                        <img src="01_Photos/apartment/master_bedroom/master_bedroom_01.jpg" alt="Master Bedroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Bedrooms</span>
+                                <h4 class="font-serif text-lg font-bold text-white">King Bed Master Suite</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="photo-lightbox" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden flex flex-col items-center justify-center p-4 sm:p-6">
+            <button onclick="closeLightbox()" aria-label="Close lightbox" class="absolute top-6 right-6 text-slate-400 hover:text-gold text-3xl z-50 p-2 cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="relative max-w-5xl max-h-[80vh] w-full h-full flex items-center justify-center">
+                <button onclick="prevLightboxImage()" aria-label="Previous image" class="absolute left-2 sm:-left-12 text-white hover:text-gold text-2xl sm:text-3xl p-3 z-10 bg-black/50 rounded-full cursor-pointer">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <img id="lightbox-img" src="" alt="Property View" class="max-h-[70vh] max-w-full object-contain rounded-xl shadow-2xl border border-gold/20">
+                    <p id="lightbox-caption" class="text-gold font-serif text-lg mt-4 tracking-wide"></p>
+                </div>
+                <button onclick="nextLightboxImage()" aria-label="Next image" class="absolute right-2 sm:-right-12 text-white hover:text-gold text-2xl sm:text-3xl p-3 z-10 bg-black/50 rounded-full cursor-pointer">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Virtual Tour Section -->
+        <section id="virtual-tour" class="py-24 bg-[#121212] relative border-t border-b border-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Immersive Experience</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Virtual Tour & Guided Walkthrough</h2>
+                    <p class="text-slate-400">Step inside right now using our interactive 3D Matterport tour or watch our curated guided walkthrough video.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                    <div class="bg-[#0f172a] rounded-3xl p-6 border border-gold/30 shadow-2xl flex flex-col justify-between">
+                        <h3 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-cube text-gold"></i> Matterport 3D Tour
+                        </h3>
+                        <div class="relative w-full h-[400px] sm:h-[450px] rounded-2xl overflow-hidden border border-slate-700 bg-black">
+                            <iframe src="https://my.matterport.com/show/?m=hkYrymBjFjm" width="100%" height="100%" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0f172a] rounded-3xl p-6 border border-gold/30 shadow-2xl flex flex-col justify-between">
+                        <h3 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-video text-gold"></i> Narrated Walkthrough
+                        </h3>
+                        <div class="relative w-full h-[400px] sm:h-[450px] rounded-2xl overflow-hidden border border-slate-700 bg-black flex items-center justify-center">
+                            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/ATsha6CzFZA" title="Walkthrough" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="py-24 bg-[#0f172a] relative border-t border-gold/20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Secure Reservation</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Direct Booking & Agreement</h2>
+                    <p class="text-slate-400">Select your preferred stay details and request a secure Payoneer payment link.</p>
+                </div>
+
+                <div class="bg-[#121212] rounded-3xl p-6 sm:p-10 border border-gold/30 shadow-2xl">
+                    <form id="booking-form" class="space-y-8" onsubmit="handleBookingSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="guest-name" class="block text-sm font-medium text-slate-300 mb-2">Full Name</label>
+                                <input type="text" id="guest-name" required placeholder="John Doe" class="w-full bg-[#0f172a] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold">
+                            </div>
+                            <div>
+                                <label for="guest-email" class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                                <input type="email" id="guest-email" required placeholder="john@example.com" class="w-full bg-[#0f172a] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <div class="bg-[#0f172a] p-6 rounded-2xl border border-slate-800">
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" id="agreement-checkbox" class="mt-1 w-5 h-5 accent-[#d4af37] rounded cursor-pointer" onchange="toggleBookingButton()">
+                                <span class="text-xs sm:text-sm text-slate-300 font-medium">
+                                    I agree to the house rules, quiet hours policy, and ID verification requirements.
+                                </span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <button type="submit" id="payoneer-btn" disabled class="w-full py-4 rounded-xl bg-slate-700 text-slate-400 font-bold uppercase tracking-wider cursor-not-allowed transition-all flex items-center justify-center gap-3">
+                                <i class="fa-solid fa-lock text-sm"></i> Request Payoneer Payment Link
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div id="confirmation-message" class="hidden mt-8 p-6 rounded-2xl bg-gold/10 border border-gold text-center">
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Payment Request Initiated!</h3>
+                        <p class="text-slate-300 text-sm">A secure Payoneer payment link will be sent to your email shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-12 border-t border-slate-900 text-slate-400 text-sm text-center">
+        <p>&copy; 2026 Maadi Nile View. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Automatic Image Fallback Handler so broken paths never show empty image icons
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll("img");
+            images.forEach(img => {
+                img.onerror = function() {
+                    this.src = `https://placehold.co/800x600/121212/d4af37?text=${encodeURIComponent(this.alt || 'Maadi Nile View')}`;
+                };
+            });
+        });
+
+        // Carousel Logic
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === n ? '1' : '0';
+            });
+            slideIndex = n;
+        }
+        document.getElementById('next-slide')?.addEventListener('click', () => {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        });
+        document.getElementById('prev-slide')?.addEventListener('click', () => {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlide(slideIndex);
+        });
+
+        // Lightbox Logic
+        const fullPhotoLibrary = [
+            { src: "01_Photos/apartment/view/view_hero_01.jpg", caption: "Golden Nile Sunset Panorama" },
+            { src: "01_Photos/apartment/living_dining_area/living_dining_01.jpg", caption: "Sophisticated Sitting Area" },
+            { src: "01_Photos/apartment/master_bedroom/master_bedroom_01.jpg", caption: "King Bed Master Suite" }
+        ];
+        let currentLightboxIndex = 0;
+
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            document.getElementById('photo-lightbox').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            updateLightboxContent();
+        }
+        function closeLightbox() {
+            document.getElementById('photo-lightbox').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        function updateLightboxContent() {
+            const photo = fullPhotoLibrary[currentLightboxIndex] || fullPhotoLibrary[0];
+            document.getElementById('lightbox-img').src = photo.src;
+            document.getElementById('lightbox-caption').textContent = photo.caption;
+        }
+        function nextLightboxImage() {
+            currentLightboxIndex = (currentLightboxIndex + 1) % fullPhotoLibrary.length;
+            updateLightboxContent();
+        }
+        function prevLightboxImage() {
+            currentLightboxIndex = (currentLightboxIndex - 1 + fullPhotoLibrary.length) % fullPhotoLibrary.length;
+            updateLightboxContent();
+        }
+
+        // Booking Form Validation
+        function toggleBookingButton() {
+            const checkbox = document.getElementById('agreement-checkbox');
+            const btn = document.getElementById('payoneer-btn');
+            if (checkbox.checked) {
+                btn.disabled = false;
+                btn.className = 'w-full py-4 rounded-xl bg-gold text-black font-bold uppercase tracking-wider cursor-pointer hover:bg-gold-light transition-all shadow-xl shadow-gold/20 flex items-center justify-center gap-3';
+                btn.innerHTML = '<i class="fa-solid fa-paper-plane text-sm"></i> Request Payoneer Payment Link';
+            } else {
+                btn.disabled = true;
+                btn.className = 'w-full py-4 rounded-xl bg-slate-700 text-slate-400 font-bold uppercase tracking-wider cursor-not-allowed transition-all flex items-center justify-center gap-3';
+                btn.innerHTML = '<i class="fa-solid fa-lock text-sm"></i> Request Payoneer Payment Link';
+            }
+        }
+
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            document.getElementById('confirmation-message').classList.remove('hidden');
+            document.getElementById('booking-form').reset();
+            toggleBookingButton();
+        }
+    </script>
+</body>
+</html>
