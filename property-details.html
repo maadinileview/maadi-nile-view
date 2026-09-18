@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details & Gallery | Maadi Nile View</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; }
+        
+        /* HEADER */
+        header { background: #1e293b; border-bottom: 1px solid #334155; padding: 2rem 1rem; text-align: center; }
+        header h1 { font-size: 2.5rem; color: #f59e0b; margin-bottom: 0.5rem; }
+        header p { color: #94a3b8; font-size: 1.1rem; max-width: 700px; margin: 0 auto 1.5rem; }
+        
+        .nav-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        .nav-btn { background: #334155; color: #f8fafc; text-decoration: none; padding: 0.5rem 1.2rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500; transition: background 0.2s; }
+        .nav-btn:hover { background: #475569; }
+
+        /* LAYOUT & SECTIONS */
+        .container { max-width: 1100px; margin: 3rem auto; padding: 0 1.5rem; }
+        section { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 2.5rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.8rem; color: #f59e0b; margin-bottom: 1.2rem; }
+        h3 { font-size: 1.3rem; color: #e2e8f0; margin: 1.5rem 0 0.8rem; }
+        p { color: #cbd5e1; margin-bottom: 1rem; font-size: 1.05rem; }
+
+        /* STATS GRID */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .stat-box { background: #0f172a; border: 1px solid #334155; padding: 1.2rem; border-radius: 8px; text-align: center; }
+        .stat-box .label { font-size: 0.85rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.3rem; }
+        .stat-box .value { font-size: 1.2rem; font-weight: 600; color: #f8fafc; }
+
+        /* AMENITIES & FEATURES */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+        .feature-item { background: #0f172a; padding: 1.2rem; border-radius: 8px; border: 1px solid #334155; }
+        .feature-item h4 { color: #f59e0b; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .feature-item ul { padding-left: 1.2rem; color: #cbd5e1; font-size: 0.95rem; }
+        .feature-item li { margin-bottom: 0.3rem; }
+
+        /* REVIEWS GRID */
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .review-card { background: #0f172a; border: 1px solid #334155; padding: 1.5rem; border-radius: 8px; }
+        .review-card p { font-style: italic; color: #e2e8f0; margin-bottom: 0.8rem; }
+        .review-card span { font-weight: 600; color: #f59e0b; font-size: 0.9rem; }
+
+        /* HOST SECTION */
+        .host-flex { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; }
+        .host-info { flex: 1; min-width: 280px; }
+
+        /* FOOTER */
+        footer { background: #0b1120; text-align: center; padding: 2.5rem; color: #64748b; font-size: 0.9rem; border-top: 1px solid #1e293b; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Property Details & Comprehensive Guide</h1>
+        <p>Explore full specifications, amenities, room layouts, and guest reviews for Maadi Nile View.</p>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">&larr; Back to Home</a>
+            <a href="experiences.html" class="nav-btn">Tours & Experiences</a>
+            <a href="dashboard.html" class="nav-btn" style="background-color: #d97706; color: #fff;">Guest Dashboard</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- QUICK FACTS & STATISTICS -->
+        <section>
+            <h2>Property Quick Facts</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="label">Listing Type</span>
+                    <span class="value">Entire Condo (Cairo)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Capacity</span>
+                    <span class="value">6 Guests</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Layout</span>
+                    <span class="value">3 Beds, 4 Beds, 2.5 Baths</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Rating</span>
+                    <span class="value">4.98 / 5 (168 Reviews)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT THE SPACE -->
+        <section>
+            <h2>Wake Up to the Nile and Ancient Wonders</h2>
+            <p>Imagine stepping out onto your balcony or looking out from the living room to a breathtaking panorama: the gentle flow of the Nile River right in front of you, the iconic silhouettes of the Giza Pyramids rising on the horizon, and—on clear days—the ancient Saqqara Pyramids resting quietly in the far distance on the left side of your view.</p>
+            <p>Welcome to your luxurious home-away-from-home in the heart of Cairo. Situated on the vibrant Corniche El Nile in Maadi, our 3-bedroom, 2.5-bath apartment blends modern comfort with an unbeatable location.</p>
+
+            <h3>A Sanctuary of Comfort and Style</h3>
+            <p>While the building itself features a traditional, older Cairo exterior with authentic local character, opening the front door reveals a complete transformation. Remodeled and renovated to high standards, the interior is bright, spacious, and meticulously maintained. Cleanliness is our absolute top priority, ensuring you can unwind in a pristine environment after a day of exploring the city.</p>
+
+            <h3>Designed for Ease and Luxury</h3>
+            <ul style="padding-left: 1.2rem; color: #cbd5e1; margin-bottom: 1.5rem;">
+                <li><strong>Million-Dollar Views:</strong> Enjoy dynamic vistas that shift from golden morning sunrises over the water to dramatic evening sunsets.</li>
+                <li><strong>Fully Equipped & Connected:</strong> Features fast Wi-Fi (57 Mbps), SAT TV, a whole-house water filtration system, universal wall sockets, and USB ports in every corner.</li>
+                <li><strong>Handicap Accessible:</strong> Thoughtfully designed for accessibility, featuring an elevator, step-free interior living, and an accessible master bedroom and bathroom.</li>
+                <li><strong>Chef-Ready Kitchen & Laundry:</strong> Includes full cooking essentials, a refrigerator, oven, stove, microwave, coffee maker, plus an in-unit washer and dryer.</li>
+            </ul>
+            <p>Whether you are here to explore Egypt’s ancient history or looking for a peaceful riverside escape, we provide seamless hospitality—including optional airport transfers and customized local tour recommendations. Come experience Cairo from a privileged vantage point very few get to enjoy.</p>
+        </section>
+
+        <!-- TRANSPARENCY SECTION -->
+        <section>
+            <h2>What to Expect / Transparency Section</h2>
+            <p>To ensure your stay is wonderful from the moment you arrive, we believe in complete transparency so expectations match reality:</p>
+            <ul style="padding-left: 1.2rem; color: #cbd5e1;">
+                <li><strong>The Building Exterior:</strong> This apartment is located in a traditional, older building in the heart of Cairo with a modest, character-filled exterior. Once you cross the threshold, you will enter a modern, luxurious, and fully updated sanctuary.</li>
+                <li><strong>The View:</strong> You will enjoy direct views of the Nile River and the Giza Pyramids, with the distant Saqqara Pyramids visible on clear days on the far left of your line of sight.</li>
+                <li><strong>Safety & Security:</strong> The building features 24/7 security and exterior property cameras. There are no recording devices or cameras inside the private apartment.</li>
+            </ul>
+        </section>
+
+        <!-- SLEEPING ARRANGEMENTS -->
+        <section>
+            <h2>Sleeping Arrangements</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="label">Bedroom 1 (Master)</span>
+                    <span class="value">1 King Bed</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Bedroom 2</span>
+                    <span class="value">1 Queen Bed</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Bedroom 3</span>
+                    <span class="value">2 Single Beds</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Living Room</span>
+                    <span class="value">2 Couches</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPREHENSIVE AMENITIES -->
+        <section>
+            <h2>Complete Amenities List</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>Scenic Views & Outdoor</h4>
+                    <ul>
+                        <li>River view & Waterfront</li>
+                        <li>Private patio or balcony</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h4>Bathrooms</h4>
+                    <ul>
+                        <li>Bathtub & Bidet</li>
+                        <li>Hair dryer & Shower gel</li>
+                        <li>Shampoo, conditioner, soap</li>
+                        <li>Hot water</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h4>Bedroom & Laundry</h4>
+                    <ul>
+                        <li>Free washer & dryer (In unit)</li>
+                        <li>Towels, bed sheets, toilet paper</li>
+                        <li>Hangers & extra pillows</li>
+                        <li>Room-darkening shades & iron</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h4>Kitchen & Dining</h4>
+                    <ul>
+                        <li>Refrigerator, freezer, oven, stove</li>
+                        <li>Microwave & toaster</li>
+                        <li>Cooking basics & silverware</li>
+                        <li>Coffee maker (pour-over) & kettle</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h4>Entertainment & Office</h4>
+                    <ul>
+                        <li>Fast Wi-Fi (57 Mbps verified)</li>
+                        <li>Ethernet connection</li>
+                        <li>49-inch HDTV with cable</li>
+                        <li>Dedicated workspace (with door)</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h4>Family Features</h4>
+                    <ul>
+                        <li>Mini crib & Travel crib</li>
+                        <li>Standalone high chair</li>
+                        <li>Board games</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h4>Safety & Climate</h4>
+                    <ul>
+                        <li>Split AC units & portable fans</li>
+                        <li>Smoke & carbon monoxide alarms</li>
+                        <li>Fire extinguisher & first aid kit</li>
+                        <li>Exterior security cameras</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h4>Facilities & Services</h4>
+                    <ul>
+                        <li>Free/Paid parking on premises</li>
+                        <li>Elevator (52" deep, 32" doorway)</li>
+                        <li>Airport transfer services</li>
+                        <li>Self check-in (Smart lock)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCESSIBILITY SECTION -->
+        <section>
+            <h2>Accessibility & Mobility Features</h2>
+            <p>Our property is designed to accommodate guests with diverse mobility needs, ensuring a comfortable, accessible stay from arrival to departure.</p>
+            
+            <h3>Building & Entrance</h3>
+            <ul style="padding-left: 1.2rem; color: #cbd5e1; margin-bottom: 1rem;">
+                <li><strong>Step-Free Access:</strong> Handicap-friendly, step-free access from the building entrance straight into the apartment.</li>
+                <li><strong>Doorways:</strong> Main guest entrance is wider than 32 inches.</li>
+                <li><strong>Elevator Access:</strong> Elevator features a depth of at least 52 inches and a doorway width of at least 32 inches.</li>
+                <li><strong>Interior Layout:</strong> Single-level interior home with no stairs inside the apartment.</li>
+            </ul>
+
+            <h3>Bathrooms</h3>
+            <ul style="padding-left: 1.2rem; color: #cbd5e1;">
+                <li><strong>Master Bathroom:</strong> Step-free access, step-free walk-in shower, fixed grab bars for toilet and shower, and shower/bath chair.</li>
+                <li><strong>Bathroom 2:</strong> Step-free access and a shower or bath chair.</li>
+            </ul>
+        </section>
+
+        <!-- REVIEW HIGHLIGHTS -->
+        <section>
+            <h2>Review Highlights & Breakdown</h2>
+            <div class="stats-grid" style="margin-bottom: 2rem;">
+                <div class="stat-box"><span class="label">Cleanliness</span><span class="value">4.9 / 5</span></div>
+                <div class="stat-box"><span class="label">Accuracy</span><span class="value">5.0 / 5</span></div>
+                <div class="stat-box"><span class="label">Check-in</span><span class="value">5.0 / 5</span></div>
+                <div class="stat-box"><span class="label">Communication</span><span class="value">5.0 / 5</span></div>
+                <div class="stat-box"><span class="label">Location</span><span class="value">4.9 / 5</span></div>
+                <div class="stat-box"><span class="label">Value</span><span class="value">4.9 / 5</span></div>
+            </div>
+
+            <h3>Sample Guest Reviews</h3>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>"The host was incredibly welcoming and kind. I truly appreciated his hospitality and the effort he put into making my stay comfortable."</p>
+                    <span>— Mossa (Tennessee)</span>
+                </div>
+                <div class="review-card">
+                    <p>"One of the best locations in Cairo. Literally 30 minutes away from everything... If you have a family and you are looking for space and convenience. This is it!"</p>
+                    <span>— Abdullah</span>
+                </div>
+                <div class="review-card">
+                    <p>"Awesome apartment with a view that can't be beat! Spacious, luxurious and spotlessly clean. The bedrooms face the backyard and there is no noise..."</p>
+                    <span>— Alexandra</span>
+                </div>
+                <div class="review-card">
+                    <p>"My stay at Samer’s home in Cairo was absolutely perfect!... A special mention goes to Abbas at the reception, always ready to help with anything I needed."</p>
+                    <span>— Valentina</span>
+                </div>
+                <div class="review-card">
+                    <p>"Samer was amazing. He made everything smooth and the stay was amazing. Thank You!"</p>
+                    <span>— Josh (Riyadh)</span>
+                </div>
+                <div class="review-card">
+                    <p>"Samer was a great host very responsive and attentive to my family needs. The place was very clean, neat and well equipped..."</p>
+                    <span>— Hebbe (Arizona)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEET YOUR HOST -->
+        <section>
+            <h2>Meet Your Host (Samer)</h2>
+            <div class="host-flex">
+                <div class="host-info">
+                    <p><strong>Experience:</strong> 9 years of hosting excellence with a 4.98 average rating across 168+ reviews.</p>
+                    <p><strong>Background:</strong> Having spent my formative years in the United States, I have been deeply immersed in the captivating culture of Egypt since 2010. This beautiful country is now my cherished home, and I am thrilled to open my doors to travelers from around the world.</p>
+                    <p><strong>Hosting Philosophy:</strong> My goal is simple: to ensure your stay is comfortable, enjoyable, and truly memorable. Think of me as your friendly local guide, here to help you experience the best of Egypt.</p>
+                    <p><strong>Communication & Support:</strong> 100% response rate, typically replying within an hour. I am at your service to coordinate airport pick-up/drop-off services and connect you with trusted local tour guides.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Maadi Nile View Accommodation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

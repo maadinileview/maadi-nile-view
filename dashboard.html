@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Dashboard & Guidebook | Maadi Nile View</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; padding-bottom: 4rem; }
+        
+        /* HEADER & NAVIGATION */
+        header { background: #1e293b; border-bottom: 1px solid #334155; padding: 2rem 1rem; text-align: center; }
+        header h1 { font-size: 2.2rem; color: #f59e0b; margin-bottom: 0.5rem; }
+        header p { color: #94a3b8; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem; }
+        
+        .nav-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .nav-btn { background: #334155; color: #f8fafc; text-decoration: none; padding: 0.5rem 1.2rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500; transition: background 0.2s; }
+        .nav-btn:hover { background: #475569; }
+
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+
+        /* QUICK ACCESS TABS */
+        .dash-nav { display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #334155; }
+        .dash-tab { background: #1e293b; color: #94a3b8; border: 1px solid #334155; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; white-space: nowrap; font-weight: 600; transition: 0.2s; }
+        .dash-tab.active, .dash-tab:hover { background: #f59e0b; color: #0f172a; border-color: #f59e0b; }
+
+        /* CONTENT SECTIONS */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
+        .card h2 { font-size: 1.4rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .card h3 { font-size: 1.1rem; color: #e2e8f0; margin: 1rem 0 0.5rem; }
+
+        /* INFO LISTS */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+        .info-box { background: #0f172a; border: 1px solid #334155; padding: 1rem; border-radius: 8px; }
+        .info-box label { display: block; font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+        .info-box span { font-size: 1.1rem; font-weight: 600; color: #f8fafc; }
+
+        /* PLATFORM BOOKING BUTTONS */
+        .booking-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .btn-platform { display: flex; align-items: center; justify-content: center; gap: 0.6rem; padding: 0.8rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; color: #fff; transition: opacity 0.2s; }
+        .btn-platform:hover { opacity: 0.9; }
+        .btn-airbnb { background: #FF5A5F; }
+        .btn-booking { background: #003580; }
+        .btn-vrbo { background: #2a6ebb; }
+
+        /* EMBED CONTAINER */
+        .embed-container { background: #0f172a; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center; }
+
+        ul.rules-list { list-style: none; padding-left: 0; }
+        ul.rules-list li { padding: 0.5rem 0; border-bottom: 1px solid #334155; display: flex; align-items: center; gap: 0.5rem; }
+        ul.rules-list li:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guest Portal & Dashboard</h1>
+        <p>Everything you need for a comfortable stay at Maadi Nile View[cite: 15].</p>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">&larr; Main Site</a>
+            <a href="property-details.html" class="nav-btn">Property Gallery</a>
+            <a href="experiences.html" class="nav-btn">Tours & Experiences</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- DASHBOARD NAVIGATION TABS -->
+        <div class="dash-nav">
+            <button class="dash-tab active" onclick="openTab('arrival')">Arrival & Check-In</button>
+            <button class="dash-tab" onclick="openTab('wifi')">Wi-Fi & Amenities</button>
+            <button class="dash-tab" onclick="openTab('rules')">House Rules</button>
+            <button class="dash-tab" onclick="openTab('booking')">Book / Extend Stay</button>
+            <button class="dash-tab" onclick="openTab('contacts')">Help & Emergency</button>
+        </div>
+
+        <!-- TAB 1: ARRIVAL & CHECK-IN -->
+        <div id="arrival" class="tab-content active">
+            <div class="card">
+                <h2>🔑 Check-In & Access Details</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <label>Check-In Time</label>
+                        <span>3:00 PM Onwards</span>
+                    </div>
+                    <div class="info-box">
+                        <label>Check-Out Time</label>
+                        <span>11:00 AM</span>
+                    </div>
+                    <div class="info-box">
+                        <label>Property Address</label>
+                        <span>Maadi Corniche, Cairo, Egypt</span>
+                    </div>
+                </div>
+
+                <h3>Keylock & Smart Access Instructions</h3>
+                <p style="color: #cbd5e1; margin-top: 0.5rem;">
+                    Detailed self-check-in lockbox codes and building security contact details will be sent directly to your registered platform chat or WhatsApp 24 hours prior to arrival[cite: 15].
+                </p>
+            </div>
+        </div>
+
+        <!-- TAB 2: WI-FI & AMENITIES -->
+        <div id="wifi" class="tab-content">
+            <div class="card">
+                <h2>📶 Wi-Fi & Appliances</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <label>Network Name (SSID)</label>
+                        <span>MaadiNileView_5G</span>
+                    </div>
+                    <div class="info-box">
+                        <label>Password</label>
+                        <span>[Available upon check-in]</span>
+                    </div>
+                </div>
+
+                <h3>Apartment Controls</h3>
+                <ul class="rules-list" style="margin-top: 0.5rem; color: #cbd5e1;">
+                    <li>❄️ <strong>Air Conditioners:</strong> Controls are located in each bedroom and main living area[cite: 15].</li>
+                    <li>🔥 <strong>Water Heater:</strong> Ensure switch outside the bathroom is toggled ON 15 minutes before showering[cite: 15].</li>
+                    <li>📺 <strong>Smart TV:</strong> Pre-loaded with Netflix, YouTube, and international media apps[cite: 15].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB 3: HOUSE RULES -->
+        <div id="rules" class="tab-content">
+            <div class="card">
+                <h2>📋 House Rules & Standards</h2>
+                <ul class="rules-list" style="color: #cbd5e1;">
+                    <li>🚭 <strong>Strictly No Smoking</strong> inside the apartment (Balcony use only with doors closed)[cite: 15].</li>
+                    <li>🔇 <strong>Quiet Hours:</strong> Please respect residential quiet hours between 10:00 PM and 8:00 AM[cite: 15].</li>
+                    <li>👥 <strong>Registered Guests Only:</strong> Unregistered visitors are strictly prohibited per building policies[cite: 15].</li>
+                    <li>🔌 <strong>Energy Conservation:</strong> Turn off ACs and lights when leaving the apartment[cite: 15].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB 4: BOOKING PLATFORMS -->
+        <div id="booking" class="tab-content">
+            <div class="card">
+                <h2>📅 Reserve or Extend Your Stay</h2>
+                <p style="color: #cbd5e1;">Select your preferred booking platform to manage, extend, or review your stay[cite: 15]:</p>
+                
+                <div class="booking-actions">
+                    <a href="https://www.airbnb.co.uk/rooms/20851083?guests=1&adults=1&s=67&unique_share_id=fe2c4f28-f7fb-4e4b-ba98-a993c5d499f8" target="_blank" class="btn-platform btn-airbnb">
+                        Book on Airbnb
+                    </a>
+                    <a href="https://www.booking.com/hotel/eg/breathtaking-nile-view-with-pyramids-in-back-drop.en-gb.html" target="_blank" class="btn-platform btn-booking">
+                        Book on Booking.com
+                    </a>
+                    <a href="https://www.booking.com/hotel/eg/breathtaking-nile-view-with-pyramids-in-back-drop.en-gb.html" target="_blank" class="btn-platform btn-vrbo">
+                        Book on Vrbo
+                    </a>
+                </div>
+
+                <div class="embed-container">
+                    <h3 style="margin-bottom: 1rem;">Live Airbnb Listing</h3>
+                    <div class="airbnb-embed-frame" data-id="20851083" data-view="home" data-hide-price="true" style="width: 100%; max-width: 450px; height: 300px; margin: auto;">
+                        <a href="https://www.airbnb.co.uk/rooms/20851083?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View on Airbnb</a>
+                        <a href="https://www.airbnb.co.uk/rooms/20851083?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Apartment in Cairo · ★4.98 · 3 bedrooms · 4 beds · 2.5 bathrooms</a>
+                        <script async="" src="https://www.airbnb.co.uk/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 5: EMERGENCY & SUPPORT -->
+        <div id="contacts" class="tab-content">
+            <div class="card">
+                <h2>📞 Emergency & Host Support</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <label>Host WhatsApp</label>
+                        <span>Direct Support Available 24/7</span>
+                    </div>
+                    <div class="info-box">
+                        <label>Local Tourist Police</label>
+                        <span>126</span>
+                    </div>
+                    <div class="info-box">
+                        <label>Ambulance Service</label>
+                        <span>123</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            const tabs = document.querySelectorAll('.dash-tab');
+            
+            contents.forEach(c => c.classList.remove('active'));
+            tabs.forEach(t => t.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
