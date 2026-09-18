@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maadi Nile View | Luxury Short-Term Rental in Cairo</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0f172a',
+                        darkcanvas: '#121212',
+                        gold: {
+                            DEFAULT: '#d4af37',
+                            light: '#e6ca65',
+                            dark: '#c5a059'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Luxury Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c5a059;
+            border-radius: 4px;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f8fafc 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+        .gold-glow:hover {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#f8fafc] font-sans antialiased selection:bg-gold selection:text-black">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#121212]/90 backdrop-blur-md border-b border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full border border-gold flex items-center justify-center bg-gold/10 text-gold group-hover:bg-gold group-hover:text-black transition-all">
+                    <i class="fa-solid fa-water text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider gold-gradient-text">Maadi Nile View</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-gold/80">Cairo Luxury Sanctuary</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#gallery" class="text-slate-300 hover:text-gold transition-colors">Gallery</a>
+                <a href="#virtual-tour" class="text-slate-300 hover:text-gold transition-colors">Virtual Tour</a>
+                <a href="#services" class="text-slate-300 hover:text-gold transition-colors">Tourism & Services</a>
+                <a href="#location" class="text-slate-300 hover:text-gold transition-colors">Location</a>
+                <a href="#booking" class="px-5 py-2.5 rounded-full bg-gold text-black font-semibold hover:bg-gold-light transition-all shadow-lg shadow-gold/20">Book Your Stay</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="md:hidden text-slate-300 hover:text-gold focus:outline-none text-xl p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0f172a] border-b border-gold/20 px-6 py-6 space-y-4">
+            <a href="#gallery" class="block text-slate-300 hover:text-gold text-lg font-medium">Gallery</a>
+            <a href="#virtual-tour" class="block text-slate-300 hover:text-gold text-lg font-medium">Virtual Tour</a>
+            <a href="#services" class="block text-slate-300 hover:text-gold text-lg font-medium">Tourism & Services</a>
+            <a href="#location" class="block text-slate-300 hover:text-gold text-lg font-medium">Location</a>
+            <a href="#booking" class="block text-center w-full py-3 rounded-xl bg-gold text-black font-semibold">Book Your Stay</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Video Loop -->
+            <div class="absolute inset-0 z-0">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover filter brightness-75 scale-105 transform transition-transform duration-1000">
+                    <source src="nile-hero-background.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/40 to-black/60"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs sm:text-sm uppercase tracking-widest mb-6 font-semibold backdrop-blur-sm">
+                    ★ Top 10% Airbnb Guest Favorite • 4.98 / 5.0 Rating
+                </span>
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
+                    Wake Up to the Nile and <span class="gold-gradient-text italic">Ancient Wonders</span>
+                </h1>
+                <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                    Experience an exclusive panoramic vista of the majestic Nile River, the iconic Giza Pyramids on the horizon, and distant Saqqara views from our fully renovated 3-bedroom luxury sanctuary in Maadi.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#booking" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold text-black font-semibold tracking-wider hover:bg-gold-light transition-all shadow-xl shadow-gold/30 text-center text-lg">
+                        Reserve Your Dates
+                    </a>
+                    <a href="#virtual-tour" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition-all text-center text-lg">
+                        Explore Virtual Tour <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-center animate-bounce hidden sm:block">
+                <a href="#gallery" class="text-gold/80 hover:text-gold text-sm tracking-widest uppercase flex flex-col items-center gap-2">
+                    <span>Scroll to Discover</span>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Main Property Gallery Section (50 Photos Total) -->
+        <section id="gallery" class="py-24 bg-[#0f172a] relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Visual Masterpiece</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Property Gallery & Highlights</h2>
+                    <p class="text-slate-400">Immerse yourself in our meticulously renovated interiors, spacious bedrooms, and breathtaking river vistas.</p>
+                </div>
+
+                <!-- Main Featured Carousel -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gold/20 bg-[#121212] mb-12 group">
+                    <div class="relative h-[350px] sm:h-[550px] md:h-[650px] overflow-hidden">
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center justify-center">
+                            <img src="view/view_hero.jpg" alt="Panoramic Nile View" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/1200x800/121212/d4af37?text=Maadi+Nile+View'">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Living Room Vistas</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Direct Panorama of the Nile River & Pyramids</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                            <img src="living_dining_area/living_dining_hero.jpg" alt="Living & Dining Area" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/1200x800/121212/d4af37?text=Living+Dining+Area'">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Interior Elegance</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Spacious & Bright Living/Dining Sanctuary</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                            <img src="master_bedroom/master_bedroom_hero.jpg" alt="Master Bedroom" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/1200x800/121212/d4af37?text=Master+Bedroom'">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Restful Suites</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Luxurious King Bed Master Suite</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                            <img src="kitchen/kitchen_01.jpg" alt="Chef Kitchen" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/1200x800/121212/d4af37?text=Chef+Kitchen'">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Culinary Comfort</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Fully Equipped Chef-Ready Kitchen</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                            <img src="accessibility/accessibility_hero.jpeg" alt="Handicap Accessible" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/1200x800/121212/d4af37?text=Accessibility+Features'">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 sm:p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Universal Comfort</span>
+                                <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-1">Thoughtfully Designed Handicap Accessible Spaces</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button id="prev-slide" aria-label="Previous slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 hover:bg-gold hover:text-black text-white flex items-center justify-center transition-all border border-white/20">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="next-slide" aria-label="Next slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 hover:bg-gold hover:text-black text-white flex items-center justify-center transition-all border border-white/20">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Dot Indicators -->
+                    <div class="absolute bottom-4 right-6 flex space-x-2 z-20">
+                        <button onclick="currentSlide(0)" class="carousel-dot w-3 h-3 rounded-full bg-gold transition-all" aria-label="Slide 1"></button>
+                        <button onclick="currentSlide(1)" class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all" aria-label="Slide 2"></button>
+                        <button onclick="currentSlide(2)" class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all" aria-label="Slide 3"></button>
+                        <button onclick="currentSlide(3)" class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all" aria-label="Slide 4"></button>
+                        <button onclick="currentSlide(4)" class="carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all" aria-label="Slide 5"></button>
+                    </div>
+                </div>
+
+                <!-- Filterable Property Gallery System -->
+                <div class="mt-16">
+                    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="filter-buttons-container">
+                        <button onclick="filterGallery('all', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-gold text-black transition-all">All Photos (50)</button>
+                        <button onclick="filterGallery('view', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#121212] text-slate-300 hover:bg-gold/20 border border-slate-800 transition-all">Views & Balcony</button>
+                        <button onclick="filterGallery('interior', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#121212] text-slate-300 hover:bg-gold/20 border border-slate-800 transition-all">Living & Bedrooms</button>
+                        <button onclick="filterGallery('amenities', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#121212] text-slate-300 hover:bg-gold/20 border border-slate-800 transition-all">Kitchen & Bath</button>
+                        <button onclick="filterGallery('exterior', this)" class="gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#121212] text-slate-300 hover:bg-gold/20 border border-slate-800 transition-all">Building & Accessibility</button>
+                    </div>
+
+                    <!-- Dynamic Property Gallery Grid -->
+                    <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fullscreen Lightbox Modal -->
+        <div id="lightbox-modal" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-xl flex flex-col justify-between p-4 sm:p-8">
+            <div class="flex items-center justify-between text-white z-10">
+                <div>
+                    <span id="lightbox-counter" class="text-xs text-gold uppercase tracking-widest font-semibold">Image 1 of 50</span>
+                    <h4 id="lightbox-title" class="font-serif text-lg sm:text-2xl font-bold">Photo Title</h4>
+                </div>
+                <button onclick="closeLightbox()" aria-label="Close Lightbox" class="w-12 h-12 rounded-full bg-white/10 hover:bg-gold hover:text-black flex items-center justify-center text-xl transition-all">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="relative flex-1 flex items-center justify-center my-4 overflow-hidden">
+                <button onclick="changeLightboxSlide(-1)" aria-label="Previous Image" class="absolute left-2 sm:left-6 z-10 w-12 h-12 rounded-full bg-black/60 hover:bg-gold hover:text-black text-white flex items-center justify-center text-lg transition-all border border-white/20">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <img id="lightbox-img" src="" alt="Expanded View" class="max-h-[75vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl border border-gold/20" onerror="this.src='https://placehold.co/1200x800/121212/d4af37?text=Maadi+Nile+View'">
+                <button onclick="changeLightboxSlide(1)" aria-label="Next Image" class="absolute right-2 sm:right-6 z-10 w-12 h-12 rounded-full bg-black/60 hover:bg-gold hover:text-black text-white flex items-center justify-center text-lg transition-all border border-white/20">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="text-center text-xs text-slate-400 z-10">
+                <p>Use keyboard arrow keys left/right to navigate or ESC to close.</p>
+            </div>
+        </div>
+
+        <section id="virtual-tour" class="py-24 bg-[#121212] relative border-t border-b border-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Immersive Experience</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Virtual Tour & Guided Walkthrough</h2>
+                    <p class="text-slate-400">Step inside right now using our interactive 3D Matterport tour or watch our curated guided walkthrough video.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                    <!-- Matterport 3D Tour Embed -->
+                    <div class="bg-[#0f172a] rounded-3xl p-6 border border-gold/30 shadow-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-serif text-2xl font-bold text-white flex items-center gap-3">
+                                    <i class="fa-solid fa-cube text-gold"></i> Matterport 3D Tour
+                                </h3>
+                                <span class="px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-medium">Interactive</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">Navigate through every corner of our 3-bedroom luxury apartment at your own pace.</p>
+                        </div>
+                        <div class="relative w-full h-[400px] sm:h-[450px] rounded-2xl overflow-hidden border border-slate-700 bg-black">
+                            <iframe src="https://my.matterport.com/show/?m=hkYrymBjFjm" width="100%" height="100%" frameborder="0" allowfullscreen allow="xr-spatial-tracking" class="w-full h-full"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Guided Walkthrough Video Player -->
+                    <div class="bg-[#0f172a] rounded-3xl p-6 border border-gold/30 shadow-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-serif text-2xl font-bold text-white flex items-center gap-3">
+                                    <i class="fa-solid fa-video text-gold"></i> Narrated Walkthrough
+                                </h3>
+                                <span class="px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-medium">2-Min Tour</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">Watch host Samer guide you through the property features, views, and top amenities.</p>
+                        </div>
+                        <div class="relative w-full h-[400px] sm:h-[450px] rounded-2xl overflow-hidden border border-slate-700 bg-black flex items-center justify-center">
+                            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/ATsha6CzFZA" title="Maadi Nile View Narrated Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dedicated Tourism & Guest Experiences Section -->
+        <section id="services" class="py-24 bg-[#0f172a] relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Bespoke Guest Experiences</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Tourism & VIP Services</h2>
+                    <p class="text-slate-400">Enjoy seamless arrival coordination and curated Egyptian excursions directly through our local guide partners.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+                    <!-- Service Card 1 -->
+                    <div class="bg-[#121212] p-8 rounded-3xl border border-gold/20 hover:border-gold transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-black transition-all">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-3">VIP Airport Pickups</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Skip the hassle of airport taxis. Our professional driver will meet you directly at Cairo International Airport (CAI) or Sphinx Airport with name sign and direct transfer to Maadi Stars Towers.</p>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Meet & Greet inside terminal</li>
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Flight tracking included</li>
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Luggage assistance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-[#121212] p-8 rounded-3xl border border-gold/20 hover:border-gold transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-black transition-all">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-3">Custom Excursions</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Discover the Giza Pyramids, Saqqara, Egyptian Museum, and Khan El-Khalili bazaar with certified expert Egyptologist tour guides and private air-conditioned transport.</p>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Private Egyptologist guides</li>
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Skip-the-line ticketing advice</li>
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Tailored itinerary planning</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-[#121212] p-8 rounded-3xl border border-gold/20 hover:border-gold transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-gold group-hover:text-black transition-all">
+                            <i class="fa-solid fa-sailboat"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-3">Nile Felucca Sunsets</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Experience traditional sailing on the Nile River right from Maadi. Enjoy private sunset felucca cruises with refreshments and local hospitality.</p>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Private traditional sailboat</li>
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Golden hour photography</li>
+                            <li><i class="fa-solid fa-check text-gold mr-2"></i> Just 500m from the property</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- DEDICATED TOURISM SLIDESHOW CAROUSEL & GALLERY (All 10 Tourism Photos) -->
+                <div class="mt-12 bg-[#121212] rounded-3xl p-6 sm:p-10 border border-gold/30 shadow-2xl">
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Cairo Highlights Showcase</span>
+                        <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mb-3">Top 10 Guest Excursions</h3>
+                        <p class="text-slate-400 text-sm">Explore our curated slideshow carousel featuring all 10 signature Cairo attractions reachable during your stay.</p>
+                    </div>
+
+                    <!-- Tourism Slideshow Carousel Player -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gold/20 bg-black mb-8 group">
+                        <div class="relative h-[320px] sm:h-[500px] md:h-[580px] overflow-hidden">
+                            <!-- Slides dynamically initialized via JS -->
+                            <div id="tourism-slides-container" class="w-full h-full relative"></div>
+                        </div>
+
+                        <!-- Carousel Prev/Next Buttons -->
+                        <button onclick="tourismPrevSlide()" aria-label="Previous Tourism Slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-black/70 hover:bg-gold hover:text-black text-white flex items-center justify-center transition-all border border-white/20 z-20">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button onclick="tourismNextSlide()" aria-label="Next Tourism Slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-black/70 hover:bg-gold hover:text-black text-white flex items-center justify-center transition-all border border-white/20 z-20">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Counter Pill -->
+                        <div class="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-gold/30 text-gold text-xs font-semibold">
+                            <span id="tourism-counter">01 / 10</span>
+                        </div>
+                    </div>
+
+                    <!-- Tourism Thumbnail Selector Ribbon -->
+                    <div class="mb-10 flex space-x-3 overflow-x-auto pb-4 scrollbar-thin" id="tourism-thumbnails-strip"></div>
+
+                    <!-- Interactive Tourism 10-Photo Grid Gallery -->
+                    <div class="border-t border-slate-800 pt-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <h4 class="font-serif text-xl font-bold text-white">Full Tourism Photo Gallery</h4>
+                            <span class="text-xs text-slate-400">Click any image to view in lightbox</span>
+                        </div>
+                        <div id="tourism-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="location" class="py-24 bg-[#121212] relative border-t border-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Prime Cairo Location</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Location Guide & Landmarks</h2>
+                    <p class="text-slate-400">Situated in Maadi Stars Towers along the Corniche El Nile, perfectly positioned near top landmarks, dining, and diplomatic hubs.</p>
+                </div>
+
+                <!-- Property & Attractions Map Display -->
+                <div class="mb-16 rounded-3xl overflow-hidden border border-gold/20 shadow-2xl bg-[#0f172a] p-4 sm:p-8">
+                    <div class="text-center max-w-xl mx-auto mb-6">
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2">Area Map & Landmark Layout</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm">Visual overview of apartment proximity to the Nile Corniche and key Cairo destinations.</p>
+                    </div>
+                    <div class="relative w-full rounded-2xl overflow-hidden border border-slate-800 bg-black">
+                        <img src="Map-attractions-property.png" alt="Maadi Nile View Attractions Map" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/1200x800/121212/d4af37?text=Attractions+Map'">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                    <!-- Landmark 1 -->
+                    <div class="bg-[#0f172a] p-6 rounded-2xl border border-slate-800">
+                        <div class="text-gold font-serif text-2xl font-bold mb-1">~500 m</div>
+                        <h4 class="text-white font-semibold text-base mb-2">Roma Boats Felucca</h4>
+                        <p class="text-slate-400 text-xs">Steps away from the Nile waterfront for traditional boat rides and evening breezes.</p>
+                    </div>
+                    <!-- Landmark 2 -->
+                    <div class="bg-[#0f172a] p-6 rounded-2xl border border-slate-800">
+                        <div class="text-gold font-serif text-2xl font-bold mb-1">~13 km</div>
+                        <h4 class="text-white font-semibold text-base mb-2">Cairo Tower & Tahrir Sq.</h4>
+                        <p class="text-slate-400 text-xs">Quick drive along the Corniche to downtown Cairo and the iconic panoramic tower.</p>
+                    </div>
+                    <!-- Landmark 3 -->
+                    <div class="bg-[#0f172a] p-6 rounded-2xl border border-slate-800">
+                        <div class="text-gold font-serif text-2xl font-bold mb-1">~20 km</div>
+                        <h4 class="text-white font-semibold text-base mb-2">Giza Pyramids</h4>
+                        <p class="text-slate-400 text-xs">Direct access to the Western plateau to witness the ancient wonder of the world.</p>
+                    </div>
+                    <!-- Landmark 4 -->
+                    <div class="bg-[#0f172a] p-6 rounded-2xl border border-slate-800">
+                        <div class="text-gold font-serif text-2xl font-bold mb-1">~22 km</div>
+                        <h4 class="text-white font-semibold text-base mb-2">Cairo Airport (CAI)</h4>
+                        <p class="text-slate-400 text-xs">Convenient 30-40 minute transit with our VIP airport transfer service.</p>
+                    </div>
+                </div>
+
+                <!-- Neighborhood Highlights -->
+                <div class="bg-[#0f172a] rounded-3xl p-8 sm:p-12 border border-gold/20">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-white mb-3">Safe & Prestigious Maadi</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Maadi is one of Cairo's most secure, leafy, and expat-friendly neighborhoods. Positioned right in front of the Armed Forces Club, our building features 24/7 security and elite neighborhood amenities.
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-shield-halved text-gold mt-1"></i>
+                                <div>
+                                    <h5 class="text-white font-semibold text-sm">24/7 Building Security</h5>
+                                    <p class="text-slate-400 text-xs">Secure premises with professional reception and exterior surveillance.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-utensils text-gold mt-1"></i>
+                                <div>
+                                    <h5 class="text-white font-semibold text-sm">Fine Dining & Cafes</h5>
+                                    <p class="text-slate-400 text-xs">Platform Restaurant (0.2km), Alpha Market (1km), and Road 9 cafes nearby.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-hospital text-gold mt-1"></i>
+                                <div>
+                                    <h5 class="text-white font-semibold text-sm">Healthcare & Services</h5>
+                                    <p class="text-slate-400 text-xs">Close to Al Salam International Hospital and prominent international schools.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-map-pin text-gold mt-1"></i>
+                                <div>
+                                    <h5 class="text-white font-semibold text-sm">Easy City Access</h5>
+                                    <p class="text-slate-400 text-xs">Quick connections to Ring Road, Maadi Degla, and downtown arteries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-24 bg-[#0f172a] relative border-t border-gold/20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Secure Reservation</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Direct Booking & Agreement</h2>
+                    <p class="text-slate-400">Select your preferred rate tier, provide your stay details, and request a secure Payoneer payment link.</p>
+                </div>
+
+                <div class="bg-[#121212] rounded-3xl p-6 sm:p-10 border border-gold/30 shadow-2xl">
+                    <form id="booking-form" class="space-y-8" onsubmit="handleBookingSubmit(event)">
+                        
+                        <!-- 1. Pricing Tier Selection -->
+                        <div>
+                            <label class="block text-sm font-semibold text-white mb-3">Select Pricing Tier:</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <label class="relative flex flex-col p-5 rounded-2xl bg-[#0f172a] border border-gold/40 cursor-pointer hover:border-gold transition-all">
+                                    <input type="radio" name="pricing_tier" value="semi_strict" checked class="absolute top-5 right-5 accent-[#d4af37]">
+                                    <span class="font-serif text-lg font-bold text-white mb-1">Firm / Semi-Strict Rate</span>
+                                    <span class="text-gold text-sm font-semibold mb-2">Free cancellation up to 14 days before check-in</span>
+                                    <span class="text-slate-400 text-xs">Standard flexible booking with moderate cancellation terms. Ideal for travelers planning ahead.</span>
+                                </label>
+                                <label class="relative flex flex-col p-5 rounded-2xl bg-[#0f172a] border border-slate-700 cursor-pointer hover:border-gold transition-all">
+                                    <input type="radio" name="pricing_tier" value="non_refundable" class="absolute top-5 right-5 accent-[#d4af37]">
+                                    <span class="font-serif text-lg font-bold text-white mb-1">Non-Refundable Rate</span>
+                                    <span class="text-gold text-sm font-semibold mb-2">Save 10% on your stay</span>
+                                    <span class="text-slate-400 text-xs">Best price guaranteed. Strict non-refundable policy upon confirmation.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 2. Guest Detail Inputs -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div>
+                                <label for="check-in-date" class="block text-sm font-medium text-slate-300 mb-2">Check-in Date</label>
+                                <input type="date" id="check-in-date" required class="w-full bg-[#0f172a] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label for="check-out-date" class="block text-sm font-medium text-slate-300 mb-2">Check-out Date</label>
+                                <input type="date" id="check-out-date" required class="w-full bg-[#0f172a] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label for="guest-count" class="block text-sm font-medium text-slate-300 mb-2">Guest Count</label>
+                                <select id="guest-count" class="w-full bg-[#0f172a] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors">
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6" selected>6 Guests (Max Capacity)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="guest-name" class="block text-sm font-medium text-slate-300 mb-2">Full Name (As per Passport)</label>
+                                <input type="text" id="guest-name" required placeholder="John Doe" class="w-full bg-[#0f172a] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label for="guest-email" class="block text-sm font-medium text-slate-300 mb-2">Email Address (For Payoneer Link)</label>
+                                <input type="email" id="guest-email" required placeholder="john@example.com" class="w-full bg-[#0f172a] border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- 3. Statutory Agreement & House Rules Box -->
+                        <div class="bg-[#0f172a] p-6 rounded-2xl border border-slate-800">
+                            <h4 class="font-serif text-lg font-bold text-white mb-3">Statutory Lease & House Rules Summary</h4>
+                            <div class="max-h-40 overflow-y-auto text-xs text-slate-400 space-y-2 pr-2 mb-4 scrollbar-thin">
+                                <p><strong>1. Identification:</strong> Guest passport or national ID copies are required prior to check-in for building security authorization.</p>
+                                <p><strong>2. Occupancy:</strong> Maximum capacity (6 guests) must be respected at all times. Unregistered overnight guests are strictly prohibited.</p>
+                                <p><strong>3. Conduct:</strong> Quiet hours are enforced between 10:00 PM and 8:00 AM. Strictly NO smoking inside the apartment, and NO parties or high-volume sound devices.</p>
+                                <p><strong>4. Building Character:</strong> The building exterior reflects authentic traditional Cairo character, while the interior is a fully renovated, modern luxury sanctuary.</p>
+                                <p><strong>5. Verification:</strong> All bookings are subject to verification and formal confirmation by host Samer.</p>
+                            </div>
+                            
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" id="agreement-checkbox" class="mt-1 w-5 h-5 accent-[#d4af37] rounded cursor-pointer" onchange="toggleBookingButton()">
+                                <span class="text-xs sm:text-sm text-slate-300 font-medium">
+                                    I have read and agree to the statutory lease terms, house rules, and identification verification policy.
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- 4. Submit / Request Payoneer Link Button -->
+                        <div>
+                            <button type="submit" id="payoneer-btn" disabled class="w-full py-4 rounded-xl bg-slate-700 text-slate-400 font-bold uppercase tracking-wider cursor-not-allowed transition-all shadow-lg flex items-center justify-center gap-3">
+                                <i class="fa-solid fa-lock text-sm"></i> Request Payoneer Payment Link
+                            </button>
+                            <p class="text-center text-xs text-slate-500 mt-3">
+                                Button unlocks automatically upon ticking the statutory agreement checkbox above.
+                            </p>
+                        </div>
+
+                    </form>
+
+                    <!-- Success Confirmation Modal / Banner -->
+                    <div id="confirmation-message" class="hidden mt-8 p-6 rounded-2xl bg-gold/10 border border-gold text-center animate-fade-in">
+                        <div class="w-12 h-12 rounded-full bg-gold text-black flex items-center justify-center text-xl mx-auto mb-4">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Payment Request Initiated!</h3>
+                        <p class="text-slate-300 text-sm max-w-xl mx-auto leading-relaxed">
+                            Thank you! Your booking details have been recorded. A formal Payoneer secure payment request will be manually generated and sent to your email (<span id="confirmed-email" class="text-gold font-semibold"></span>) shortly by host Samer.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-16 border-t border-slate-900 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <a href="#" class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 rounded-full border border-gold flex items-center justify-center text-gold bg-gold/10">
+                            <i class="fa-solid fa-water text-sm"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold tracking-wider text-white">Maadi Nile View</span>
+                    </a>
+                    <p class="text-slate-400 text-xs sm:text-sm max-w-sm leading-relaxed mb-6">
+                        A magnificent 3-bedroom luxury short-term rental sanctuary situated directly on the Corniche El Nile in Cairo, Egypt. Offering million-dollar river and pyramid views.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Airbnb" class="w-10 h-10 rounded-full bg-[#0f172a] hover:bg-gold hover:text-black flex items-center justify-center text-slate-300 transition-all"><i class="fa-brands fa-airbnb"></i></a>
+                        <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-full bg-[#0f172a] hover:bg-gold hover:text-black flex items-center justify-center text-slate-300 transition-all"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-[#0f172a] hover:bg-gold hover:text-black flex items-center justify-center text-slate-300 transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="font-serif text-white font-bold text-base mb-4">Quick Links</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#gallery" class="hover:text-gold transition-colors">Property Gallery</a></li>
+                        <li><a href="#virtual-tour" class="hover:text-gold transition-colors">3D Virtual Tour</a></li>
+                        <li><a href="#services" class="hover:text-gold transition-colors">Tourism & Excursions</a></li>
+                        <li><a href="#location" class="hover:text-gold transition-colors">Location & Landmarks</a></li>
+                        <li><a href="#booking" class="hover:text-gold transition-colors">Direct Booking</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-serif text-white font-bold text-base mb-4">Host Excellence</h5>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                        Hosted by Samer • 9 Years Hosting Experience • 4.98 / 5.0 Star Rating across 168+ Verified Reviews.
+                    </p>
+                    <span class="inline-block px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-semibold">
+                        ★ Airbnb Guest Favorite
+                    </span>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs">
+                <p>&copy; 2026 Maadi Nile View. All rights reserved.</p>
+                <p class="mt-4 sm:mt-0 text-slate-500">Designed for luxury stays in Cairo, Egypt.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Master Property Gallery Dataset (Items 1 to 50 - Property Interiors, Vistas, Amenities)
+        const galleryData = [
+            // Views & Balcony
+            { src: "view/view_hero.jpg", title: "Nile River & Pyramid Panorama", category: "view", tag: "Views", isHero: true },
+            { src: "view/view_hero_01.jpg", title: "Golden Nile Sunset", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_02.jpg", title: "Living Room Window View", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_03.jpg", title: "Evening Nile Lights", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_04.jpg", title: "Panoramic Balcony Perspective", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_05.jpg", title: "Clear Pyramids Horizon", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_06.jpg", title: "Nile Corniche Waterfront", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_07.jpg", title: "Daylight Nile Vista", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_08.jpg", title: "Felucca Boats Passing By", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_09.jpg", title: "Sunset Sky Colors", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_010.jpg", title: "River View Horizon", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_011.jpg", title: "Twilight Over Cairo", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_012.jpg", title: "Balcony Vista Angle", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_013.jpg", title: "High Angle River View", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_014.jpg", title: "Nile Reflection at Dusk", category: "view", tag: "Views", isHero: false },
+            { src: "view/view_hero_015.jpg", title: "West Bank Pyramid Horizon", category: "view", tag: "Views", isHero: false },
+            { src: "rear_balcony/rear_balcony_hero.jpg", title: "Rear Balcony Hero", category: "view", tag: "Balcony", isHero: true },
+            { src: "rear_balcony/rear_balcony_01.jpg", title: "Balcony Seating Area", category: "view", tag: "Balcony", isHero: false },
+            { src: "rear_balcony/rear_balcony_02.jpg", title: "Balcony Fresh Air Lounge", category: "view", tag: "Balcony", isHero: false },
+
+            // Interior: Living & Bedrooms (Resolves Item 24 Visibility)
+            { src: "living_dining_area/living_dining_hero.jpg", title: "Living & Dining Header", category: "interior", tag: "Living", isHero: true },
+            { src: "living_dining_area/living_dining_01.jpg", title: "Main Living Room Lounge", category: "interior", tag: "Living", isHero: false },
+            { src: "living_dining_area/living_dining_02.jpg", title: "Dining Table & Decor", category: "interior", tag: "Living", isHero: false },
+            { src: "living_dining_area/living_dining_03.jpg", title: "Spacious Living Sanctuary", category: "interior", tag: "Living", isHero: false },
+            { src: "living_dining_area/living_dining_04.jpg", title: "Open Concept Living & Dining Space", category: "interior", tag: "Living", isHero: false }, // Fixed Item 24
+            { src: "master_bedroom/master_bedroom_hero.jpg", title: "Master Bedroom Header", category: "interior", tag: "Master Bedroom", isHero: true },
+            { src: "master_bedroom/master_bedroom_01.jpg", title: "King Bed Suite", category: "interior", tag: "Master Bedroom", isHero: false },
+            { src: "master_bedroom/master_bedroom_02.jpg", title: "Master Bedroom Wardrobes", category: "interior", tag: "Master Bedroom", isHero: false },
+            { src: "master_bedroom/master_bedroom_03.jpg", title: "Master Bedroom Decor", category: "interior", tag: "Master Bedroom", isHero: false },
+            { src: "master_bedroom/master_bedroom_04.jpg", title: "Master Suite Ambiance", category: "interior", tag: "Master Bedroom", isHero: false },
+            { src: "left_bedroom/left_bedroom_hero.jpg", title: "Left Bedroom Header", category: "interior", tag: "Guest Bedroom", isHero: true },
+            { src: "left_bedroom/left_bedroom_01.jpg", title: "Twin Bed Setup", category: "interior", tag: "Guest Bedroom", isHero: false },
+            { src: "left_bedroom/left_bedroom_02.jpg", title: "Left Bedroom Interior", category: "interior", tag: "Guest Bedroom", isHero: false },
+            { src: "right_bedroom/right_bedroom_hero.jpg", title: "Right Bedroom Header", category: "interior", tag: "Guest Bedroom", isHero: true },
+            { src: "right_bedroom/right_bedroom_01.jpg", title: "Right Bedroom Queen Bed", category: "interior", tag: "Guest Bedroom", isHero: false },
+            { src: "sitting_area/siting_area_hero.jpg", title: "Sitting Area Header", category: "interior", tag: "Sitting Room", isHero: true },
+            { src: "sitting_area/siting_area_01.jpg", title: "Cozy Corner Sitting Area", category: "interior", tag: "Sitting Room", isHero: false },
+            { src: "apartment_entrance/apartment_entrance_hero.jpg", title: "Apartment Entrance Foyer", category: "interior", tag: "Entrance", isHero: true },
+            { src: "apartment_entrance/apartment_entrance_01.jpg", title: "Private Entrance Doorway", category: "interior", tag: "Entrance", isHero: false },
+
+            // Amenities: Kitchen & Bathrooms
+            { src: "kitchen/kitchen_01.jpg", title: "Fully Equipped Kitchen", category: "amenities", tag: "Kitchen", isHero: false },
+            { src: "kitchen/kitchen_02.jpg", title: "Modern Appliances & Storage", category: "amenities", tag: "Kitchen", isHero: false },
+            { src: "master_bathroom/master_bathroom_hero.jpg", title: "Master Bathroom Header", category: "amenities", tag: "Bathroom", isHero: true },
+            { src: "master_bathroom/master_bathroom_01.jpg", title: "En-suite Shower & Vanity", category: "amenities", tag: "Bathroom", isHero: false },
+            { src: "bathroom_2/bathroom_2_hero.jpg", title: "Second Bathroom Header", category: "amenities", tag: "Bathroom", isHero: true },
+            { src: "bathroom_2/bathroom_2_01.jpg", title: "Guest Bathroom Amenities", category: "amenities", tag: "Bathroom", isHero: false },
+            { src: "bathroom_half/bathroom_half.jpg", title: "Half Bathroom / Powder Room", category: "amenities", tag: "Bathroom", isHero: true },
+
+            // Exterior & Accessibility
+            { src: "accessibility/accessibility_hero.jpeg", title: "Accessibility Header", category: "exterior", tag: "Accessibility", isHero: true },
+            { src: "accessibility/accessibility_02.jpeg", title: "Step-free Elevator Access", category: "exterior", tag: "Accessibility", isHero: false },
+            { src: "accessibility/accessibility_03.jpeg", title: "Wide Hallway Clearances", category: "exterior", tag: "Accessibility", isHero: false },
+            { src: "exterior/exterior_hero_01.jpg", title: "Maadi Stars Towers Building", category: "exterior", tag: "Building", isHero: true },
+            { src: "exterior/exterior_01.jpg", title: "Building Entrance Approach", category: "exterior", tag: "Building", isHero: false }
+        ];
+
+        // DEDICATED TOURISM DATASET (All 10 Tourism Photos)
+        const tourismData = [
+            { src: "tourism_top_10/tourism_top_10_hero.jpg", title: "Great Pyramids of Giza & Sphinx", desc: "Experience the ultimate ancient wonder of the world, just 20 km from your doorstep." },
+            { src: "tourism_top_10/tourism_top_10_01.jpg", title: "Grand Egyptian Museum (GEM)", desc: "Discover Tutankhamun's complete treasures inside the world's largest archaeological museum." },
+            { src: "tourism_top_10/tourism_top_10_02.jpg", title: "Nile Felucca Sunset Sailing", desc: "Enjoy a private golden hour cruise along the quiet waters of the Nile in Maadi." },
+            { src: "tourism_top_10/tourism_top_10_03.jpg", title: "Khan El-Khalili Historic Bazaar", desc: "Immerse yourself in vibrant 14th-century markets, spice shops, and iconic copper lanterns." },
+            { src: "tourism_top_10/tourism_top_10_04.jpg", title: "Citadel of Saladin & Alabaster Mosque", desc: "Perched high above Cairo with breathtaking panoramic vistas of the capital." },
+            { src: "tourism_top_10/tourism_top_10_05.jpg", title: "Saqqara Step Pyramid of Djoser", desc: "Explore mankind's oldest monumental stone architecture in ancient Memphis." },
+            { src: "tourism_top_10/tourism_top_10_06.jpg", title: "Egyptian Museum in Tahrir Square", desc: "The legendary pink museum housing thousands of pharaonic statues and mummies." },
+            { src: "tourism_top_10/tourism_top_10_07.jpg", title: "Al-Azhar Park Skyline Views", desc: "Relax in 74 acres of lush gardens overlooking Old Cairo's historic minarets." },
+            { src: "tourism_top_10/tourism_top_10_08.jpg", title: "The Hanging Church & Coptic Cairo", desc: "Walk through early 3rd-century Christian sanctuaries and ancient Roman fortresses." },
+            { src: "tourism_top_10/tourism_top_10_09.jpg", title: "Historic Islamic Cairo & Al-Mu'izz Street", desc: "Marvel at medieval Islamic architecture, grand gates, and traditional tea houses." }
+        ];
+
+        let activeCategory = 'all';
+        let filteredDataset = [...galleryData];
+        let currentLightboxIndex = 0;
+        let isTourismLightbox = false;
+
+        // Render Main Property Gallery Cards
+        function renderGallery(category = 'all') {
+            const grid = document.getElementById('gallery-grid');
+            if (!grid) return;
+
+            grid.innerHTML = '';
+            activeCategory = category;
+
+            filteredDataset = category === 'all' 
+                ? galleryData 
+                : galleryData.filter(item => item.category === category);
+
+            filteredDataset.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = "gallery-item group relative rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800 cursor-pointer gold-glow transition-all duration-300";
+                card.onclick = () => openLightbox(index, false);
+
+                card.innerHTML = `
+                    <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x450/121212/d4af37?text=${encodeURIComponent(item.title)}';">
+                    ${item.isHero ? '<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-gold/90 text-black text-[10px] uppercase font-bold tracking-wider z-10">Featured</span>' : ''}
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5 z-0">
+                        <div>
+                            <span class="text-gold text-[10px] uppercase tracking-widest font-semibold block mb-1">${item.tag}</span>
+                            <h4 class="font-serif text-base font-bold text-white">${item.title}</h4>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterGallery(category, btnElement) {
+            if (btnElement) {
+                const buttons = document.querySelectorAll('.gallery-filter-btn');
+                buttons.forEach(b => {
+                    b.className = 'gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#121212] text-slate-300 hover:bg-gold/20 border border-slate-800 transition-all';
+                });
+                btnElement.className = 'gallery-filter-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-gold text-black transition-all';
+            }
+            renderGallery(category);
+        }
+
+        // TOURISM SECTION CAROUSEL LOGIC
+        let currentTourismIndex = 0;
+
+        function initTourismSection() {
+            const container = document.getElementById('tourism-slides-container');
+            const strip = document.getElementById('tourism-thumbnails-strip');
+            const grid = document.getElementById('tourism-grid');
+
+            if (!container || !strip || !grid) return;
+
+            container.innerHTML = '';
+            strip.innerHTML = '';
+            grid.innerHTML = '';
+
+            tourismData.forEach((item, index) => {
+                // 1. Build Slideshow Slides
+                const slide = document.createElement('div');
+                slide.className = `tourism-slide absolute inset-0 transition-opacity duration-700 ${index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'} flex items-center justify-center`;
+                slide.innerHTML = `
+                    <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x800/121212/d4af37?text=${encodeURIComponent(item.title)}';">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 sm:p-10">
+                        <span class="text-gold text-xs uppercase tracking-widest font-semibold block mb-1">Attraction ${index + 1} of 10</span>
+                        <h4 class="font-serif text-xl sm:text-3xl font-bold text-white mb-2">${item.title}</h4>
+                        <p class="text-slate-300 text-xs sm:text-sm max-w-2xl font-light">${item.desc}</p>
+                    </div>
+                `;
+                container.appendChild(slide);
+
+                // 2. Build Thumbnail Strip
+                const thumb = document.createElement('button');
+                thumb.className = `tourism-thumb flex-shrink-0 w-24 h-16 rounded-xl overflow-hidden border-2 transition-all ${index === 0 ? 'border-gold scale-105' : 'border-slate-800 opacity-60 hover:opacity-100'}`;
+                thumb.onclick = () => selectTourismSlide(index);
+                thumb.innerHTML = `<img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/200x150/121212/d4af37?text=Tourism';">`;
+                strip.appendChild(thumb);
+
+                // 3. Build Tourism Grid Gallery Cards
+                const card = document.createElement('div');
+                card.className = "group relative rounded-xl overflow-hidden aspect-[4/3] bg-black border border-slate-800 cursor-pointer gold-glow transition-all";
+                card.onclick = () => openLightbox(index, true);
+                card.innerHTML = `
+                    <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/400x300/121212/d4af37?text=${encodeURIComponent(item.title)}';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-3 flex items-end">
+                        <span class="text-white text-xs font-semibold truncate">${item.title}</span>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function selectTourismSlide(index) {
+            currentTourismIndex = index;
+            const slides = document.querySelectorAll('.tourism-slide');
+            const thumbs = document.querySelectorAll('.tourism-thumb');
+            const counter = document.getElementById('tourism-counter');
+
+            slides.forEach((s, i) => {
+                s.className = `tourism-slide absolute inset-0 transition-opacity duration-700 ${i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'} flex items-center justify-center`;
+            });
+
+            thumbs.forEach((t, i) => {
+                t.className = `tourism-thumb flex-shrink-0 w-24 h-16 rounded-xl overflow-hidden border-2 transition-all ${i === index ? 'border-gold scale-105' : 'border-slate-800 opacity-60 hover:opacity-100'}`;
+            });
+
+            if (counter) {
+                counter.textContent = `${String(index + 1).padStart(2, '0')} / 10`;
+            }
+        }
+
+        function tourismNextSlide() {
+            currentTourismIndex = (currentTourismIndex + 1) % tourismData.length;
+            selectTourismSlide(currentTourismIndex);
+        }
+
+        function tourismPrevSlide() {
+            currentTourismIndex = (currentTourismIndex - 1 + tourismData.length) % tourismData.length;
+            selectTourismSlide(currentTourismIndex);
+        }
+
+        // Lightbox Modal Controls (Handles both Main Property & Tourism Datasets)
+        function openLightbox(index, isTourism = false) {
+            isTourismLightbox = isTourism;
+            currentLightboxIndex = index;
+            updateLightboxContent();
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightboxContent() {
+            const dataset = isTourismLightbox ? tourismData : filteredDataset;
+            const item = dataset[currentLightboxIndex];
+            if (!item) return;
+
+            document.getElementById('lightbox-img').src = item.src;
+            document.getElementById('lightbox-title').textContent = item.title;
+            
+            const tagLabel = isTourismLightbox ? "Cairo Tourism Excursion" : (item.tag || "Property View");
+            document.getElementById('lightbox-counter').textContent = `Image ${currentLightboxIndex + 1} of ${dataset.length} • ${tagLabel}`;
+        }
+
+        function changeLightboxSlide(direction) {
+            const dataset = isTourismLightbox ? tourismData : filteredDataset;
+            currentLightboxIndex += direction;
+            if (currentLightboxIndex < 0) currentLightboxIndex = dataset.length - 1;
+            if (currentLightboxIndex >= dataset.length) currentLightboxIndex = 0;
+            updateLightboxContent();
+        }
+
+        // Navigation Header Mobile Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Main Property Carousel Auto Rotation
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === n ? '1' : '0';
+            });
+            dots.forEach((dot, i) => {
+                dot.className = i === n 
+                    ? 'carousel-dot w-3 h-3 rounded-full bg-gold transition-all' 
+                    : 'carousel-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all';
+            });
+            slideIndex = n;
+        }
+
+        function currentSlide(n) {
+            showSlide(n);
+        }
+
+        document.getElementById('next-slide').addEventListener('click', () => {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        });
+
+        document.getElementById('prev-slide').addEventListener('click', () => {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlide(slideIndex);
+        });
+
+        setInterval(() => {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }, 6000);
+
+        // Auto rotate tourism carousel every 7 seconds
+        setInterval(() => {
+            tourismNextSlide();
+        }, 7000);
+
+        // Booking Form Handling
+        function toggleBookingButton() {
+            const checkbox = document.getElementById('agreement-checkbox');
+            const btn = document.getElementById('payoneer-btn');
+
+            if (checkbox.checked) {
+                btn.disabled = false;
+                btn.className = 'w-full py-4 rounded-xl bg-gold text-black font-bold uppercase tracking-wider cursor-pointer hover:bg-gold-light transition-all shadow-xl shadow-gold/20 flex items-center justify-center gap-3';
+                btn.innerHTML = '<i class="fa-solid fa-paper-plane text-sm"></i> Request Payoneer Payment Link';
+            } else {
+                btn.disabled = true;
+                btn.className = 'w-full py-4 rounded-xl bg-slate-700 text-slate-400 font-bold uppercase tracking-wider cursor-not-allowed transition-all shadow-lg flex items-center justify-center gap-3';
+                btn.innerHTML = '<i class="fa-solid fa-lock text-sm"></i> Request Payoneer Payment Link';
+            }
+        }
+
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('guest-email').value;
+            const confirmationBox = document.getElementById('confirmation-message');
+            const confirmedEmailSpan = document.getElementById('confirmed-email');
+
+            confirmedEmailSpan.textContent = emailInput;
+            confirmationBox.classList.remove('hidden');
+            confirmationBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            document.getElementById('booking-form').reset();
+            toggleBookingButton();
+        }
+
+        // Keyboard Navigation for Lightbox Modal
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('lightbox-modal');
+            if (modal.classList.contains('hidden')) return;
+            if (e.key === 'ArrowLeft') changeLightboxSlide(-1);
+            if (e.key === 'ArrowRight') changeLightboxSlide(1);
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Initialize Page Data
+        window.addEventListener('DOMContentLoaded', () => {
+            renderGallery('all');
+            initTourismSection();
+
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            const nextWeek = new Date();
+            nextWeek.setDate(nextWeek.getDate() + 6);
+
+            const formatDate = (d) => d.toISOString().split('T')[0];
+            
+            const checkInEl = document.getElementById('check-in-date');
+            const checkOutEl = document.getElementById('check-out-date');
+
+            if (checkInEl && checkOutEl) {
+                checkInEl.value = formatDate(tomorrow);
+                checkOutEl.value = formatDate(nextWeek);
+            }
+        });
+    </script>
+</body>
+</html>
