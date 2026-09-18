@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maadi Nile View | Luxury Short-Term Rental in Cairo</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0f172a',
+                        darkcanvas: '#121212',
+                        gold: {
+                            DEFAULT: '#d4af37',
+                            light: '#e6ca65',
+                            dark: '#c5a059'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #121212; }
+        ::-webkit-scrollbar-thumb { background: #c5a059; border-radius: 4px; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f8fafc 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#f8fafc] font-sans antialiased selection:bg-gold selection:text-black">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-[#121212]/90 backdrop-blur-md border-b border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full border border-gold flex items-center justify-center bg-gold/10 text-gold group-hover:bg-gold group-hover:text-black transition-all">
+                    <i class="fa-solid fa-water text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider gold-gradient-text">Maadi Nile View</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-gold/80">Cairo Luxury Sanctuary</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#gallery" class="text-slate-300 hover:text-gold transition-colors">Gallery</a>
+                <a href="#booking-platforms" class="text-slate-300 hover:text-gold transition-colors">Booking Options</a>
+                <a href="#booking-platforms" class="px-5 py-2.5 rounded-full bg-gold text-black font-semibold hover:bg-gold-light transition-all shadow-lg shadow-gold/20">Book Your Stay</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0 bg-slate-900">
+                <img src="view/view_hero.jpg" alt="Panoramic Nile View" class="w-full h-full object-cover filter brightness-50">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/40 to-black/60"></div>
+            </div>
+
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs sm:text-sm uppercase tracking-widest mb-6 font-semibold backdrop-blur-sm">
+                    ★ Top 10% Airbnb Guest Favorite • 4.98 / 5.0 Rating
+                </span>
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
+                    Wake Up to the Nile and <span class="gold-gradient-text italic">Ancient Wonders</span>
+                </h1>
+                <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                    Experience an exclusive panoramic vista of the majestic Nile River, the iconic Giza Pyramids on the horizon, and distant Saqqara views from our luxury sanctuary in Maadi.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#booking-platforms" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold text-black font-semibold tracking-wider hover:bg-gold-light transition-all shadow-xl shadow-gold/30 text-center text-lg">
+                        View Booking Options
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Booking Section -->
+        <section id="booking-platforms" class="py-16 bg-[#0f172a] border-b border-gold/20 relative z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Verified Reservations</span>
+                    <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mb-3">Book via Your Preferred Platform</h2>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 mb-12">
+                    <a href="https://www.airbnb.com/rooms/20851083?guests=1&adults=1&s=67&unique_share_id=8309f30d-bd37-4e5d-a73a-ef5ad2d1e1b1" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-7 py-3.5 rounded-full bg-[#FF5A5F] text-white font-semibold hover:brightness-110 transition-all shadow-lg text-base">
+                        <i class="fa-brands fa-airbnb text-2xl"></i>
+                        <span>Book on Airbnb</span>
+                    </a>
+
+                    <a href="https://www.booking.com/hotel/eg/breathtaking-nile-view-with-pyramids-in-back-drop.en-gb.html" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-7 py-3.5 rounded-full bg-[#003580] text-white font-semibold hover:brightness-110 transition-all shadow-lg text-base">
+                        <i class="fa-solid fa-b text-xl"></i>
+                        <span>Book on Booking.com</span>
+                    </a>
+
+                    <a href="https://www.booking.com/hotel/eg/breathtaking-nile-view-with-pyramids-in-back-drop.en-gb.html" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-7 py-3.5 rounded-full bg-[#1A3B5D] text-white font-semibold hover:brightness-110 transition-all shadow-lg text-base">
+                        <i class="fa-solid fa-house-chimney text-lg"></i>
+                        <span>Book on Vrbo</span>
+                    </a>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <div class="p-4 rounded-2xl bg-[#121212] border border-gold/30 shadow-2xl overflow-hidden max-w-full">
+                        <div class="airbnb-embed-frame" data-id="20851083" data-view="home" data-hide-price="true" style="width: 100%; max-width: 450px; height: 300px; margin: auto;">
+                            <a href="https://www.airbnb.com/rooms/20851083?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View On Airbnb</a>
+                            <a href="https://www.airbnb.com/rooms/20851083?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Condo in Cairo · ★4.98 · 3 bedrooms · 4 beds · 2.5 baths</a>
+                            <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-24 bg-[#0f172a]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-2">Visual Experience</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Property Gallery</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800">
+                        <img src="view/view_hero_01.jpg" alt="Nile View" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800">
+                        <img src="living_dining_area/living_dining_hero.jpg" alt="Living & Dining Area" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800">
+                        <img src="master_bedroom/master_bedroom_hero.jpg" alt="Master Bedroom" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800">
+                        <img src="kitchen/kitchen_01.jpg" alt="Kitchen" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800">
+                        <img src="sitting_area/siting_area_hero.jpg" alt="Sitting Area" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-black/40 border border-slate-800">
+                        <img src="rear_balcony/rear_balcony_hero.jpg" alt="Balcony View" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        &copy; 2026 Maadi Nile View. All rights reserved.
+    </footer>
+
+    <!-- Global Image Fallback Handler -->
+    <script>
+        document.addEventListener('error', function (e) {
+            if (e.target.tagName.toLowerCase() === 'img') {
+                e.target.onerror = null;
+                e.target.src = 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=800&q=80';
+            }
+        }, true);
+    </script>
+</body>
+</html>
