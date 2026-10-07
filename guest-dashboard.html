@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<title>Guest Dashboard | Maadi Nile View</title>
+<link rel="icon" type="image/png" href="logo_transparent.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:{DEFAULT:'#d4af37',light:'#e6ca65'}},fontFamily:{serif:['"Playfair Display"','serif'],sans:['Inter','sans-serif']}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+html{scroll-padding-top:7.5rem}
+body{background:#0b1220;background-image:radial-gradient(1200px 500px at 50% -10%,rgba(212,175,55,.18),transparent 60%),radial-gradient(800px 400px at 100% 30%,rgba(56,189,248,.08),transparent 60%)}
+.gold-text{background:linear-gradient(135deg,#f8fafc,#d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.card{transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.6);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.chip{transition:all .2s}.chip.on{background:#d4af37;color:#111;border-color:#d4af37}
+.fade{animation:fade .45s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.heart.on i{color:#f43f5e}
+.nav a.act{background:#d4af37;color:#111;border-color:#d4af37}
+.done span{text-decoration:line-through;opacity:.5}
+</style>
+</head>
+<body class="text-slate-100 font-sans antialiased selection:bg-gold selection:text-black">
+
+<header class="sticky top-0 z-40 bg-[#0b1220]/95 backdrop-blur-md border-b border-gold/20">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center gap-3">
+    <img src="logo_transparent.png" alt="Sam's Spots" class="h-10 w-auto rounded-lg bg-white/90 px-1.5 py-0.5">
+    <span class="font-serif text-lg sm:text-xl font-bold gold-text whitespace-nowrap">Guest Dashboard</span>
+    <span class="ml-auto text-xs text-slate-400 hidden sm:block"><i class="fa-regular fa-clock mr-1"></i><span id="clock"></span> Cairo</span>
+  </div>
+  <nav id="nav" class="nav max-w-6xl mx-auto px-4 pb-3 flex gap-2 overflow-x-auto text-xs font-semibold whitespace-nowrap">
+    <a href="#checkin" data-l="checkin" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Check In <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <a href="#checkout" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Check Out</a>
+    <a href="#garbage" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Garbage</a>
+    <a href="#howto" data-l="howto" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">How-To Videos <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <a href="#local" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Shops &amp; Restaurants</a>
+    <a href="#address" data-l="address" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Address &amp; GPS <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <a href="#wifi" data-l="wifi" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Wi-Fi <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <button type="button" data-open-rules class="px-4 py-2 rounded-full border border-gold/50 text-gold hover:bg-gold hover:text-black transition"><i class="fa-solid fa-scroll mr-1.5 text-[10px]"></i>House Rules &amp; Terms</button>
+  </nav>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 pb-24">
+  <section class="text-center pt-10 pb-6">
+    <span class="inline-block py-1 px-4 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs uppercase tracking-widest font-semibold mb-4">Welcome to Maadi</span>
+    <h1 class="font-serif text-4xl sm:text-5xl font-bold leading-tight mb-3">Everything for your <span class="gold-text italic">stay</span>, in one place</h1>
+    <p class="text-slate-300 max-w-2xl mx-auto font-light text-sm sm:text-base">Sections marked <i class="fa-solid fa-lock text-gold text-xs"></i> are private. Enter your guest password once to unlock them all.</p>
+    <button type="button" data-open-rules class="card mt-6 inline-flex items-center gap-4 text-left rounded-2xl bg-[#0f172a] border border-gold/30 px-5 py-4 max-w-md w-full">
+      <span class="w-12 h-12 shrink-0 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl"><i class="fa-solid fa-scroll"></i></span>
+      <span class="flex-1"><span class="block font-semibold text-white">House Rules &amp; Terms</span><span class="block text-xs text-slate-400">Quick guide to quiet hours, trash, security and checkout</span></span>
+      <i class="fa-solid fa-chevron-right text-gold text-sm"></i>
+    </button>
+  </section>
+
+  <!-- CHECK IN -->
+  <section id="checkin" class="pt-8"><h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-key text-gold mr-2 text-xl"></i>Check In</h2><p class="text-slate-400 text-sm mb-5">Lock, elevator key, safe and safety essentials.</p><div data-lock="checkin"></div></section>
+
+  <!-- CHECK OUT -->
+  <section id="checkout" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-suitcase-rolling text-gold mr-2 text-xl"></i>Check Out</h2>
+    <p class="text-slate-400 text-sm mb-5">Check-out is by <b class="text-white">11:00 AM</b>. Need a different time? Just ask. We can often accommodate unless another guest is checking in.</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-5">
+        <h3 class="font-semibold text-white mb-3">Your checklist <span class="text-xs text-slate-500 font-normal">(tap to tick)</span></h3>
+        <ul id="cklist" class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Tell your host what time you are checking out</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Reset the safe to its default code (see Check In)</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Switch off and unplug the heaters</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Take your garbage to the stairway bin</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Check for your belongings, passport and chargers</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Return the elevator key (see notes)</span></li>
+        </ul>
+      </div>
+      <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-5 text-sm text-slate-300 space-y-3 leading-relaxed">
+        <p><b class="text-white">Pre-checkout inspection:</b> someone will pass by to help with check-out and do a quick inspection.</p>
+        <p><b class="text-white">Early or late flight?</b> You may need to self check-out. Please tell us first and leave the elevator key with someone at the front desk.</p>
+        <p><b class="text-white">Airport drop-off:</b> need a ride? Let us know and we will help arrange it.</p>
+        <p><b class="text-white">Feedback:</b> we aim for 5 out of 5. Tell us about any issue, and how your tour guide did if we arranged one. It helps future guests.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARBAGE -->
+  <section id="garbage" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-5"><i class="fa-solid fa-trash-can text-gold mr-2 text-xl"></i>Garbage Location</h2>
+    <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-6 flex gap-5 items-start">
+      <div class="w-14 h-14 shrink-0 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl"><i class="fa-solid fa-dumpster"></i></div>
+      <div class="text-sm text-slate-300 leading-relaxed"><p>Leave your garbage in the bin in the <b class="text-white">stairway</b>. Use the door <b class="text-white">in front of the middle elevator</b> to reach it.</p><p class="mt-2"><i class="fa-regular fa-clock text-gold mr-1"></i>Garbage is usually collected between <b class="text-white">2 AM and 6 AM</b>.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW TO -->
+  <section id="howto" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-circle-play text-gold mr-2 text-xl"></i>How-To Videos</h2>
+    <p class="text-slate-400 text-sm mb-5">Short videos for the appliances. Tap to watch.</p>
+    <div data-lock="howto"></div>
+  </section>
+
+  <!-- LOCAL -->
+  <section id="local" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-bag-shopping text-gold mr-2 text-xl"></i>Local Shops &amp; Restaurants</h2>
+    <p class="text-slate-400 text-sm mb-5">Your host's hand-picked spots. Tap the heart to save your favorites.</p>
+    <div class="rounded-2xl border border-gold/30 bg-gold/5 p-4 mb-6 text-sm text-slate-300 leading-relaxed"><b class="text-white">Host tips:</b> check recent reviews and choose places that cater to visitors. Drink bottled water and go easy on ice. The cafes right across the street are best for a hot drink only. For the best strolling, take an Uber to <b class="text-white">Street 9</b>.</div>
+    <div class="relative mb-4"><i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i><input id="q" type="search" placeholder="Search restaurants, markets, cuisines..." class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-[#0f172a] border border-slate-700 focus:border-gold/60 focus:outline-none focus:ring-2 focus:ring-gold/40 text-white placeholder-slate-500"></div>
+    <div id="chips" class="flex gap-2 overflow-x-auto pb-3 -mx-4 px-4 mb-2"></div>
+    <p id="count" class="text-xs text-slate-500 mb-4"></p>
+    <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    <p id="empty" class="hidden text-center text-slate-400 py-16">Nothing matches that. Try another word or filter.</p>
+
+    <h3 class="font-serif text-xl font-bold mt-12 mb-1">Order In</h3>
+    <p class="text-slate-400 text-sm mb-4">Delivery apps and hotlines. Tap a number to call.</p>
+    <div class="flex flex-wrap gap-3 mb-5">
+      <a href="https://www.talabat.com/egypt" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-[#FF5A00]/90 hover:brightness-110 text-white text-sm font-semibold transition"><i class="fa-solid fa-motorcycle mr-2"></i>Talabat</a>
+      <a href="https://elmenus.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-[#E4002B]/90 hover:brightness-110 text-white text-sm font-semibold transition"><i class="fa-solid fa-bowl-food mr-2"></i>Elmenus</a>
+    </div>
+    <div id="hotlines" class="grid grid-cols-2 sm:grid-cols-4 gap-3"></div>
+
+    <h3 class="font-serif text-xl font-bold mt-12 mb-1">Nearby Landmarks</h3>
+    <p class="text-slate-400 text-sm mb-4">Approximate distances from the apartment.</p>
+    <div id="landmarks" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+  </section>
+
+  <!-- ADDRESS -->
+  <section id="address" class="pt-12"><h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-map-location-dot text-gold mr-2 text-xl"></i>Address &amp; GPS</h2><p class="text-slate-400 text-sm mb-5">Where to find us, with directions.</p><div data-lock="address"></div></section>
+
+  <!-- WIFI -->
+  <section id="wifi" class="pt-12"><h2 class="font-serif text-2xl sm:text-3xl font-bold mb-5"><i class="fa-solid fa-wifi text-gold mr-2 text-xl"></i>Wi-Fi</h2><div data-lock="wifi"></div></section>
+</main>
+
+<footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">Private guest page &middot; Please don't share this link or password &middot; <a href="terms.html" class="hover:text-gold">Terms</a> &middot; <a href="privacy.html" class="hover:text-gold">Privacy</a> &middot; Maadi Nile View by Sam's Spots</footer>
+
+<div id="rules-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-3 sm:p-4 invisible opacity-0 transition-[opacity,visibility] duration-300" role="dialog" aria-modal="true" aria-labelledby="rules-title" aria-hidden="true">
+  <div id="rules-backdrop" class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+  <div id="rules-panel" class="relative w-full max-w-3xl max-h-[92vh] flex flex-col rounded-2xl border border-gold/30 bg-[#0f172a] shadow-2xl shadow-black/60 transform scale-95 translate-y-3 transition-all duration-300">
+    <div class="flex items-start justify-between gap-4 px-5 sm:px-6 pt-5 pb-4 border-b border-slate-800">
+      <div><span class="text-gold uppercase tracking-widest text-[11px] font-semibold">Quick reference</span><h2 id="rules-title" class="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">House Rules &amp; Terms</h2></div>
+      <button type="button" id="rules-close" aria-label="Close house rules" class="shrink-0 w-10 h-10 rounded-full border border-slate-700 text-slate-300 hover:border-gold hover:text-gold hover:bg-gold/10 transition flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="overflow-y-auto px-5 sm:px-6 py-5"><div class="grid sm:grid-cols-2 gap-3"><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-wifi text-sm"></i></span>Wi-Fi</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Wi-Fi is provided as a convenience. Your network details are in the Wi-Fi section once you unlock it.</li><li>Please use it for lawful purposes only.</li><li>No refunds for outages, speed or access issues, so download what you need in advance if you rely on it.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-shield-halved text-sm"></i></span>Building &amp; Security</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Keep the elevator key safe and do not lose it.</li><li>Make sure the apartment door is locked behind you every time you leave.</li><li>Only registered guests may stay overnight. Visitors are your responsibility.</li><li>Do not share your door code or the password to this page. Use the in-room safe for valuables.</li><li>Switch off and unplug heaters when you leave. Tell us if a smoke alarm chirps.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-trash-can text-sm"></i></span>Trash Disposal</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Leave garbage in the bin in the stairway, through the door in front of the middle elevator.</li><li>Collection is usually between <b class="text-white">2 AM and 6 AM</b>.</li><li>Please do not leave bags in the hallway or by the elevators.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-moon text-sm"></i></span>Quiet Hours</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Quiet hours run daily from <b class="text-white">10:00 PM to 8:00 AM</b>.</li><li>Keep outdoor and balcony noise to a minimum, and be considerate of neighbors.</li><li>Repeated disturbances may end the stay without refund.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-suitcase-rolling text-sm"></i></span>Checkout</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Check-out is by <b class="text-white">11:00 AM</b>. Please tell us your plans.</li><li>Early or late flight? You may need to self check-out. Tell us first and leave the elevator key with the front desk.</li><li>Reset the safe, switch off heaters, take out the garbage and check for your belongings.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-file-contract text-sm"></i></span>Damage &amp; Terms</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Guests are responsible for damage to or loss of the property and contents.</li><li>Damage, breakage and missing items are charged at full replacement value.</li><li>No smoking indoors (balconies and terraces only), and no parties or subletting.</li></ul></div></div>
+      <p class="text-xs text-slate-500 mt-4">Questions or problems during your stay? Contact your host. Thank you for taking care of our home.</p></div>
+    <div class="px-5 sm:px-6 py-4 border-t border-slate-800 flex flex-wrap items-center gap-3 justify-end"><div class="mr-auto self-center flex flex-wrap gap-x-3 gap-y-1 text-xs"><a href="terms.html" target="_blank" rel="noopener" class="text-gold hover:underline">Full terms</a><a href="03_legal/Maadi-Nile-View-Rental-Agreement-EN.pdf" download class="text-gold hover:underline"><i class="fa-solid fa-file-pdf mr-1"></i>English PDF</a><a href="03_legal/Maadi-Nile-View-Rental-Agreement-AR.pdf" download class="text-gold hover:underline"><i class="fa-solid fa-file-pdf mr-1"></i><span dir="rtl" lang="ar">العربية</span></a></div><button type="button" data-close-rules class="px-6 py-2.5 rounded-full bg-gold text-black text-sm font-semibold hover:bg-gold-light transition">Got it</button></div>
+  </div>
+</div>
+
+<div id="vm" class="hidden fixed inset-0 z-50 bg-black/85 flex items-center justify-center p-4">
+  <div class="w-full max-w-3xl">
+    <div class="flex justify-between items-center mb-2 text-sm"><a id="vy" target="_blank" rel="noopener noreferrer" class="text-gold hover:underline">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a><button id="vc" class="px-4 py-1.5 rounded-full border border-slate-600 text-slate-200 hover:border-gold">Close <i class="fa-solid fa-xmark ml-1"></i></button></div>
+    <div class="aspect-video bg-black rounded-xl overflow-hidden"><iframe id="vf" class="w-full h-full" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+  </div>
+</div>
+<button id="top" aria-label="Back to top" class="fixed bottom-5 right-5 w-11 h-11 rounded-full bg-gold text-black shadow-xl opacity-0 pointer-events-none transition"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+(function(){
+const maps=n=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(n+' Maadi Cairo');
+const C={
+  walk:{l:'Walkable',i:'🚶',c:'from-emerald-500/30'},
+  dine:{l:'Restaurants',i:'🍽️',c:'from-amber-500/30'},
+  fine:{l:'Fine Dining',i:'🥂',c:'from-fuchsia-500/30'},
+  healthy:{l:'Healthy',i:'🥗',c:'from-lime-500/30'},
+  market:{l:'Markets',i:'🛒',c:'from-sky-500/30'},
+  fit:{l:'Fitness & Spa',i:'💆',c:'from-rose-500/30'}
+};
+// n=name, k=category, d=distance/location, t=description, u=link (optional; Maps search used if missing), f=host pick, v=delivers, p=phone
+const S=[
+ {n:'The Platform',k:'walk',d:'3 min walk · ~230 m',t:'Right across the street. The easiest first dinner.',f:1},
+ {n:'Sun Market & Kiosk',k:'walk',d:'Across the street',t:'Small market across the road, plus a kiosk in the next building. Snacks and essentials.'},
+ {n:'Lucilles',k:'dine',d:'American diner',t:'Everyone loves it. Go in person; the host does not recommend delivery.',u:'https://goo.gl/maps/xLyWUSxPcmamAejA9',f:1},
+ {n:'Frank & Co',k:'dine',d:'~6.6 km · next to Ovio',t:'Host pick: the egg casserole.',f:1},
+ {n:'Sizzler Maadi',k:'dine',d:'17 Road 231, Degla · 4.7★ · $$',t:'Generous steak and potato dishes, plus pasta. Dine-in, takeaway, delivery.',u:'https://g.page/sizzlermaadi?share'},
+ {n:'Kazlak',k:'dine',d:'Steak house',t:'A hearty steak house in Maadi.',u:'https://g.page/kazlak?share'},
+ {n:'Crave',k:'dine',d:'Street 213 · 4.4★ · $$',t:'Western comfort food.',u:'https://goo.gl/maps/iaAgRZckNf3Zc4Ep6',v:1},
+ {n:"Vittorio's",k:'dine',d:'Street 231, Sarayat Al Gharbeyah',t:'Italian favorite in Maadi.',u:'https://g.page/vittorio-s-301?share'},
+ {n:'Tabla Luna',k:'dine',d:'Latin American · Street 231',t:'Latin American flavors and a lively vibe.',u:'https://goo.gl/maps/ca4hFBW298ieWwzS9'},
+ {n:'Villa Caracas',k:'dine',d:'Maadi',t:'A local favorite, also on the delivery apps.',u:'https://goo.gl/maps/M3kzY7kZAyxUPuSr6',v:1},
+ {n:'The Lebanese Bakery',k:'dine',d:'18 Street, Sarayat El Maadi',t:'Fresh Lebanese bakes and mezze.',u:'https://g.page/tlb-cairo?share',v:1},
+ {n:'Gaya',k:'dine',d:'Korean',t:'Korean cooking in Maadi.',u:'https://goo.gl/maps/xa98rQpg3ffy9oYx6',v:1},
+ {n:'Il Mulino',k:'dine',d:'7 Street 261, Ezbet Fahmy',t:'Italian dining.',u:'https://g.page/ilmulinoeg?share'},
+ {n:'Zulu',k:'dine',d:'South African · 9 Street 100',t:'Something different: South African grill and flavors.',u:'https://g.page/zuluincairo?share'},
+ {n:'Blue Nile Boat',k:'dine',d:'~4 km by car',t:'Dine on the water.'},
+ {n:'Bua Khao',k:'dine',d:'Thai',t:'Thai favorite. Delivers too.',v:1},
+ {n:'Estro Sicilian Rooftop',k:'dine',d:'~6.5 km by car',t:'Sicilian dining on a rooftop.'},
+ {n:'Ovio',k:'dine',d:'~6.6 km by car · Hotline 19801',t:'Delivers as well as dine-in.',v:1,p:'19801'},
+ {n:'Gringos Burrito',k:'dine',d:'Mexican',t:'Burritos, available on the delivery apps.',v:1},
+ {n:'Street 9',k:'dine',d:'~4 km · restaurants, shops, cafes',t:'The neighborhood hub. Take an Uber and explore on foot.',u:'https://goo.gl/maps/WQKvu335KmSxadmF7',f:1},
+ {n:'Pier 88',k:'fine',d:'Fine dining',t:'Special-occasion seafood on the Nile.',u:'https://g.co/kgs/pmBXq3'},
+ {n:'Le Deck',k:'fine',d:'Fine dining',t:'Elegant evening out.',u:'https://g.co/kgs/h62BaM'},
+ {n:'The Grill',k:'fine',d:'Fine dining',t:'Classic grill and steaks.',u:'https://g.co/kgs/QZTD53'},
+ {n:'Birdcage',k:'fine',d:'Fine dining',t:'A top-of-the-list favorite.',u:'https://g.co/kgs/jn89rA'},
+ {n:'JW Steakhouse',k:'fine',d:'Fine dining',t:'Premium steakhouse.',u:'https://g.co/kgs/U6DZhp'},
+ {n:'Koshary Abou Tarek',k:'fine',d:'Downtown Cairo',t:'The freshest koshary, a true Cairo icon.'},
+ {n:'Zooba',k:'fine',d:'Egyptian street food',t:'Modern Egyptian street food.'},
+ {n:'Naguib Mahfouz Cafe',k:'fine',d:'Khan el-Khalili',t:'Atmospheric Egyptian cafe and restaurant.'},
+ {n:'Diet House',k:'healthy',d:'Healthy eating',t:'Balanced, lighter meals.',u:'https://g.co/kgs/8kwMe3',v:1},
+ {n:"Let's Poke",k:'healthy',d:'Poke bowls',t:'Fresh and customizable bowls.',u:'https://g.co/kgs/KYpiMb',v:1},
+ {n:'Gourmet Egypt',k:'market',d:'Supermarket · online ordering',t:'Quality groceries and imported goods.',u:'https://gourmetegypt.com'},
+ {n:'Alpha Market',k:'market',d:'~1–1.5 km',t:'Supermarket for your groceries and bottled water.'},
+ {n:'Metro Market',k:'market',d:'~1.5 km',t:'Supermarket for a full grocery run.'},
+ {n:'Osana Wellness',k:'fit',d:'Spa & wellness',t:'Unwind after a day of sightseeing.',u:'https://g.co/kgs/FBbvhR'},
+ {n:'Curves',k:'fit',d:'Gym',t:'Fitness studio in Maadi.',u:'https://g.co/kgs/Jr8dzc'},
+ {n:'Fitzone',k:'fit',d:'Gym · ladies only',t:'Ladies-only fitness center in Maadi.',u:'https://g.co/kgs/3dYiid'}
+];
+const HOT=[['McDonald\'s','19991'],['KFC','19019'],['Pizza Hut','19000'],['Papa John\'s','19277'],['Domino\'s','19223'],['Burger King','16977'],['Hardee\'s','19066'],['Ovio','19801']];
+const LM=[['Supreme Constitutional Court','0.4 km'],['HSBC Bank Egypt','0.7 km'],['The District Mall','2.1 km'],['Coptic Museum','3.9 km'],['Mar Girgis Metro Station','3.9 km'],['Fustat Park','4.5 km'],['The First Mall','6.2 km'],['Cairo Citadel','6.8 km'],['Cairo Tower','8.4 km'],['Muizz Street','9.2 km'],['Great Sphinx','9.5 km'],['Cairo International Airport','22 km']];
+const ENC={"s": "5Old8c+JZslhE4l7RdpmfA==", "i": "1xJc8FLET/dNAqmd", "c": "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"};
+let fav=[];try{fav=JSON.parse(localStorage.getItem('mnv_fav')||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem('mnv_fav',JSON.stringify(fav))}catch(e){}};
+let cat='all',q='';
+const $=id=>document.getElementById(id);
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function openVid(id,pl){
+  $('vf').src=pl?`https://www.youtube-nocookie.com/embed/videoseries?list=${id}`:`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+  $('vy').href=pl?`https://www.youtube.com/playlist?list=${id}`:`https://youtu.be/${id}`;
+  $('vm').classList.remove('hidden');
+}
+function closeVid(){$('vm').classList.add('hidden');$('vf').src=''}
+document.addEventListener('click',e=>{
+  const y=e.target.closest('[data-yt]');if(y){openVid(y.dataset.yt,0);return}
+  const p=e.target.closest('[data-pl]');if(p){openVid(p.dataset.pl,1);return}
+  const c=e.target.closest('[data-copy]');if(c){const t=c.dataset.copy;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).catch(()=>{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(_){}a.remove()});c.textContent='Copied';setTimeout(()=>c.textContent='Copy',1500);return}
+  if(e.target===$('vm')||e.target.closest('#vc'))closeVid();
+});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeVid()});
+
+/* ---- checkout checklist ---- */
+$('cklist').addEventListener('click',e=>{const li=e.target.closest('li');if(!li)return;li.classList.toggle('done');const i=li.querySelector('i');i.className=li.classList.contains('done')?'fa-solid fa-square-check mt-0.5 text-gold':'fa-regular fa-square mt-0.5 text-gold'});
+
+/* ---- locked sections ---- */
+const LABEL={checkin:'Check In details',howto:'How-To videos',address:'Address &amp; GPS',wifi:'Wi-Fi details'};
+function lockCard(k){return `<form class="lockf rounded-2xl border border-gold/30 bg-gold/5 p-6 max-w-xl" autocomplete="off">
+ <div class="flex items-center gap-3 mb-3"><div class="w-11 h-11 rounded-full bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-lock"></i></div><div><div class="font-semibold text-white">${LABEL[k]} are private</div><div class="text-xs text-slate-400">Enter the guest password from your booking message.</div></div></div>
+ <div class="flex gap-2"><input type="password" name="pw" placeholder="Guest password" autocapitalize="none" class="flex-1 min-w-0 px-4 py-3 rounded-xl bg-[#0f172a] border border-slate-700 focus:border-gold/60 focus:outline-none focus:ring-2 focus:ring-gold/40 text-white placeholder-slate-500"><button class="px-5 py-3 rounded-xl bg-gold text-black font-semibold hover:bg-gold-light transition">Unlock</button></div>
+ <p class="err text-rose-400 text-xs mt-2 hidden"></p></form>`}
+document.querySelectorAll('[data-lock]').forEach(d=>d.innerHTML=lockCard(d.dataset.lock));
+const b64=x=>Uint8Array.from(atob(x),c=>c.charCodeAt(0));
+async function decrypt(pw){
+  const km=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw.toLowerCase().replace(/\s+/g,'')),'PBKDF2',false,['deriveKey']);
+  const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(ENC.s),iterations:600000,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);
+  const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(ENC.i)},key,b64(ENC.c));
+  return JSON.parse(new TextDecoder().decode(pt));
+}
+function unlock(data){
+  document.querySelectorAll('[data-lock]').forEach(d=>{d.innerHTML=data[d.dataset.lock]||''});
+  document.querySelectorAll('[data-l] i').forEach(i=>i.className='fa-solid fa-lock-open ml-1 text-[10px]');
+}
+async function tryPw(pw,form){
+  const err=form&&form.querySelector('.err'),btn=form&&form.querySelector('button');
+  if(!(window.crypto&&crypto.subtle)){if(err){err.textContent='Please open this page over https to unlock.';err.classList.remove('hidden')}return}
+  if(btn){btn.disabled=true;btn.textContent='Checking...'}
+  try{const data=await decrypt(pw);try{sessionStorage.setItem('mnv_pw',pw)}catch(e){}unlock(data)}
+  catch(e){if(err){err.textContent="That password didn't work. Check your booking message or ask your host.";err.classList.remove('hidden')}try{sessionStorage.removeItem('mnv_pw')}catch(_){}if(btn){btn.disabled=false;btn.textContent='Unlock'}}
+}
+document.addEventListener('submit',e=>{const f=e.target.closest('.lockf');if(!f)return;e.preventDefault();tryPw(f.pw.value,f)});
+try{const s=sessionStorage.getItem('mnv_pw');if(s)tryPw(s,null)}catch(e){}
+
+/* ---- local spots ---- */
+const chipDefs=[['all','All'],['fav','♥ My Picks'],['pick','⭐ Host Picks'],['deliv','🛵 Delivers'],...Object.entries(C).map(([k,v])=>[k,v.i+' '+v.l])];
+$('chips').innerHTML=chipDefs.map(c=>`<button data-c="${c[0]}" class="chip shrink-0 px-4 py-2 rounded-full border border-slate-700 text-sm text-slate-300 hover:border-gold/60 whitespace-nowrap ${c[0]==='all'?'on':''}">${c[1]}</button>`).join('');
+function render(){
+  const list=S.filter(s=>{
+    if(cat==='fav'&&!fav.includes(s.n))return false;
+    if(cat==='pick'&&!s.f)return false;
+    if(cat==='deliv'&&!s.v)return false;
+    if(C[cat]&&s.k!==cat)return false;
+    if(q&&!(s.n+' '+s.d+' '+s.t+' '+C[s.k].l).toLowerCase().includes(q))return false;
+    return true;
+  });
+  $('count').textContent=list.length+' spot'+(list.length===1?'':'s');
+  $('empty').classList.toggle('hidden',list.length>0);
+  $('grid').innerHTML=list.map((s,i)=>{
+    const m=C[s.k],link=s.u||maps(s.n),on=fav.includes(s.n);
+    return `<article class="card fade rounded-2xl overflow-hidden bg-[#0f172a] border border-slate-800 flex flex-col" style="animation-delay:${Math.min(i,12)*30}ms">
+      <div class="relative h-20 bg-gradient-to-br ${m.c} to-transparent flex items-center px-5"><span class="text-3xl">${m.i}</span>
+        <div class="ml-3 flex flex-wrap gap-1.5"><span class="text-[10px] uppercase tracking-wider font-semibold text-slate-200 bg-black/40 rounded-full px-2 py-0.5">${m.l}</span>${s.f?'<span class="text-[10px] uppercase tracking-wider font-semibold text-black bg-gold rounded-full px-2 py-0.5">Host pick</span>':''}${s.v?'<span class="text-[10px] uppercase tracking-wider font-semibold text-slate-200 bg-black/40 rounded-full px-2 py-0.5">Delivers</span>':''}</div>
+        <button class="heart ${on?'on':''} absolute top-3 right-3 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 flex items-center justify-center" data-fav="${esc(s.n)}" aria-label="Save ${esc(s.n)}"><i class="${on?'fa-solid':'fa-regular'} fa-heart"></i></button></div>
+      <div class="p-5 flex flex-col flex-1"><h3 class="font-serif text-lg font-bold text-white leading-snug">${esc(s.n)}</h3><p class="text-gold text-xs font-medium mt-0.5 mb-2">${esc(s.d)}</p><p class="text-slate-400 text-sm font-light flex-1">${esc(s.t)}</p>
+        <div class="mt-4 flex gap-2"><a href="${link}" target="_blank" rel="noopener noreferrer" class="flex-1 text-center text-sm font-semibold py-2.5 rounded-full bg-gold text-black hover:bg-gold-light transition"><i class="fa-solid fa-location-dot mr-1.5"></i>${s.u?'Open Link':'Find on Maps'}</a>${s.p?`<a href="tel:${s.p}" class="px-4 py-2.5 rounded-full border border-gold/50 text-gold hover:bg-gold hover:text-black transition" aria-label="Call"><i class="fa-solid fa-phone"></i></a>`:''}</div></div></article>`;
+  }).join('');
+}
+$('chips').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(!b)return;cat=b.dataset.c;document.querySelectorAll('#chips .chip').forEach(x=>x.classList.toggle('on',x.dataset.c===cat));render()});
+$('q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();render()});
+$('grid').addEventListener('click',e=>{const h=e.target.closest('[data-fav]');if(!h)return;const n=h.dataset.fav;fav=fav.includes(n)?fav.filter(x=>x!==n):[...fav,n];save();render()});
+$('hotlines').innerHTML=HOT.map(h=>`<a href="tel:${h[1]}" class="card rounded-xl bg-[#0f172a] border border-slate-800 p-4 flex items-center justify-between"><span class="text-sm font-medium">${esc(h[0])}</span><span class="text-gold text-sm font-semibold"><i class="fa-solid fa-phone text-xs mr-1"></i>${h[1]}</span></a>`).join('');
+$('landmarks').innerHTML=LM.map(l=>`<a href="${maps(l[0])}" target="_blank" rel="noopener noreferrer" class="card rounded-xl bg-[#0f172a] border border-slate-800 p-4 flex items-center justify-between gap-3"><span class="text-sm">${esc(l[0])}</span><span class="shrink-0 text-xs font-semibold text-gold bg-gold/10 rounded-full px-3 py-1">${l[1]}</span></a>`).join('');
+
+/* ---- house rules modal ---- */
+(function(){
+  const m=$('rules-modal'),p=$('rules-panel');let opener=null;
+  const isOpen=()=>m.getAttribute('aria-hidden')==='false';
+  function openR(from){opener=from||null;m.classList.remove('invisible','opacity-0');m.classList.add('opacity-100');p.classList.remove('scale-95','translate-y-3');p.classList.add('scale-100','translate-y-0');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';setTimeout(()=>$('rules-close').focus(),50)}
+  function closeR(){m.classList.remove('opacity-100');m.classList.add('opacity-0');p.classList.remove('scale-100','translate-y-0');p.classList.add('scale-95','translate-y-3');m.setAttribute('aria-hidden','true');document.body.style.overflow='';setTimeout(()=>m.classList.add('invisible'),300);if(opener)opener.focus()}
+  document.querySelectorAll('[data-open-rules]').forEach(b=>b.addEventListener('click',()=>openR(b)));
+  document.querySelectorAll('[data-close-rules]').forEach(b=>b.addEventListener('click',closeR));
+  $('rules-close').addEventListener('click',closeR);
+  $('rules-backdrop').addEventListener('click',closeR);
+  m.addEventListener('click',e=>{if(e.target===m)closeR()});
+  addEventListener('keydown',e=>{
+    if(!isOpen())return;
+    if(e.key==='Escape'){closeR();return}
+    if(e.key==='Tab'){const f=p.querySelectorAll('button,a[href]');const a=f[0],z=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}
+  });
+})();
+
+/* ---- clock, nav highlight, back-to-top ---- */
+function tick(){try{$('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Africa/Cairo'})}catch(e){}}
+tick();setInterval(tick,30000);
+const links=[...document.querySelectorAll('#nav a')];
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+en.target.id))}),{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
+const top=$('top');addEventListener('scroll',()=>{const on=scrollY>600;top.style.opacity=on?1:0;top.style.pointerEvents=on?'auto':'none'});
+top.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+render();
+})();
+</script>
+</body>
+</html>
