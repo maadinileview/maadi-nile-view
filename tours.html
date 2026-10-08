@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Private Tours, Airport Transfers & VIP Special Access | Maadi Nile View</title>
+<meta name="description" content="Book private Egypt tours, airport meet & greet, hotel transfers and VIP special access permits directly.">
+<link rel="icon" type="image/png" href="logo_transparent.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:{DEFAULT:'#D4AF37',light:'#E6CA65',amber:'#F59E0B'}},fontFamily:{serif:['"Playfair Display"','serif'],sans:['Inter','sans-serif']}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+html{scroll-padding-top:7rem}
+body{background:#0b1220}
+.gold-text{background:linear-gradient(135deg,#f8fafc,#D4AF37);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.card{transition:transform .25s,border-color .25s,box-shadow .25s}.card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.6);box-shadow:0 16px 34px rgba(0,0,0,.5)}
+.tab.on{background:#D4AF37;color:#111;border-color:#D4AF37}
+.seg.on{background:#D4AF37;color:#111}
+.slide{opacity:0;transition:opacity 1.2s}.slide.on{opacity:1}
+.modal{opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}.modal.open{opacity:1;visibility:visible}
+.modal .panel{transform:scale(.96) translateY(10px);transition:transform .3s}.modal.open .panel{transform:none}
+.fade{animation:fade .45s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+input,select,textarea{background:#0f172a;border:1px solid #334155;border-radius:.75rem;padding:.7rem .9rem;width:100%;color:#fff;font-size:.9rem}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#D4AF37;box-shadow:0 0 0 2px rgba(212,175,55,.35)}
+label span{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:#94a3b8;margin-bottom:.3rem}
+</style>
+</head>
+<body class="text-slate-200 font-sans antialiased selection:bg-gold selection:text-black">
+
+<header class="sticky top-0 z-40 bg-[#0b1220]/95 backdrop-blur-md border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex items-center gap-3">
+    <a href="index.html" class="flex items-center gap-3 shrink-0"><img src="logo_transparent.png" alt="Sam's Spots" class="h-10 w-auto rounded-lg bg-white/90 px-1.5 py-0.5"><span class="font-serif text-lg sm:text-xl font-bold gold-text whitespace-nowrap">Maadi Nile View</span></a>
+    <nav class="ml-auto flex items-center gap-4 text-xs sm:text-sm text-slate-300"><a href="contact.html" class="hover:text-gold whitespace-nowrap"><i class="fa-solid fa-envelope mr-1.5"></i>Contact</a><a href="index.html" class="hover:text-gold whitespace-nowrap"><i class="fa-solid fa-arrow-left mr-1.5"></i>Back to site</a></nav>
+  </div>
+  <nav class="max-w-7xl mx-auto px-4 pb-3 flex gap-2 overflow-x-auto text-xs font-semibold whitespace-nowrap">
+    <a href="#airport" class="px-4 py-2 rounded-full border border-slate-700 hover:border-gold/60">Airport Transfers</a>
+    <a href="#vip" class="px-4 py-2 rounded-full border border-slate-700 hover:border-gold/60">VIP Special Access</a>
+    <a href="#tours" class="px-4 py-2 rounded-full border border-slate-700 hover:border-gold/60">Tours &amp; Packages</a>
+    <a href="#gallery" class="px-4 py-2 rounded-full border border-slate-700 hover:border-gold/60">Gallery</a>
+  </nav>
+</header>
+
+<!-- HERO CAROUSEL -->
+<section class="relative h-[78vh] min-h-[520px] overflow-hidden bg-black">
+  <div id="hero" class="absolute inset-0"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0b1220] via-black/40 to-black/60"></div>
+  <div class="relative h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-center text-center">
+    <span class="py-1 px-4 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs uppercase tracking-widest font-semibold mb-5">Direct booking &middot; No middlemen</span>
+    <h1 class="font-serif text-4xl sm:text-6xl font-bold text-white leading-tight mb-4">Private Egypt, <span class="gold-text italic">Seamlessly</span> Arranged</h1>
+    <p class="text-slate-200 max-w-2xl font-light mb-8">From the moment you land to the moment you stand alone inside the Great Pyramid. Airport VIP service, private transfers, expert-guided tours and Ministry special access.</p>
+    <div class="flex flex-wrap justify-center gap-3 text-sm">
+      <a href="contact.html?topic=airport-transfer" class="px-7 py-3.5 rounded-full bg-gold text-black font-semibold hover:bg-gold-light transition"><i class="fa-solid fa-van-shuttle mr-2"></i>Book Airport Transfer</a>
+      <a href="#tours" class="px-7 py-3.5 rounded-full border border-gold/60 text-gold hover:bg-gold hover:text-black transition">Browse Tours</a>
+    </div>
+  </div>
+  <div id="heroDots" class="absolute bottom-5 inset-x-0 flex justify-center gap-2"></div>
+</section>
+
+<!-- LANDING HIGHLIGHTS -->
+<section class="py-10 bg-[#0b1220]"><div id="strip" class="flex gap-4 overflow-x-auto px-4 max-w-7xl mx-auto pb-2"></div></section>
+
+<!-- A. AIRPORT -->
+<section id="airport" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+    <div class="relative rounded-3xl overflow-hidden border border-gold/30 shadow-2xl aspect-[4/3] bg-slate-900">
+      <img id="airportImg" data-fb="van" alt="Airport meet and greet and private transfer" class="w-full h-full object-cover">
+      <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/85 to-transparent flex flex-wrap gap-2">
+        <span class="text-[11px] uppercase tracking-wider font-semibold bg-gold text-black rounded-full px-3 py-1">Premium Hyundai H1 Van</span>
+        <span class="text-[11px] uppercase tracking-wider font-semibold bg-black/60 text-slate-100 rounded-full px-3 py-1">Space for family luggage</span>
+      </div>
+    </div>
+    <div>
+      <span class="text-gold uppercase tracking-widest text-xs font-semibold">Arrival, handled</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1 mb-3">Airport Meet &amp; Greet + Private Transfer</h2>
+      <p id="mgIntro" class="text-slate-300 text-sm leading-relaxed mb-5"></p>
+      <div class="flex rounded-full border border-slate-700 p-1 mb-5 text-xs sm:text-sm font-semibold" id="segs"></div>
+      <div id="svcCard" class="rounded-2xl bg-[#0f172a] border border-gold/30 p-5 mb-5"></div>
+      <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-5 mb-5">
+        <h3 class="font-semibold text-white mb-1 text-sm">What the greeter does</h3>
+        <p id="mgGreeter" class="text-slate-400 text-xs mb-3"></p>
+        <ul id="mgSteps" class="grid sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-slate-300"></ul>
+      </div>
+      <a id="airportCta" href="contact.html?topic=airport-transfer" class="inline-block text-center w-full sm:w-auto px-8 py-3.5 rounded-full bg-gold text-black font-semibold hover:bg-gold-light transition"><i class="fa-solid fa-plane-arrival mr-2"></i>Book Airport Transfer</a>
+    </div>
+  </div>
+</section>
+
+<!-- B. VIP -->
+<section id="vip" class="py-20 bg-slate-950 border-y border-gold/20">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="relative rounded-3xl overflow-hidden border border-gold/40 shadow-2xl min-h-[420px] flex items-end bg-black">
+      <img id="vipImg" data-fb="giza" alt="Special Access Egypt" class="absolute inset-0 w-full h-full object-cover opacity-70">
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+      <div class="relative p-6 sm:p-10 max-w-3xl">
+        <div id="vipBadges" class="flex flex-wrap gap-2 mb-4"></div>
+        <h2 id="vipHead" class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight mb-2"></h2>
+        <p id="vipSub" class="text-gold-light tracking-wide text-sm sm:text-base mb-5"></p>
+        <a href="contact.html?topic=tours&item=VIP%20Special%20Access%20Permit" class="inline-block px-7 py-3.5 rounded-full bg-gold text-black font-semibold hover:bg-gold-light transition"><i class="fa-solid fa-key mr-2"></i>Inquire for VIP Permits</a>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-4 mt-6">
+      <div class="rounded-2xl bg-black/50 border border-gold/30 p-5 md:col-span-2"><div class="text-gold text-xs uppercase tracking-widest font-semibold mb-1">Permit notice</div><p id="vipPermit" class="text-white text-lg font-semibold mb-1"></p><p id="vipWhat" class="text-slate-400 text-sm leading-relaxed"></p></div>
+      <div class="rounded-2xl bg-black/50 border border-gold/30 p-5"><div class="text-gold text-xs uppercase tracking-widest font-semibold mb-1">Booking window</div><p id="vipWindow" class="text-white font-semibold"></p><p class="text-slate-400 text-xs mt-1">Required to clear security and antiquities authorizations.</p></div>
+    </div>
+    <div id="vipCats" class="mt-10 space-y-10"></div>
+    <div id="vipNotes" class="grid md:grid-cols-3 gap-4 mt-10"></div>
+  </div>
+</section>
+
+<!-- C. CATALOG -->
+<section id="tours" class="py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto mb-8"><span class="text-gold uppercase tracking-widest text-xs font-semibold">Private &middot; Guided &middot; Hotel pickup</span><h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-1 mb-3">Tours &amp; Packages</h2><p class="text-slate-400 text-sm">Private Egyptologist guide, air-conditioned vehicle and hotel pickup on every tour. Prices are per private group; final quotes can vary by group size, season and hotel category.</p></div>
+    <div id="tabs" class="flex gap-2 overflow-x-auto pb-3 mb-2 sm:justify-center"></div>
+    <p id="count" class="text-center text-xs text-slate-500 mb-6"></p>
+    <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-20 bg-[#0f172a]/60 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4"><h2 class="font-serif text-3xl font-bold text-white text-center mb-8">Gallery</h2><div id="gal" class="columns-2 md:columns-3 lg:columns-4 gap-3 [&>*]:mb-3"></div></div>
+</section>
+
+<footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+  <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 mb-3"><a href="index.html" class="hover:text-gold">Home</a><a href="contact.html" class="hover:text-gold">Contact</a><a href="terms.html#terms" class="hover:text-gold">Terms &amp; Conditions</a><a href="terms.html#legal" class="hover:text-gold">Legal Information</a><a href="privacy.html" class="hover:text-gold">Privacy Policy</a></div>
+  &copy; 2026 Maadi Nile View. All rights reserved. <span id="src" class="block mt-1 text-slate-600"></span>
+</footer>
+
+<!-- MODALS -->
+<div id="m-detail" class="modal fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/85 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Tour details">
+ <div class="panel w-full max-w-3xl max-h-[92vh] overflow-y-auto rounded-2xl border border-gold/30 bg-[#0f172a]"><div id="detailBody"></div></div>
+</div>
+
+<div id="lb" class="modal fixed inset-0 z-[70] bg-black/95 flex items-center justify-center p-4"><img id="lbImg" class="max-h-full max-w-full rounded-lg" alt=""><button data-close class="absolute top-4 right-4 w-11 h-11 rounded-full border border-slate-600 text-white" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+
+<script>
+/* ---------- Markdown parsers (run in the browser and at build time) ---------- */
+function mdClean(s){return String(s||'').replace(/\[cite:[^\]]*\]/g,'').replace(/\*\*/g,'').replace(/`/g,'').replace(/\s+/g,' ').trim()}
+function mdKey(s){return String(s||'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim()}
+
+function parseMeetGreet(md){
+  const L=md.replace(/\r/g,'').split('\n');
+  const first=L.find(l=>l.trim())||'';
+  const g=L.find(l=>/^What it typically includes/i.test(l.trim()))||'';
+  return {
+    intro:mdClean(first),
+    greeter:mdClean(g.replace(/^What it typically includes\s*\(Arrival\)\s*/i,'')),
+    steps:L.filter(l=>/^\s*-\s+/.test(l)).map(l=>mdClean(l.replace(/^\s*-\s+/,'')))
+  };
+}
+
+function parseSpecial(md){
+  md=md.replace(/\r/g,'');
+  const pick=(re)=>{const m=md.match(re);return m?mdClean(m[1]):''};
+  const out={
+    headline:pick(/\*\*Headline\*\*:\s*"([^"]+)"/),
+    subtitle:pick(/\*\*Subtitle\*\*:\s*"([^"]+)"/),
+    badges:[],categories:[],notes:[]
+  };
+  const bl=md.match(/\*\*Badges\*\*:[^\n]*|Badges:[^\n]*/);
+  const badgeLine=(md.split('\n').find(l=>/Badges/.test(l))||'');
+  out.badges=[...badgeLine.matchAll(/"([^"]+)"/g)].map(m=>m[1]);
+  out.what=pick(/### What Are Special Access Tours\?\s*\n([^\n]+)/);
+  out.permit=pick(/\*\*Base Ministry Special Access Permit Fee\*\*:\s*\*\*(\$[\d,]+ USD)\*\*/);
+  out.range=pick(/\*\*Variable Site Pricing\*\*:[^\n]*?\*\*([^*]+)\*\*/);
+  out.window=pick(/\*\*Booking Window\*\*:[^\n]*?\(\*\*([^*]+)\*\*\)/);
+  const sec3=(md.split(/^## 3\./m)[1]||'').split(/^## 4\./m)[0];
+  sec3.split(/^### Category \d+:\s*/m).slice(1).forEach(block=>{
+    const title=mdClean(block.split('\n')[0]);
+    const items=[];
+    block.split(/^\d+\.\s+/m).slice(1).forEach(it=>{
+      const name=mdClean((it.match(/\*\*(.+?)\*\*/)||[])[1]);
+      const rate=mdClean((it.match(/\*\*Permit Rate\*\*:\s*([^\n]+)/)||[])[1]);
+      const access=mdClean((it.match(/\*\*Access\*\*:\s*([^\n]+)/)||[])[1]);
+      const img=((it.match(/Image relative path\*\*:\s*`([^`]+)`/)||[])[1])||'';
+      if(name)items.push({name,rate,access,img});
+    });
+    out.categories.push({title,items});
+  });
+  (md.split(/^## 4\./m)[1]||'').split('\n').forEach(l=>{
+    const m=l.match(/^-\s+\*\*(.+?)\*\*:\s*(.+)$/); if(m)out.notes.push({label:mdClean(m[1]),text:mdClean(m[2])});
+  });
+  return out;
+}
+
+function priceOf(s){const m=String(s||'').match(/\$\s*([\d,]+)/);return m?parseInt(m[1].replace(/,/g,''),10):null}
+function catOf(name,pack){
+  if(pack)return ['packs'];
+  const c=[];
+  if(/alexandria|fayoum|safari|sandboard/i.test(name))c.push('alex');
+  if(/museum|\bgem\b/i.test(name))c.push('museum');
+  if(!c.length||/giza|sound|cruise|luxor/i.test(name))c.unshift('day');
+  return c;
+}
+function parseCatalog(md){
+  md=md.replace(/\r/g,'');
+  const tours=[];let inPack=false;
+  const lines=md.split('\n');
+  for(let i=0;i<lines.length;i++){
+    const l=lines[i].trim();
+    if(/^Multi-day Packages/i.test(l))inPack=true;
+    if(/^Note:/i.test(l)&&inPack)inPack=true;
+    if(l.startsWith('|')&&!/^\|[-\s|]+$/.test(l)){
+      const c=l.replace(/^\||\|$/g,'').split('|').map(x=>mdClean(x));
+      if(c.length>=5&&c[0]&&!/^Tour Name$/i.test(c[0])&&priceOf(c[4])){
+        tours.push({name:c[0],duration:c[1],highlights:c[2],inclusions:c[3],price:priceOf(c[4]),cats:catOf(c[0],inPack),pack:inPack});
+      }
+    }
+    const m=l.match(/^-\s+(.+?):\s*\$([\d,]+)\s*$/);
+    if(m&&!inPack&&/Additional day tours/i.test(lines.slice(Math.max(0,i-4),i).join(' '))||(m&&!inPack&&tours.length&&tours[tours.length-1].extra)){
+      tours.push({name:mdClean(m[1]),duration:'',highlights:'',inclusions:'',price:parseInt(m[2].replace(/,/g,''),10),cats:catOf(m[1],false),pack:false,extra:true});
+    }
+  }
+  return tours;
+}
+if(typeof module!=='undefined')module.exports={parseMeetGreet,parseSpecial,parseCatalog,mdKey,mdClean};
+
+
+const SNAP={"mg":{"intro":"Meet and Greet (or Meet & Assist) services at Egypt airports are personalized assistance packages designed to make arrival smoother and faster, especially at busy airports like Cairo International (CAI).","greeter":"A professional greeter meets you right after you get off the plane (at the gate, airbridge, or sometimes with a buggy/electric cart) holding a sign with your name.","steps":["Visa on arrival / immigration formalities (often using Fast Track / priority lanes)","Passport control","Collecting your luggage","Going through customs","Escorting you to the arrivals exit where your driver/hotel transfer is waiting"]},"sa":{"headline":"BEYOND THE ROPE. INTO THE LEGEND.","subtitle":"SPECIAL ACCESS EGYPT — Exclusive Ministry Permits & Private Entry","badges":["Ministry Permit Required","After-Hours Exclusive","Zero Crowds","VIP Private Access"],"categories":[{"title":"Giza Plateau Iconic Monuments","items":[{"name":"Private Access Inside the Great Pyramid of Khufu (Cheops)","rate":"~$2,000 USD permit baseline + tour handling ($2,500 - $3,500 total package).","access":"Full 1 to 2 hours inside *completely alone* after public hours. Includes the King’s Chamber, Grand Gallery, plus restricted access to the Queen’s Chamber and Subterranean Chamber (\"The Pit\").","img":"01_photos/02_tourism/special-access.jpg"},{"name":"Great Sphinx Enclosure \"Between the Paws\"","rate":"~$2,000 USD permit baseline ($2,200 - $3,000 total package).","access":"Step inside the restricted enclosure wall right up to the feet of the Sphinx and the Dream Stele of Thutmose IV, away from the public viewing platform.","img":""},{"name":"Giza Plateau After-Hours & Osiris Shaft","rate":"~$2,000 USD per permit area ($2,500 - $4,000 total package).","access":"Private access to the Pyramid of Menkaure, or deep subterranean descent into the multi-tiered Osiris Shaft near the Sphinx causeway.","img":""}]},{"title":"Saqqara & Closed Archaeological Zones","items":[{"name":"Step Pyramid of Djoser & Subterranean Labyrinth","rate":"~$2,000 USD permit baseline ($2,300 - $3,000 total package).","access":"Exclusive private entry down into the blue-faience tile passages and deep granite burial shaft below Djoser's Step Pyramid.","img":""},{"name":"The Serapeum of Saqqara & Active Excavation Sites","rate":"~$2,000 USD permit baseline ($2,200 - $2,800 total package).","access":"VIP entry to examine the massive 70-ton solid basalt/granite sarcophagi. Special permission add-ons available for permanently closed active dig sites at Abu Sir (Abusir) and Abu Ghurab Sun Temples.","img":""}]},{"title":"Luxor & Upper Egypt VIP Access","items":[{"name":"Valley of the Kings: Private Royal Tomb Closures","rate":"~$2,000 - $3,500 USD (depending on tomb selection & hours).","access":"Private after-hours entry into restricted royal tombs (such as King Tutankhamun, Seti I, or Nefertari in Valley of the Queens) with zero public visitors present.","img":""},{"name":"Luxor Temple & Karnak Night Access","rate":"~$2,000 USD permit baseline ($2,400 - $3,200 total package).","access":"Illuminate the great Hypostyle Hall or Luxor Temple colonnades after dark with exclusive private lighting and guide service.","img":""}]},{"title":"Specialized Closed Antiquities","items":[{"name":"The Osirion at Abydos (Temple of Seti I)","rate":"~$2,000 - $2,500 USD permit baseline ($2,800 - $3,800 total package).","access":"Descend into the subterranean water-surrounded megalithic sanctuary of the Osirion at Abydos, normally closed to all public traffic.","img":""},{"name":"Grand Egyptian Museum (GEM) & Philae Temple Private Hours","rate":"~$2,000 - $4,000 USD depending on VIP hall scope.","access":"VIP curator-led private walk-throughs of restricted GEM conservation labs and private island access to Philae Temple in Aswan.","img":""}]}],"notes":[{"label":"Photography Rules","text":"Strict professional camera rules apply; mobile photography included, commercial equipment requires additional press permits."},{"label":"Official Supervision","text":"Every special access booking is accompanied by an official Ministry Antiquities Inspector and Tourism Police escort."},{"label":"Comparison Callout","text":"Distinguish \"True Special Access\" ($2,000+ permit restricted zones) from standard $30-$50 public daytime ticket add-ons (such as standard daytime Great Pyramid interior tickets)."}],"what":"Exclusive, permit-based experiences granted directly by Egypt’s Ministry of Tourism and Antiquities (and supervised by Tourism Police and official Antiquities Inspectors). These permits allow private entry into closed chambers, restricted archaeological sites, or world-famous monuments strictly outside normal public opening hours (early morning before opening or after-hours closing).","permit":"$2,000 USD","range":"$2,000 USD to $4,500+ USD","window":"minimum 14–30 days prior"},"cat":[{"name":"All-in-One Giza Pyramids from inside, Sphinx & Camel ride & Lunch","duration":"4–5 hours","highlights":"Giza Plateau (Great Gate, Visitors Center, Panoramic Point); Pyramids of Khufu, Khafre & Menkaure; inside 3rd Pyramid (Menkaure); Valley Temple; Great Sphinx; Camel ride; Traditional local lunch","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; camel ride; local lunch; entry inside 3rd pyramid; entrance fees; mineral water; taxes/service","price":54,"cats":["day"],"pack":false},{"name":"Giza pyramids and Sphinx includes inside the pyramids with Local Lunch And ATVs","duration":"5–7 hours","highlights":"Giza Pyramids & Sphinx (including inside 3rd Pyramid); Camel ride; Traditional local lunch; 1-hour ATV/quad bike desert ride","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; camel ride; local lunch; inside 3rd pyramid; ATVs; entrance fees; mineral water; taxes/service","price":72,"cats":["day"],"pack":false},{"name":"Giza pyramids and Sphinx includes Local Lunch And Felucca Ride","duration":"5–7 hours","highlights":"Giza Pyramids & Sphinx; Local lunch; Felucca ride","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; local lunch; Felucca; entrance fees; mineral water; taxes/service","price":72,"cats":["day"],"pack":false},{"name":"Giza pyramids, Sphinx and Grand Egyptian Museum include Local Lunch","duration":"7–9 hours","highlights":"Giza Pyramids & Sphinx; Grand Egyptian Museum (Ramses II statue, Grand Staircase, galleries, Tutankhamun treasures, Solar Boat); Khan El-Khalili Market; Local lunch","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; entrance fees; mineral water; taxes/service","price":120,"cats":["day","museum"],"pack":false},{"name":"Giza pyramids, Sphinx, Saqqara step pyramids, Memphis city and Dahshor pyramids with Local Lunch","duration":"7–9 hours","highlights":"Giza Pyramids & Sphinx; Saqqara Step Pyramid; Memphis; Dahshur (Bent & Red Pyramids); Local lunch","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; local lunch; entrance fees; mineral water; taxes/service","price":72,"cats":["day"],"pack":false},{"name":"Giza Pyramids, Sphinx and Grand Egyptian Museum with Lunch","duration":"6–7 hours","highlights":"Giza Pyramids & Sphinx; Grand Egyptian Museum; Lunch","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; lunch; entrance fees; mineral water; taxes/service","price":114,"cats":["day","museum"],"pack":false},{"name":"Grand Egyptian Museum With Lunch","duration":"3–4 hours","highlights":"Grand Egyptian Museum; Lunch","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; lunch; entrance fees; mineral water; taxes/service","price":96,"cats":["museum"],"pack":false},{"name":"Day tour to Alexandria History lovers from Cairo","duration":"9–11 hours","highlights":"Alexandria historical sites","inclusions":"Hotel pickup & return from Cairo; private A/C vehicle; private Egyptologist guide; entrance fees; mineral water; taxes/service","price":96,"cats":["alex"],"pack":false},{"name":"Overday tour to Alexandria city from Cairo enjoy the pretty city","duration":"9–11 hours","highlights":"Alexandria city highlights","inclusions":"Similar private day-tour inclusions from Cairo","price":102,"cats":["alex"],"pack":false},{"name":"Overday Safari Daytour To Fayoum Oasis","duration":"9–11 hours","highlights":"Fayoum Oasis safari/adventure sites","inclusions":"Hotel pickup & return; private vehicle/guide; entrance/activities","price":120,"cats":["alex"],"pack":false},{"name":"Luxury All-in-One Giza Pyramids from inside, Sphinx, Camel ride & Lunch at the 9 pyramids lounge restaurant","duration":"4–5 hours","highlights":"Same core as basic All-in-One + lunch at 9 Pyramids Lounge","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; camel; inside pyramid; luxury lunch; entrance fees; mineral water; taxes/service","price":114,"cats":["day"],"pack":false},{"name":"All-in-One Giza Pyramids from inside, Sphinx, Grand Egyptian Museum, Camel ride & Lunch","duration":"7–8 hours","highlights":"Giza Pyramids (inside), Sphinx, Camel ride, Grand Egyptian Museum, Lunch","inclusions":"Combined inclusions of pyramids + GEM + camel + lunch + private transport/guide","price":108,"cats":["day","museum"],"pack":false},{"name":"Grand Egyptian Museum and lunch overlooking the Giza pyramids","duration":"3–4 hours","highlights":"Grand Egyptian Museum + lunch with pyramid views","inclusions":"Hotel pickup & return; private A/C vehicle; private Egyptologist guide; lunch; entrance fees; mineral water; taxes/service","price":102,"cats":["day","museum"],"pack":false},{"name":"Sound and Light Show at Giza","duration":"","highlights":"","inclusions":"","price":66,"cats":["day"],"pack":false,"extra":true},{"name":"Luxury Dinner Cruise","duration":"","highlights":"","inclusions":"","price":54,"cats":["day"],"pack":false,"extra":true},{"name":"Overday Tour to Luxor by Flight","duration":"","highlights":"","inclusions":"","price":396,"cats":["day"],"pack":false,"extra":true},{"name":"Overnight Tour to Luxor by Flight","duration":"","highlights":"","inclusions":"","price":432,"cats":["day"],"pack":false,"extra":true},{"name":"2 days/one night Cairo Sightseeing","duration":"2 days / 1 night","highlights":"Day 1: Giza Pyramids & Sphinx, Saqqara, Memphis; Day 2: Egyptian Museum, Old Coptic Cairo, Citadel & Mohamed Ali Mosque; Airport meet & assist","inclusions":"1 night hotel (breakfast); meet & assist + transfers; 2 day tours; private A/C vehicle; Egyptologist guide; bottled water","price":240,"cats":["packs"],"pack":true},{"name":"2 Days / One Night Cairo History Lovers","duration":"2 days / 1 night","highlights":"History-focused Cairo/Giza sights","inclusions":"Similar private package structure","price":300,"cats":["packs"],"pack":true},{"name":"2 Days / One Night Cairo Sightseeing with Grand Egyptian Museum","duration":"2 days / 1 night","highlights":"Cairo/Giza sightseeing including GEM","inclusions":"Similar private package structure","price":276,"cats":["packs"],"pack":true},{"name":"3 days / 2 nights Classic Cairo Sightseeing","duration":"3 days / 2 nights","highlights":"Giza Pyramids & Sphinx; Egyptian Museum; Saqqara; Memphis; Dahshur; Airport meet & assist","inclusions":"2 nights hotel (breakfast); meet & assist + transfers; day tours; private A/C vehicle; Egyptologist guide; bottled water","price":360,"cats":["packs"],"pack":true},{"name":"3 days / 2 Nights Cairo and Giza Sightseeing with lunch and dinner cruise","duration":"3 days / 2 nights","highlights":"Cairo/Giza sightseeing + lunch & dinner cruise","inclusions":"Accommodation, transfers, guided tours, meals/cruise","price":600,"cats":["packs"],"pack":true},{"name":"3 days / 2 nights Cairo Alexandria Cities","duration":"3 days / 2 nights","highlights":"Cairo, Giza & Alexandria","inclusions":"Accommodation, transfers, multi-city guided tours","price":480,"cats":["packs"],"pack":true},{"name":"3 days / 2 Nights Cairo Sightseeing for History Lovers","duration":"3 days / 2 nights","highlights":"History-focused Cairo/Giza","inclusions":"Similar private package","price":480,"cats":["packs"],"pack":true},{"name":"3 Days / 2 Nights Cairo and Grand Egyptian Museum","duration":"3 days / 2 nights","highlights":"Cairo/Giza + GEM focus","inclusions":"Similar private package","price":408,"cats":["packs"],"pack":true},{"name":"4 Days / 3 Nights Cairo, Giza Classic Package","duration":"4 days / 3 nights","highlights":"Classic Cairo & Giza sights","inclusions":"Accommodation, transfers, guided tours","price":540,"cats":["packs"],"pack":true},{"name":"4 Days / 3 Nights Cairo and Alexandria","duration":"4 days / 3 nights","highlights":"Cairo, Giza & Alexandria","inclusions":"Accommodation, transfers, multi-city tours","price":540,"cats":["packs"],"pack":true},{"name":"4 days / 3 Nights Cairo and Giza Sightseeing with lunch and dinner cruise","duration":"4 days / 3 nights","highlights":"Cairo/Giza + meals/cruise","inclusions":"Accommodation, transfers, guided tours + cruise","price":540,"cats":["packs"],"pack":true},{"name":"4 Days / 3 Nights Cairo and Grand Egyptian Museum","duration":"4 days / 3 nights","highlights":"Cairo/Giza + GEM","inclusions":"Similar private package","price":468,"cats":["packs"],"pack":true},{"name":"4 days / 3 Nights Cairo Sightseeing for History Lovers","duration":"4 days / 3 nights","highlights":"History-focused","inclusions":"Similar private package","price":360,"cats":["packs"],"pack":true}]};
+const DET={"all in one giza pyramids from inside sphinx and camel ride and lunch": {"dur": "4 to 5 hours", "overview": "Start your luxury, hassle-free day with a warm welcome from an expert Egyptologist guide. Begin at the Giza Plateau, entering through the Great Gate, leading to the eco-friendly Giza Visitors Center. At the Panoramic Point, capture breathtaking views of the pyramids — Khufu, Khafre, and Menkaure — all in one frame. Walk between …", "itinerary": ["With a warm greeting from a professional Egyptologist tour guide, you will start your luxury hassle-free day tour.", "Once you start your tour, your guide will give you a complete introduction to Egyptian history.", "Start your tour by visiting the Giza Pyramids — the thrill of the ancient Seven Wonders and the only one still standing.", "The great pyramids of Giza are the most famous and discussed structures in history.", "Begin from the Great Gate of the Giza Plateau, the newly developed entrance created to support a more eco-friendly visitor experience.", "This modern gate leads to the Giza Visitors Center, where you’ll get an informative overview of the entire site.", "Explore detailed models of the pyramids and view replicas of the tools used in pyramid construction, offering insight into the engineering behind these ancient wonders.", "The guided tour continues to the Panoramic Point, where you will enjoy your camel ride that takes you to the must-see spot for capturing stunning photos of all three pyramids of Giza — Khufu, Khafre, and Menkau…", "Smoothly go from one to the other.", "Start with the Third Pyramid of King Menkaure, known for its beautiful granite casing."], "inc": "Inclusions", "exc": ""}, "giza pyramids and sphinx includes inside the pyramids with local lunch and atvs": {"dur": "5 to 7 hours", "overview": "A complete Giza experience upgraded with an exhilarating one-hour ATV adventure across the desert sands surrounding the pyramids, plus entry inside the Pyramid of Menkaure, a camel ride, and a traditional local lunch.", "itinerary": ["With a warm greeting from a professional Egyptologist tour guide, you will start your luxury hassle-free day.", "Your guide will give you a complete introduction to Egyptian history.", "Start by visiting the Giza Pyramids — the only remaining wonder of the ancient world.", "Begin from the Great Gate of the Giza Plateau and the eco-friendly Visitors Center.", "Continue to the Panoramic Point for your camel ride and the classic photo of all three pyramids lined up together.", "Visit the Pyramid of Menkaure and go inside to explore the narrow passages and burial chamber.", "Continue to the Pyramid of Khafre with its remaining limestone casing at the peak, then the Great Pyramid of Khufu.", "Pass by the Valley Temple of Khafre and finish at the Great Sphinx.", "After the plateau, enjoy a traditional Egyptian lunch (open buffet, shawarma, or koshari).", "Then get ready for an exciting one-hour ATV (quad bike) tour around the Giza Pyramids."], "inc": "Inclusions", "exc": ""}, "giza pyramids and sphinx includes local lunch and felucca ride": {"dur": "5 to 7 hours", "overview": "A classic Giza Plateau experience combined with a peaceful traditional Felucca sail on the Nile and a local Egyptian lunch.", "itinerary": ["With a warm greeting from a professional Egyptologist guide, begin your luxury hassle-free day.", "Your guide will provide a complete introduction to Egyptian history.", "Start at the Giza Plateau via the Great Gate and eco-friendly Visitors Center.", "Capture the panoramic view of the three pyramids — Khufu, Khafre, and Menkaure.", "Walk between them, visit the Valley Temple of Khafre, and stand before the Great Sphinx, the 4,500-year-old guardian of the plateau.", "Continue with a relaxing Felucca ride on the Nile River — the perfect way to unwind and enjoy the timeless scenery of the river.", "Finish with a traditional Egyptian lunch (open buffet, shawarma, or koshari options) before returning to your hotel."], "inc": "Hotel pickup & return · Private air-conditioned vehicle · Private Egyptologist guide · Felucca ride · Local lunch · All entrance fees · Mineral water · All taxes & service charges.", "exc": "Extras not mentioned · Tipping · Drinks."}, "giza pyramids sphinx and grand egyptian museum include local lunch": {"dur": "7 to 9 hours", "overview": "A full-day journey combining the iconic Giza Plateau with the world’s largest archaeological museum dedicated to a single civilization, plus a traditional local lunch.", "itinerary": ["With a warm greeting from a professional Egyptologist guide, begin your luxury hassle-free day.", "Start at the Giza Plateau via the Great Gate and Visitors Center.", "Capture the panoramic view of all three pyramids, walk between them, visit the Valley Temple, and stand before the Great Sphinx.", "Then transfer to the Grand Egyptian Museum (GEM), the largest archaeological museum in the world dedicated to one civilization, located just steps from the pyramids.", "Begin at the grand entrance where a towering statue of King Ramses II and the iconic hanging obelisk welcome you.", "Ascend the magnificent Grand Staircase — a ceremonial path lined with over 70 statues of ancient kings and queens, columns, sarcophagi, and statues of gods and goddesses.", "At the top, enjoy a breathtaking panoramic view of the Giza Pyramids framed by the museum’s architecture.", "Explore the 12 permanent exhibition galleries that take you on a chronological journey from the prehistoric era through the Old, Middle, and New Kingdoms to the Greco-Roman period.", "More than 7,000 carefully selected artifacts illustrate every aspect of ancient Egyptian life.", "Marvel at the legendary treasures of King Tutankhamun — the dazzling golden mask, exquisite jewelry, chariots, and personal items from the boy king’s tomb."], "inc": "Inclusions", "exc": ""}, "giza pyramids sphinx saqqara step pyramids memphis city and dahshor pyramids with local lunch": {"dur": "7 to 9 hours", "overview": "A comprehensive exploration of the most important pyramid fields of ancient Egypt in a single day, finished with a traditional local lunch.", "itinerary": ["With a warm greeting from a professional Egyptologist guide, start your luxury day.", "Begin at the Giza Plateau (Great Gate, Visitors Center, Panoramic Point, three pyramids, Valley Temple, and Great Sphinx).", "Continue to Saqqara, the most important ancient necropolis in Egyptian history.", "Visit the Step Pyramid of Djoser (c. 2686–2667 BC), the oldest stone structure in the world, designed by Imhotep.", "Explore the vast funerary complex set in a huge courtyard surrounded by ceremonial buildings.", "Next, Memphis — the ancient capital of Upper and Lower Egypt and the oldest administrative capital in the world.", "See the remains of the great temple of the god Ptah, the colossal statue of Ramses II (the largest one-piece monument ever found in Egypt), and the Alabaster Sphinx.", "End at Dahshur, a remote and atmospheric site in the desert where you can truly feel you have stepped back in time.", "Visit the Bent Pyramid — the first attempt to build a true pyramid, famous for its change in angle and still-preserved limestone casing.", "Then the Red Pyramid, the first successful true pyramid in history, named for the reddish limestone that once covered it."], "inc": "Inclusions", "exc": ""}, "giza pyramids sphinx and grand egyptian museum with lunch": {"dur": "6 to 7 hours", "overview": "The perfect combination of the ancient monuments and the modern masterpiece museum that houses their treasures.", "itinerary": ["Full guided Giza Plateau visit.", "Transfer to the Grand Egyptian Museum.", "Experience the Hanging Obelisk, the colossal Ramses II statue, the Grand Staircase with panoramic pyramid views, the 12 galleries, the Tutankhamun treasures, and the Solar Boat.", "Traditional lunch, then return to hotel."], "inc": "Hotel pickup & return · Private vehicle · Private guide · Lunch · All entrance fees · Mineral water · Taxes.", "exc": "Tips · Drinks · Extras."}, "grand egyptian museum with lunch": {"dur": "3 to 4 hours", "overview": "A focused, high-quality visit to the world’s largest archaeological museum dedicated to ancient Egypt, combined with a traditional local lunch.", "itinerary": ["With a warm greeting from a professional Egyptologist guide, begin your luxury hassle-free visit.", "Arrive at the Grand Egyptian Museum.", "Start in the grand open court with the world’s first hanging obelisk of King Ramses II and the colossal red-granite statue of Ramses II carved from a single block.", "Ascend the magnificent Grand Staircase, lined with large statues of kings and queens, columns, and architectural elements, ending with a panoramic view of the Giza Pyramids.", "Explore the 12 permanent galleries that take you through Egyptian history from prehistoric times to the Greco-Roman era.", "Discover statues, tools, furniture, papyrus, writing implements, and everyday objects that bring ancient life vividly to life.", "Marvel at the treasures of King Tutankhamun and visit the Solar Boat Museum housing Khufu’s ancient cedarwood vessel.", "Enjoy a traditional Egyptian lunch, then return to your hotel."], "inc": "Inclusions", "exc": ""}, "day tour to alexandria history lovers from cairo": {"dur": "9 to 11 hours", "overview": "A more in-depth historical version of the Alexandria day trip focusing on archaeological and historical sites.", "itinerary": ["Same core sites as the standard Alexandria tour with extra emphasis and time at the most historically significant locations."], "inc": "Same as standard Alexandria day tour from Cairo.", "exc": ""}, "overday tour to alexandria city from cairo enjoy the pretty city": {"dur": "9 to 11 hours", "overview": "A more relaxed, scenic version of the Alexandria day trip focusing on the beauty, atmosphere, and coastal charm of the city.", "itinerary": ["Scenic highlights, harbor views, Qaitbay Citadel, library area, and leisurely time to enjoy the Mediterranean atmosphere, with lunch included."], "inc": "Same structure as other Alexandria day tours from Cairo.", "exc": ""}, "overday safari daytour to fayoum oasis": {"dur": "9 to 11 hours", "overview": "adventure A full day of nature, desert, lakes, and waterfalls in one of Egypt’s most beautiful oasis regions.", "itinerary": ["Early morning private pickup (around 7:00 AM).", "Qarun Lake — the oldest natural lake in the world.", "Wadi El Rayan Nature Reserve with Egypt’s largest waterfalls and a peaceful boat ride on the lower lake.", "El Modawara Mountain for panoramic views and birdwatching.", "Charming Tunis Village, known for its pottery and rural architecture.", "Fresh seafood lunch overlooking Qarun Lake.", "Return to Cairo/Giza in the evening."], "inc": "Hotel pickup & return · Private air-conditioned vehicle · Private Egyptologist guide · Entrance fees · Mineral water · All taxes & service charges.", "exc": "Tips · Drinks · Extras (sandboarding or additional activities if available)."}, "luxury all in one giza pyramids from inside sphinx camel ride and lunch at the 9 pyramids lounge restaurant": {"dur": "4 to 5 hours", "overview": "The ultimate elevated Giza experience. Enjoy the full classic itinerary with entry inside the Pyramid of Menkaure, a camel ride at the panoramic viewpoint, and a refined lunch at the exclusive 9 Pyramids Lounge restaurant with direct views of the pyramids.", "itinerary": ["Private hotel pickup in a luxury air-conditioned vehicle with an expert Egyptologist guide.", "Enter the Giza Plateau via the Great Gate and Visitors Center.", "Camel ride at the Panoramic Point for the perfect photo of all three pyramids.", "Visit the Pyramid of Menkaure and go inside the burial chamber.", "Continue to the Pyramid of Khafre and the Great Pyramid of Khufu.", "Explore the Valley Temple and stand before the Great Sphinx.", "Enjoy a high-quality lunch at the 9 Pyramids Lounge overlooking the ancient monuments.", "Return to your hotel in comfort."], "inc": "Luxury private vehicle · Expert Egyptologist guide · Camel ride · Entry inside 3rd pyramid · All entrance fees · Lunch at 9 Pyramids Lounge · Mineral water · All taxes & service charges.", "exc": "Tips · Drinks · Any extras not mentioned.Other Luxury Options Available for Customization"}, "all in one giza pyramids from inside sphinx grand egyptian museum camel ride and lunch": {"dur": "7 to 8 hours", "overview": "The most complete single-day combination of Giza’s highlights with the Grand Egyptian Museum.", "itinerary": ["Full Giza Plateau (including inside Menkaure Pyramid and camel ride) + Grand Egyptian Museum + traditional lunch."], "inc": "Standard private services + camel + inside pyramid + lunch + all entrance fees.", "exc": ""}, "grand egyptian museum and lunch overlooking the giza pyramids": {"dur": "3 to 4 hours", "overview": "A focused museum visit finished with a memorable lunch with direct views of the pyramids.", "itinerary": ["Full guided Grand Egyptian Museum experience + lunch at a location overlooking the Giza pyramids + return to hotel."], "inc": "Standard private services + lunch + entrance fees.", "exc": ""}, "sound and light show at giza": {"dur": "1 to 2 hours", "overview": "An evening spectacle of light, sound, and storytelling set against the pyramids and Sphinx.", "itinerary": ["Private transfer to the Giza Plateau in the evening.", "Enjoy the Sound and Light Show that narrates the history of the pyramids with dramatic illumination.", "Return to hotel."], "inc": "Hotel pickup & return · Show ticket · Private vehicle · Taxes.", "exc": "Tips · Drinks · Extras."}, "luxury dinner cruise": {"dur": "3–4 hours", "overview": "", "itinerary": ["Nile dinner cruise with entertainment."], "inc": "Cruise, dinner, transfers.", "exc": ""}, "overday tour to luxor by flight": {"dur": "12 to 14 hours", "overview": "A long but rewarding day trip to the open-air museum of Luxor by domestic flight.", "itinerary": ["Early flight from Cairo to Luxor.", "Private guided visits to major East Bank and West Bank sites (Karnak Temple, Luxor Temple, Valley of the Kings, Hatshepsut Temple, Colossi of Memnon — exact combination depending on timing).", "Return flight to Cairo and hotel transfer."], "inc": "Domestic flights · Private guiding in Luxor · Entrance fees · Transfers · Water · Taxes.", "exc": "Tips · Meals · Extras · Any additional sites."}, "overnight tour to luxor by flight": {"dur": "", "overview": "Overnight A more relaxed version of the Luxor experience with an overnight stay, allowing deeper exploration of both banks of the Nile.", "itinerary": ["Flight to Luxor, guided sightseeing on both banks, overnight in Luxor, continued visits the next day, and return flight to Cairo."], "inc": "Domestic flights · Overnight hotel · Private guiding · Entrance fees · Transfers · Water · Taxes.", "exc": "Tips · Meals not specified · Extras."}, "2 days one night cairo sightseeing": {"dur": "2 days / 1 night", "overview": "A complete short stay covering the essential Cairo and Giza highlights with hotel accommodation, airport meet & assist, and two full guided days.", "itinerary": ["Day 1", "Airport meet & assist and hotel transfer.", "Giza Pyramids & Sphinx (full plateau visit).", "Saqqara Step Pyramid of Djoser (oldest stone structure in the world).", "Memphis (ancient capital and ruins of the Ptah temple).", "Overnight at selected hotel (breakfast included).", "Day 2", "Egyptian Museum of Antiquities.", "Old Coptic Cairo (Hanging Church, Cavern Church / Holy Family site, Ben Ezra Synagogue).", "Citadel of Salah El-Din & Mohamed Ali Alabaster Mosque."], "inc": "1 night hotel accommodation with breakfast · Airport meet & assist + two hotel transfers · Two full day tours · Private air-conditioned deluxe vehicle · Expert Egyptologist private guide · Bottled water during tours and transfers.", "exc": "Any extras not mentioned · Drinks at restaurants · Tipping."}, "2 days one night cairo history lovers": {"dur": "2 days / 1 night", "overview": "History-focused short stay covering the most important archaeological sites.", "itinerary": ["Giza, Saqqara, Memphis, Egyptian Museum or GEM, and key Islamic/Christian sites, with airport services and one night hotel."], "inc": "1 night hotel with breakfast · Meet & assist · Private guiding & vehicle · Water.", "exc": ""}, "2 days one night cairo sightseeing with grand egyptian museum": {"dur": "2 days / 1 night", "overview": "", "itinerary": ["Classic 2-day program with Grand Egyptian Museum included."], "inc": "Same package structure.", "exc": ""}, "3 days 2 nights classic cairo sightseeing": {"dur": "3 days / 2 nights", "overview": "An extended classic itinerary adding Dahshur’s unique Bent and Red Pyramids to the essential Cairo and Giza sights.", "itinerary": ["Arrival Day", "Airport meet & assist and hotel transfer.", "Day 1", "Giza Pyramids & Sphinx.", "Egyptian Museum of Antiquities.", "Day 2", "Saqqara Step Pyramid.", "Memphis.", "Dahshur (Bent Pyramid and Red Pyramid).", "Departure Day"], "inc": "2 nights hotel accommodation with breakfast · Airport meet & assist + transfers · Guided day tours · Private air-conditioned deluxe vehicle · Expert Egyptologist private guide · Bottled water.", "exc": "Extras not mentioned · Drinks · Tipping."}, "3 days 2 nights cairo and giza sightseeing with lunch and dinner cruise": {"dur": "3 days / 2 nights", "overview": "A richer version of the classic Cairo stay that includes local lunches and a Nile dinner cruise.", "itinerary": ["Arrival: Airport meet & assist and hotel transfer.", "Day 1: Giza Pyramids & Sphinx + National Museum of Egyptian Civilization (Royal Mummies) + local lunch + Luxury Dinner Cruise (sailing, dinner, belly dance & dervish show).", "Day 2: Old Coptic Cairo + Citadel & Mohamed Ali Mosque + local lunch.", "Departure: Airport transfer."], "inc": "2 nights hotel with breakfast · Airport meet & assist + transfers · 2 full guided days · Local lunches · Dinner cruise (dinner + show + sailing) · Private vehicle & expert guide · Bottled water.", "exc": "Tips · Drinks · Extras."}, "3 days 2 nights cairo alexandria cities": {"dur": "3 days / 2 nights", "overview": "", "itinerary": ["Cairo/Giza highlights + full day in Alexandria."], "inc": "2 nights hotel · Multi-city private guiding & transfers.", "exc": ""}, "3 days 2 nights cairo sightseeing for history lovers": {"dur": "3 days / 2 nights", "overview": "", "itinerary": ["Expanded history-focused Cairo/Giza program."], "inc": "Standard 3-day package structure.", "exc": ""}, "3 days 2 nights cairo and grand egyptian museum": {"dur": "3 days / 2 nights", "overview": "", "itinerary": ["Cairo/Giza with strong emphasis on the Grand Egyptian Museum."], "inc": "Standard package services.", "exc": ""}, "4 days 3 nights cairo giza classic package": {"dur": "4 days / 3 nights", "overview": "", "itinerary": ["Extended classic Cairo and Giza sightseeing."], "inc": "3 nights hotel with breakfast · Full private services & transfers.", "exc": ""}, "4 days 3 nights cairo and alexandria": {"dur": "4 days / 3 nights", "overview": "", "itinerary": ["Cairo/Giza + Alexandria over four days."], "inc": "3 nights hotel · Multi-city private program.", "exc": ""}, "4 days 3 nights cairo and giza sightseeing with lunch and dinner cruise": {"dur": "4 days / 3 nights", "overview": "", "itinerary": ["Classic program plus lunch and Nile dinner cruise."], "inc": "3 nights hotel · Meals/cruise + full private services.", "exc": ""}, "4 days 3 nights cairo and grand egyptian museum": {"dur": "4 days / 3 nights", "overview": "", "itinerary": ["Extended stay focused on Cairo/Giza and the Grand Egyptian Museum."], "inc": "Standard 4-day package structure.", "exc": ""}, "4 days 3 nights cairo sightseeing for history lovers": {"dur": "4 days / 3 nights", "overview": "", "itinerary": ["History-focused extended Cairo/Giza program."], "inc": "3 nights hotel · Full private services.", "exc": ""}};
+const PACKS={"all-in-one-giza-pyramids-from-inside-sphinx-camel-ride-lunch": ["Internet_20261007_052424_12.webp", "Internet_20261007_052424_13.webp", "Internet_20261007_052424_14.webp", "Internet_20261007_052424_15.webp", "Internet_20261007_052424_16.webp", "Internet_20261007_052424_17.webp", "Internet_20261007_052424_18.webp", "Internet_20261007_052424_19.webp"], "giza-pyramids-and-sphinx-includes-local-lunch-and-felucca-ride": ["Internet_20261007_052551_11.webp", "Internet_20261007_052551_12.webp", "Internet_20261007_052551_13.jpeg", "Internet_20261007_052551_2.webp", "Internet_20261007_052551_3.webp", "Internet_20261007_052551_4.webp", "Internet_20261007_052551_5.webp", "Internet_20261007_052551_6.webp"], "giza-pyramids-sphinx-and-egyptian-museum-include-local-lunch-and-khan-el-Khalili-market": ["Internet_20261007_052731_2.webp", "Internet_20261007_052731_3.webp", "Internet_20261007_052731_4.webp", "Internet_20261007_052731_5.webp", "Internet_20261007_052731_6.webp", "Internet_20261007_052731_7.webp"], "giza-pyramids-sphinx-and-grand-egyptian-museum-include-local-lunch": ["Internet_20261007_052644_2.webp", "Internet_20261007_052644_3.webp", "Internet_20261007_052644_4.webp", "Internet_20261007_052644_5.webp", "Internet_20261007_052644_6.webp", "Internet_20261007_052644_7.webp"], "giza-pyramids-sphinx-and-saqqara-step-pyramid-with-local-lunch": ["Internet_20261007_052845_2.webp", "Internet_20261007_052845_3.webp", "Internet_20261007_052845_4.webp", "Internet_20261007_052845_5.webp", "Internet_20261007_052845_6.webp"], "giza-pyramids-sphinx-saqqara-step-pyramids-memphis-city-and-dahshor-pyramids-with-local-lunch": ["Internet_20261007_052957_2.webp", "Internet_20261007_052957_3.webp", "Internet_20261007_052957_4.webp", "Internet_20261007_052957_5.webp"], "grand-egyptian-museum-old-coptic-cairo-churches-and-khan-elkhalili-market": ["Internet_20261007_053136_4.webp", "Internet_20261007_053136_5.webp", "Internet_20261007_053136_6.webp", "Internet_20261007_053136_7.webp", "Internet_20261007_053136_8.jpeg", "Internet_20261007_053257_10.webp", "Internet_20261007_053257_12.webp", "Internet_20261007_053257_2.webp"], "grand-eyptian-museum-and-museum-of-egyptian-civilization-with-royal-mummies": ["Internet_20261007_053050_5.webp", "Internet_20261007_053050_6.webp"], "luxury-dinner-cruise": ["Internet_20261007_053618_2.webp", "Internet_20261007_053618_3.webp", "Internet_20261007_053618_4.webp"], "overday-safari-daytour-to-fayoum-oasis": ["Internet_20261007_053650_10.webp", "Internet_20261007_053650_2.webp", "Internet_20261007_053650_3.webp", "Internet_20261007_053650_4.webp", "Internet_20261007_053650_5.webp", "Internet_20261007_053650_6.webp", "Internet_20261007_053650_7.webp", "Internet_20261007_053650_8.webp"], "overday-tour-to-alexandria-from-cairo": ["Internet_20261007_053403_11.webp", "Internet_20261007_053403_12.webp", "Internet_20261007_053403_13.webp", "Internet_20261007_053403_14.webp", "Internet_20261007_053403_15.webp", "Internet_20261007_053403_16.webp", "Internet_20261007_053403_17.webp", "Internet_20261007_053403_18.webp"], "overday-tour-to-luxor-city-by-flight": ["Internet_20261007_053736_2.webp", "Internet_20261007_053736_3.webp", "Internet_20261007_053736_4.webp", "Internet_20261007_053736_5.webp", "Internet_20261007_053736_6.webp", "Internet_20261007_053736_7.webp", "Internet_20261007_053736_8.webp", "Internet_20261007_053751_10.webp"]};
+const PACKMAP=[[/felucca/i,"giza-pyramids-and-sphinx-includes-local-lunch-and-felucca-ride"],[/old coptic/i,"grand-egyptian-museum-old-coptic-cairo-churches-and-khan-elkhalili-market"],[/civilization|royal mumm/i,"grand-eyptian-museum-and-museum-of-egyptian-civilization-with-royal-mummies"],[/egyptian museum.*khan|khan.*egyptian museum/i,"giza-pyramids-sphinx-and-egyptian-museum-include-local-lunch-and-khan-el-Khalili-market"],[/giza.*grand egyptian museum|grand egyptian museum.*giza|pyramids.*gem/i,"giza-pyramids-sphinx-and-grand-egyptian-museum-include-local-lunch"],[/saqqara.*(memphis|dahshor)|memphis.*dahshor/i,"giza-pyramids-sphinx-saqqara-step-pyramids-memphis-city-and-dahshor-pyramids-with-local-lunch"],[/saqqara/i,"giza-pyramids-sphinx-and-saqqara-step-pyramid-with-local-lunch"],[/dinner cruise/i,"luxury-dinner-cruise"],[/fayoum/i,"overday-safari-daytour-to-fayoum-oasis"],[/alexandria/i,"overday-tour-to-alexandria-from-cairo"],[/luxor/i,"overday-tour-to-luxor-city-by-flight"],[/all.in.one|camel|atv/i,"all-in-one-giza-pyramids-from-inside-sphinx-camel-ride-lunch"],[/grand egyptian museum/i,"giza-pyramids-sphinx-and-grand-egyptian-museum-include-local-lunch"]];
+const CAR=["9_pyramids_lounge.jpg", "Felucca_nile_01.jpg", "Felucca_nile_02.jpg", "Luxor_01.jpg", "Luxor_02.jpg", "Luxor_03.jpg", "Sandboarding_dunes.jpg", "bent_pyramid.jpg", "camel_ride_sunset.jpg", "camel_tour_01.jpg", "camel_tour_02.jpg", "citadel_of_qaitbay_01.jpg", "citadel_of_qaitbay_02.jpg", "giza_pyramids_plateau_01.jpg", "giza_pyramids_plateau_02.jpg", "giza_pyramids_plateau_03.jpg", "giza_pyramids_plateau_04.jpg", "giza_pyramids_plateau_05.jpg", "giza_pyramids_plateau_06.jpg", "giza_pyramids_plateau_07.jpg", "giza_pyramids_plateau_08.jpg", "giza_pyramids_plateau_09.jpg", "giza_pyramids_plateau_10.jpg", "great_mosque_of_muhammed_ali_citadel_saladin.jpg", "khan_khalili.jpg", "memphis_colossus _of_ramesses_II.jpg", "museum_of_cairo.jpg", "nile.jpg", "sphinx.jpg", "step_pyramid_doser_01.jpg", "step_pyramid_doser_02.jpg", "tea.jpg", "valley_temple_of_khafre.jpg"];
+const LAND=["9_pyramids_lounge.jpg", "Felucca_nile_02.jpg", "Luxor_02.jpg", "Sandboarding_dunes.jpg", "bent_pyramid.jpg", "camel_tour_02.jpg", "citadel_of_qaitbay_01.jpg", "giza_pyramids_plateau_04.jpg", "giza_pyramids_plateau_10.jpg", "memphis_colossus _of_ramesses_II.jpg", "sphinx.jpg", "step_pyramid_doser_01.jpg", "valley_temple_of_khafre.jpg"];
+
+</script>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const IMG='01_photos/02_tourism/';
+const FB={van:['https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=70'],giza:['https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=1200&q=70','https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=70'],cairo:['https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=70']};
+const SVG='data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/></linearGradient></defs><rect width="400" height="300" fill="url(#g)"/><path d="M60 230 L170 90 L250 190 L300 140 L350 230Z" fill="#D4AF37" opacity=".35"/></svg>');
+window.imgFail=function(el){const k=el.dataset.fb||'giza',i=+(el.dataset.fi||0),l=FB[k]||FB.giza;el.dataset.fi=i+1;el.src=i<l.length?l[i]:(el.onerror=null,SVG)};
+const im=(src,alt,cls,fb)=>`<img src="${encodeURI(src)}" alt="${esc(alt)}" data-fb="${fb||'giza'}" loading="lazy" onerror="imgFail(this)" class="${cls||''}">`;
+const setImg=(el,src,fb)=>{el.dataset.fb=fb;el.onerror=()=>imgFail(el);el.src=encodeURI(src)};
+const money=n=>'$'+Number(n).toLocaleString('en-US');
+
+/* ---- config from your brief ---- */
+const SVC=[
+ {id:'mg',name:'Terminal Meet & Greet VIP Service',short:'Meet & Greet',price:30,icon:'fa-handshake-angle',pts:['Inside-terminal assistance','Personal greeting at baggage claim','Priority handling, fast-track baggage and customs escort']},
+ {id:'tr',name:'Private Airport Transfer to Hotel (One Way)',short:'Transfer',price:45,icon:'fa-van-shuttle',pts:['Direct to your hotel in a spacious Hyundai H1 Van','Generous baggage space for groups or families','Comfortable, air-conditioned ride']},
+ {id:'combo',name:'Combo: Meet & Greet + One-Way Transfer',short:'Combo',price:75,icon:'fa-crown',pts:['Terminal Meet & Greet VIP Service','Private one-way hotel transfer in a Hyundai H1 Van','Best value: one booking, one seamless arrival'],badge:'Best value'}
+];
+const TABS=[['all','All Services'],['airport','Airport Transfers'],['day','Popular Day Tours'],['museum','Museum Focus'],['alex','Alexandria & Safaris'],['packs','Multi-Day Packages']];
+const HERO=['giza_pyramids_plateau_01.jpg','sphinx.jpg','camel_ride_sunset.jpg','Luxor_01.jpg','nile.jpg','step_pyramid_doser_01.jpg','khan_khalili.jpg','giza_pyramids_plateau_05.jpg'];
+const FORM='https://formspree.io/f/xyezdlne';
+
+/* ---- data: read the three markdown files, fall back to the embedded snapshot ---- */
+const FILES={mg:'meet-greet-transfer-serv.md',sa:'special-access-ad-and-tours-guide.md',cat:'tours-catalog-data.md'};
+const get=f=>fetch(f,{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.text()}).catch(()=>null);
+let D={},live=0;
+async function load(){
+  const [a,b,c]=await Promise.all([get(FILES.mg),get(FILES.sa),get(FILES.cat)]);
+  const pa=a&&parseMeetGreet(a),pb=b&&parseSpecial(b),pc=c&&parseCatalog(c);
+  D.mg=pa&&pa.steps.length?(live++,pa):SNAP.mg;
+  D.sa=pb&&pb.categories.length?(live++,pb):SNAP.sa;
+  D.cat=pc&&pc.length?(live++,pc):SNAP.cat;
+  $('src').textContent=live===3?'':'';
+}
+
+/* ---- pictures ---- */
+function packFolder(n){for(const [re,f] of PACKMAP)if(re.test(n))return f;return null}
+function themed(n,i){
+  const T=[[/luxor/i,['Luxor_01.jpg','Luxor_02.jpg','Luxor_03.jpg']],[/alexandria/i,['citadel_of_qaitbay_01.jpg','citadel_of_qaitbay_02.jpg']],[/fayoum|safari/i,['Sandboarding_dunes.jpg','camel_ride_sunset.jpg']],[/cruise|nile|felucca/i,['nile.jpg','Felucca_nile_01.jpg','Felucca_nile_02.jpg']],[/sound|light/i,['giza_pyramids_plateau_07.jpg','sphinx.jpg']],[/museum/i,['museum_of_cairo.jpg','khan_khalili.jpg']],[/saqqara|memphis|dahshor/i,['step_pyramid_doser_01.jpg','bent_pyramid.jpg']],[/pyramid|giza/i,['giza_pyramids_plateau_02.jpg','giza_pyramids_plateau_03.jpg','giza_pyramids_plateau_06.jpg','camel_tour_01.jpg']]];
+  for(const [re,l] of T)if(re.test(n))return IMG+'02_tourism_carousel/'+l[i%l.length];
+  return IMG+'02_tourism_carousel/'+CAR[(i*7)%CAR.length];
+}
+function tourImgs(t,i){
+  const f=packFolder(t.name),files=f&&PACKS[f];
+  if(files&&files.length)return files.slice(0,8).map(x=>IMG+'04_tourism_packs/'+f+'/'+x);
+  return [themed(t.name,i),themed(t.name,i+1)];
+}
+
+/* ---- render: airport ---- */
+let svc='combo';
+function renderAirport(){
+  setImg($('airportImg'),IMG+'meet-greet-transfer.jpg','van');
+  $('mgIntro').textContent=D.mg.intro;$('mgGreeter').textContent=D.mg.greeter;
+  $('mgSteps').innerHTML=D.mg.steps.map(s=>`<li class="flex gap-2"><i class="fa-solid fa-circle-check text-gold mt-1 text-xs"></i><span>${esc(s)}</span></li>`).join('');
+  $('segs').innerHTML=SVC.map(s=>`<button data-seg="${s.id}" class="seg flex-1 rounded-full px-2 py-2.5 transition ${s.id===svc?'on':''}">${s.short} ${money(s.price)}</button>`).join('');
+  const s=SVC.find(x=>x.id===svc);
+  $('airportCta').href='contact.html?topic='+(s.id==='mg'?'meet-greet':'airport-transfer')+'&item='+encodeURIComponent(s.name)+'&price='+encodeURIComponent('$'+s.price+' USD');
+  $('svcCard').innerHTML=`<div class="flex items-start gap-4"><span class="w-12 h-12 shrink-0 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl"><i class="fa-solid ${s.icon}"></i></span><div class="flex-1"><div class="flex items-center gap-2 flex-wrap"><h3 class="font-semibold text-white">${s.name}</h3>${s.badge?`<span class="text-[10px] uppercase tracking-wider font-bold bg-gold text-black rounded-full px-2 py-0.5">${s.badge}</span>`:''}</div><ul class="mt-2 space-y-1 text-sm text-slate-300">${s.pts.map(p=>`<li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1 text-xs"></i>${p}</li>`).join('')}</ul></div><div class="text-right"><div class="text-2xl font-bold text-gold">${money(s.price)}</div><div class="text-[11px] text-slate-500">USD${s.id==='tr'?' / one way':''}</div></div></div>`;
+}
+$('segs').addEventListener('click',e=>{const b=e.target.closest('[data-seg]');if(b){svc=b.dataset.seg;renderAirport()}});
+
+/* ---- render: VIP ---- */
+function renderVip(){
+  const s=D.sa;setImg($('vipImg'),IMG+'special-access.jpg','giza');
+  $('vipHead').textContent=s.headline;$('vipSub').textContent=s.subtitle;
+  $('vipBadges').innerHTML=(s.badges||[]).map(b=>`<span class="text-[11px] uppercase tracking-wider font-semibold border border-gold/60 text-gold rounded-full px-3 py-1 bg-black/40">${esc(b)}</span>`).join('');
+  $('vipPermit').innerHTML=`Private Ministry permits from <span class="text-gold">~${esc(s.permit)}</span> per permit <span class="text-slate-400 text-sm font-normal">(excluding guide and transport)</span>`;
+  $('vipWhat').textContent=(s.what||'')+(s.range?` Typical private packages: ${s.range}.`:'');
+  $('vipWindow').textContent=(s.window||'').replace(/^./,c=>c.toUpperCase());
+  const VI=[[/khufu|great pyramid/i,IMG+'special-access.jpg'],[/sphinx/i,IMG+'02_tourism_carousel/sphinx.jpg'],[/giza|osiris/i,IMG+'02_tourism_carousel/giza_pyramids_plateau_05.jpg'],[/djoser|step pyramid/i,IMG+'02_tourism_carousel/step_pyramid_doser_01.jpg'],[/serapeum|saqqara/i,IMG+'02_tourism_carousel/step_pyramid_doser_02.jpg'],[/valley of the kings/i,IMG+'02_tourism_carousel/Luxor_01.jpg'],[/karnak|luxor/i,IMG+'02_tourism_carousel/Luxor_02.jpg'],[/osirion|abydos/i,IMG+'02_tourism_carousel/Luxor_03.jpg'],[/museum|philae/i,IMG+'02_tourism_carousel/museum_of_cairo.jpg']];
+  $('vipCats').innerHTML=s.categories.map(c=>`<div><h3 class="font-serif text-xl sm:text-2xl font-bold text-white mb-4 flex items-center gap-3"><span class="h-px w-8 bg-gold"></span>${esc(c.title)}</h3><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">${c.items.map(it=>{const src=(VI.find(v=>v[0].test(it.name))||[0,IMG+'special-access.jpg'])[1];return `<article class="card rounded-2xl overflow-hidden bg-black/60 border border-gold/20 flex flex-col"><div class="h-40 bg-slate-900">${im(src,it.name,'w-full h-full object-cover opacity-90','giza')}</div><div class="p-5 flex flex-col flex-1"><h4 class="font-semibold text-white leading-snug mb-2">${esc(it.name)}</h4><p class="text-gold text-xs font-semibold mb-2">${esc(it.rate)}</p><p class="text-slate-400 text-sm leading-relaxed flex-1">${esc(it.access)}</p><a href="contact.html?topic=tours&item=${encodeURIComponent(it.name)}&price=${encodeURIComponent(it.rate)}" class="text-center mt-4 text-sm font-semibold py-2.5 rounded-full border border-gold/60 text-gold hover:bg-gold hover:text-black transition">Request this access</a></div></article>`}).join('')}</div></div>`).join('');
+  $('vipNotes').innerHTML=(s.notes||[]).map(n=>`<div class="rounded-2xl bg-black/50 border border-slate-800 p-5"><div class="text-gold text-xs uppercase tracking-widest font-semibold mb-1">${esc(n.label)}</div><p class="text-slate-300 text-sm leading-relaxed">${esc(n.text)}</p></div>`).join('');
+}
+
+/* ---- render: catalog ---- */
+let tab='all',ALL=[];
+function buildAll(){
+  const air=SVC.map(s=>({kind:'air',id:s.id,name:s.name,price:s.price,cats:['airport'],duration:s.id==='tr'?'One way':'On arrival',highlights:s.pts.join('; '),inclusions:'',svc:s}));
+  const tours=D.cat.map((t,i)=>Object.assign({kind:'tour',i,d:DET[mdKey(t.name)]||null},t));
+  ALL=[...air,...tours];
+}
+function card(t,idx){
+  if(t.kind==='air'){return `<article class="card fade rounded-2xl overflow-hidden bg-[#0f172a] border border-gold/30 flex flex-col"><div class="relative h-44 bg-slate-900">${im(IMG+'meet-greet-transfer.jpg',t.name,'w-full h-full object-cover','van')}<span class="absolute top-3 right-3 bg-gold text-black text-sm font-bold rounded-full px-3 py-1">${money(t.price)}</span></div><div class="p-5 flex flex-col flex-1"><span class="text-gold text-[11px] uppercase tracking-widest font-semibold mb-1">Airport service</span><h3 class="font-serif text-lg font-bold text-white leading-snug mb-2">${esc(t.name)}</h3><ul class="text-sm text-slate-400 space-y-1 flex-1">${t.svc.pts.map(p=>`<li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1 text-[10px]"></i>${p}</li>`).join('')}</ul><div class="mt-4 flex gap-2"><a href="contact.html?topic=${t.id==='mg'?'meet-greet':'airport-transfer'}&item=${encodeURIComponent(t.name)}&price=${encodeURIComponent('$'+t.price+' USD')}" class="text-center flex-1 py-2.5 rounded-full bg-gold text-black text-sm font-semibold hover:bg-gold-light transition">Book Direct</a></div></div></article>`}
+  const imgs=tourImgs(t,t.i),hl=(t.d&&t.d.itinerary&&t.d.itinerary.length&&!t.pack?[]:[]);
+  const dd=t.d||{},dur=t.duration||dd.dur||'';
+  const pts=((t.highlights||'').split(/;\s*/).filter(Boolean).length?(t.highlights||'').split(/;\s*/).filter(Boolean):(dd.itinerary||[]).map(x=>x.replace(/^(Private|Enjoy|Return)\b.*$/,'$&'))).slice(0,4);
+  return `<article class="card fade rounded-2xl overflow-hidden bg-[#0f172a] border border-slate-800 flex flex-col" style="animation-delay:${Math.min(idx,12)*30}ms"><div class="relative h-44 bg-slate-900">${im(imgs[0],t.name,'w-full h-full object-cover',t.pack?'cairo':'giza')}<span class="absolute top-3 right-3 bg-gold text-black text-sm font-bold rounded-full px-3 py-1">From ${money(t.price)}</span>${dur?`<span class="absolute bottom-3 left-3 bg-black/70 text-slate-100 text-xs rounded-full px-3 py-1"><i class="fa-regular fa-clock mr-1 text-gold"></i>${esc(dur)}</span>`:''}</div><div class="p-5 flex flex-col flex-1"><h3 class="font-serif text-lg font-bold text-white leading-snug mb-3">${esc(t.name)}</h3><ul class="text-sm text-slate-400 space-y-1.5 flex-1">${pts.map(p=>`<li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1 text-[10px]"></i><span>${esc(p)}</span></li>`).join('')}</ul><div class="mt-4 grid grid-cols-2 gap-2"><button data-detail="${t.i}" class="py-2.5 rounded-full border border-gold/60 text-gold text-sm font-semibold hover:bg-gold hover:text-black transition">View Details</button><a href="contact.html?topic=tours&item=${encodeURIComponent(t.name)}&price=${encodeURIComponent('From '+money(t.price))}" class="text-center py-2.5 rounded-full bg-gold text-black text-sm font-semibold hover:bg-gold-light transition">Book Direct</a></div></div></article>`;
+}
+function renderCatalog(){
+  $('tabs').innerHTML=TABS.map(([k,l])=>`<button data-tab="${k}" class="tab shrink-0 px-5 py-2.5 rounded-full border border-slate-700 text-sm font-semibold text-slate-300 hover:border-gold/60 transition whitespace-nowrap ${k===tab?'on':''}">${l}</button>`).join('');
+  const list=ALL.filter(t=>tab==='all'||t.cats.includes(tab));
+  $('count').textContent=list.length+' service'+(list.length===1?'':'s');
+  $('grid').innerHTML=list.map(card).join('');
+}
+$('tabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(b){tab=b.dataset.tab;renderCatalog()}});
+
+/* ---- details modal ---- */
+function detail(i){
+  const t=D.cat[i],d=DET[mdKey(t.name)]||{},imgs=tourImgs(t,i);
+  const it=(d.itinerary&&d.itinerary.length?d.itinerary:(t.highlights||'').split(/;\s*/)).filter(Boolean);
+  $('detailBody').innerHTML=`<div class="relative h-56 sm:h-72 bg-slate-900">${im(imgs[0],t.name,'w-full h-full object-cover','giza')}<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent"></div><button data-close class="absolute top-3 right-3 w-10 h-10 rounded-full bg-black/60 border border-slate-600 text-white" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="p-6 -mt-10 relative"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="bg-gold text-black text-sm font-bold rounded-full px-3 py-1">From ${money(t.price)}</span>${(t.duration||d.dur)?`<span class="bg-black/50 border border-slate-700 text-xs rounded-full px-3 py-1"><i class="fa-regular fa-clock text-gold mr-1"></i>${esc(t.duration||d.dur)}</span>`:''}<span class="bg-black/50 border border-slate-700 text-xs rounded-full px-3 py-1">Private</span></div>
+  <h3 class="font-serif text-2xl font-bold text-white mb-3">${esc(t.name)}</h3>
+  ${d.overview?`<p class="text-slate-300 text-sm leading-relaxed mb-4">${esc(d.overview)}</p>`:''}
+  ${imgs.length>1?`<div class="flex gap-2 overflow-x-auto pb-2 mb-4">${imgs.slice(0,8).map(s=>im(s,t.name,'h-24 w-36 object-cover rounded-lg shrink-0 cursor-zoom-in','giza').replace('<img','<img data-zoom="1"')).join('')}</div>`:''}
+  <h4 class="text-gold text-xs uppercase tracking-widest font-semibold mb-2">Itinerary &amp; highlights</h4><ul class="space-y-1.5 text-sm text-slate-300 mb-4">${it.slice(0,12).map(x=>`<li class="flex gap-2"><i class="fa-solid fa-location-dot text-gold mt-1 text-[10px]"></i><span>${esc(x)}</span></li>`).join('')}</ul>
+  <div class="grid sm:grid-cols-2 gap-3 mb-5"><div class="rounded-xl bg-black/30 border border-slate-800 p-4"><h4 class="text-gold text-xs uppercase tracking-widest font-semibold mb-1">Included</h4><p class="text-sm text-slate-300">${esc(d.inc||t.inclusions||'Hotel pickup and return, private vehicle and guide.')}</p></div>${d.exc?`<div class="rounded-xl bg-black/30 border border-slate-800 p-4"><h4 class="text-gold text-xs uppercase tracking-widest font-semibold mb-1">Not included</h4><p class="text-sm text-slate-300">${esc(d.exc)}</p></div>`:''}</div>
+  <a href="contact.html?topic=tours&item=${encodeURIComponent(t.name)}&price=${encodeURIComponent('From '+money(t.price))}" class="block text-center w-full py-3.5 rounded-full bg-gold text-black font-semibold hover:bg-gold-light transition">Book Direct</a></div>`;
+  openM('detail');
+}
+
+/* ---- modals & forms ---- */
+function openM(id){const m=$('m-'+id)||$(id);m.classList.add('open');document.body.style.overflow='hidden'}
+function closeAll(top){const open=[...document.querySelectorAll('.modal.open')];const m=top?open[open.length-1]:null;(m?[m]:open).forEach(x=>x.classList.remove('open'));if(!document.querySelector('.modal.open'))document.body.style.overflow=''}
+document.addEventListener('click',e=>{
+  const t=e.target;
+  let b;
+  if(b=t.closest('[data-detail]')){detail(+b.dataset.detail);return}
+  if(t.closest('[data-close]')){closeAll(true);return}
+  if(t.dataset&&t.dataset.zoom){$('lbImg').src=t.src;openM('lb');return}
+  if(t.classList&&t.classList.contains('modal')){closeAll(true)}
+});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeAll(true)});
+
+/* ---- hero, strip, gallery ---- */
+function hero(){
+  $('hero').innerHTML=HERO.map((f,i)=>`<img src="${IMG}02_tourism_carousel/${f}" alt="" data-fb="giza" onerror="imgFail(this)" class="slide absolute inset-0 w-full h-full object-cover ${i?'':'on'}">`).join('');
+  $('heroDots').innerHTML=HERO.map((_,i)=>`<span class="h-1.5 rounded-full bg-white/40 transition-all ${i?'w-1.5':'w-6 !bg-gold'}"></span>`).join('');
+  let n=0;const s=[...document.querySelectorAll('#hero .slide')],d=[...document.querySelectorAll('#heroDots span')];
+  setInterval(()=>{s[n].classList.remove('on');d[n].className='h-1.5 w-1.5 rounded-full bg-white/40 transition-all';n=(n+1)%s.length;s[n].classList.add('on');d[n].className='h-1.5 w-6 rounded-full !bg-gold transition-all'},5000);
+}
+function strip(){$('strip').innerHTML=LAND.map(f=>`<div class="shrink-0 w-56 h-36 rounded-2xl overflow-hidden border border-slate-800 hover:border-gold/60 transition">${im(IMG+'03_tourism_landing/'+f,'Egypt highlight','w-full h-full object-cover hover:scale-110 transition duration-700','giza')}</div>`).join('')}
+function gallery(){$('gal').innerHTML=CAR.map(f=>`<div class="rounded-xl overflow-hidden border border-slate-800">${im(IMG+'02_tourism_carousel/'+f,'Egypt','w-full block cursor-zoom-in hover:opacity-90 transition','giza').replace('<img','<img data-zoom="1"')}</div>`).join('')}
+
+load().then(()=>{renderAirport();renderVip();buildAll();renderCatalog();hero();strip();gallery()});
+})();
+</script>
+</body>
+</html>
