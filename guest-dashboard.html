@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Guest Dashboard | Maadi Nile View</title>
+<link rel="icon" type="image/png" href="logo_transparent.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:{DEFAULT:'#d4af37',light:'#e6ca65'}},fontFamily:{serif:['"Playfair Display"','serif'],sans:['Inter','sans-serif']}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+html{scroll-padding-top:7.5rem}
+body{background:#0b1220;background-image:radial-gradient(1200px 500px at 50% -10%,rgba(212,175,55,.18),transparent 60%),radial-gradient(800px 400px at 100% 30%,rgba(56,189,248,.08),transparent 60%)}
+.gold-text{background:linear-gradient(135deg,#f8fafc,#d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.card{transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.6);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.chip{transition:all .2s}.chip.on{background:#d4af37;color:#111;border-color:#d4af37}
+.fade{animation:fade .45s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.heart.on i{color:#f43f5e}
+.nav a.act{background:#d4af37;color:#111;border-color:#d4af37}
+.done span{text-decoration:line-through;opacity:.5}
+</style>
+</head>
+<body class="text-slate-100 font-sans antialiased selection:bg-gold selection:text-black">
+
+<header class="sticky top-0 z-40 bg-[#0b1220]/95 backdrop-blur-md border-b border-gold/20">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center gap-3">
+    <img src="logo_transparent.png" alt="Sam's Spots" class="h-10 w-auto rounded-lg bg-white/90 px-1.5 py-0.5">
+    <span class="font-serif text-lg sm:text-xl font-bold gold-text whitespace-nowrap">Guest Dashboard</span>
+    <span class="ml-auto text-xs text-slate-400 hidden sm:block"><i class="fa-regular fa-clock mr-1"></i><span id="clock"></span> Cairo</span>
+  </div>
+  <nav id="nav" class="nav max-w-6xl mx-auto px-4 pb-3 flex gap-2 overflow-x-auto text-xs font-semibold whitespace-nowrap">
+    <a href="#checkin" data-l="checkin" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Check In <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <a href="#checkout" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Check Out</a>
+    <a href="#garbage" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Garbage</a>
+    <a href="#howto" data-l="howto" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">How-To Videos <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <a href="#airport" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Airport Transfer</a>
+    <a href="#experiences" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Experiences</a>
+    <a href="#local" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Shops &amp; Restaurants</a>
+    <a href="#address" data-l="address" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Address &amp; GPS <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <a href="#wifi" data-l="wifi" class="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:border-gold/60">Wi-Fi <i class="fa-solid fa-lock ml-1 text-[10px]"></i></a>
+    <button type="button" data-open-rules class="px-4 py-2 rounded-full border border-gold/50 text-gold hover:bg-gold hover:text-black transition"><i class="fa-solid fa-scroll mr-1.5 text-[10px]"></i>House Rules &amp; Terms</button>
+  </nav>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 pb-24">
+  <section class="text-center pt-10 pb-6">
+    <span class="inline-block py-1 px-4 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs uppercase tracking-widest font-semibold mb-4">Welcome to Maadi</span>
+    <h1 class="font-serif text-4xl sm:text-5xl font-bold leading-tight mb-3">Everything for your <span class="gold-text italic">stay</span>, in one place</h1>
+    <p class="text-slate-300 max-w-2xl mx-auto font-light text-sm sm:text-base">Sections marked <i class="fa-solid fa-lock text-gold text-xs"></i> are private. Enter your guest password once to unlock them all.</p>
+    <button type="button" data-open-rules class="card mt-6 inline-flex items-center gap-4 text-left rounded-2xl bg-[#0f172a] border border-gold/30 px-5 py-4 max-w-md w-full">
+      <span class="w-12 h-12 shrink-0 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl"><i class="fa-solid fa-scroll"></i></span>
+      <span class="flex-1"><span class="block font-semibold text-white">House Rules &amp; Terms</span><span class="block text-xs text-slate-400">Quick guide to quiet hours, trash, security and checkout</span></span>
+      <i class="fa-solid fa-chevron-right text-gold text-sm"></i>
+    </button>
+  </section>
+
+  <!-- CHECK IN -->
+  <section id="checkin" class="pt-8"><h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-key text-gold mr-2 text-xl"></i>Check In</h2><p class="text-slate-400 text-sm mb-5">Lock, elevator key, safe and safety essentials.</p><div data-lock="checkin"></div></section>
+
+  <!-- CHECK OUT -->
+  <section id="checkout" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-suitcase-rolling text-gold mr-2 text-xl"></i>Check Out</h2>
+    <p class="text-slate-400 text-sm mb-5">Check-out is by <b class="text-white">11:00 AM</b>. Need a different time? Just ask. We can often accommodate unless another guest is checking in.</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-5">
+        <h3 class="font-semibold text-white mb-3">Your checklist <span class="text-xs text-slate-500 font-normal">(tap to tick)</span></h3>
+        <ul id="cklist" class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Tell your host what time you are checking out</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Reset the safe to its default code (see Check In)</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Switch off and unplug the heaters</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Take your garbage to the stairway bin</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Check for your belongings, passport and chargers</span></li>
+          <li class="flex items-start gap-3 cursor-pointer"><i class="fa-regular fa-square mt-0.5 text-gold"></i><span>Return the elevator key (see notes)</span></li>
+        </ul>
+      </div>
+      <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-5 text-sm text-slate-300 space-y-3 leading-relaxed">
+        <p><b class="text-white">Pre-checkout inspection:</b> someone will pass by to help with check-out and do a quick inspection.</p>
+        <p><b class="text-white">Early or late flight?</b> You may need to self check-out. Please tell us first and leave the elevator key with someone at the front desk.</p>
+        <p><b class="text-white">Airport drop-off:</b> need a ride? Let us know and we will help arrange it.</p>
+        <p><b class="text-white">Feedback:</b> we aim for 5 out of 5. Tell us about any issue, and how your tour guide did if we arranged one. It helps future guests.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARBAGE -->
+  <section id="garbage" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-5"><i class="fa-solid fa-trash-can text-gold mr-2 text-xl"></i>Garbage Location</h2>
+    <div class="rounded-2xl bg-[#0f172a] border border-slate-800 p-6 flex gap-5 items-start">
+      <div class="w-14 h-14 shrink-0 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl"><i class="fa-solid fa-dumpster"></i></div>
+      <div class="text-sm text-slate-300 leading-relaxed"><p>Leave your garbage in the bin in the <b class="text-white">stairway</b>. Use the door <b class="text-white">in front of the middle elevator</b> to reach it.</p><p class="mt-2"><i class="fa-regular fa-clock text-gold mr-1"></i>Garbage is usually collected between <b class="text-white">2 AM and 6 AM</b>.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW TO -->
+  <section id="howto" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-circle-play text-gold mr-2 text-xl"></i>How-To Videos</h2>
+    <p class="text-slate-400 text-sm mb-5">Short videos for the appliances. Tap to watch.</p>
+    <div data-lock="howto"></div>
+  </section>
+
+<!-- ===== Airport Transfer & VIP Meet & Greet ===== -->
+<section id="airport" class="pt-12 scroll-mt-28">
+  <div>
+    <div class="rounded-3xl border border-amber-500/20 bg-slate-900 overflow-hidden shadow-2xl shadow-black/40">
+      <div class="grid lg:grid-cols-5">
+        <div class="lg:col-span-2 relative min-h-[260px] bg-gradient-to-br from-slate-800 to-slate-950">
+          <img src="01_photos/02_tourism/meet-greet-transfer.jpg" alt="VIP airport meet and greet with a private Hyundai H1 van" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+          <div class="absolute bottom-0 inset-x-0 p-5 flex flex-wrap gap-2">
+            <span class="text-[11px] uppercase tracking-wider font-semibold bg-amber-500 text-slate-950 rounded-full px-3 py-1"><i class="fa-solid fa-van-shuttle mr-1.5"></i>Hyundai H1 Van</span>
+            <span class="text-[11px] uppercase tracking-wider font-semibold bg-slate-950/70 border border-amber-500/30 text-amber-300 rounded-full px-3 py-1"><i class="fa-solid fa-snowflake mr-1.5"></i>Air-conditioned</span>
+            <span class="text-[11px] uppercase tracking-wider font-semibold bg-slate-950/70 border border-amber-500/30 text-amber-300 rounded-full px-3 py-1"><i class="fa-solid fa-suitcase-rolling mr-1.5"></i>Room for luggage</span>
+          </div>
+        </div>
+        <div class="lg:col-span-3 p-6 sm:p-8">
+          <span class="text-[#D4AF37] uppercase tracking-widest text-xs font-semibold">Arrive in style</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1 mb-2">Airport Transfer &amp; VIP Meet &amp; Greet</h2>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">Skip the queues and the guesswork. A personal greeter meets you inside the terminal and a private driver takes you straight to the door.</p>
+          <div id="svcPick" role="radiogroup" aria-label="Choose a service" class="grid sm:grid-cols-3 gap-3 mb-6">
+            <button type="button" role="radio" aria-checked="false" data-svc="mg" class="svc text-left rounded-2xl border border-slate-700 bg-slate-950/60 p-4 hover:border-amber-500/60 transition">
+              <i class="fa-solid fa-handshake-angle text-amber-500 text-xl mb-2"></i>
+              <div class="font-semibold text-white text-sm leading-snug">Airport VIP Meet &amp; Greet</div>
+              <div class="text-[#D4AF37] font-bold text-2xl mt-1">$30 <span class="text-[11px] text-slate-500 font-normal">USD</span></div>
+              <ul class="mt-2 space-y-1 text-xs text-slate-400">
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>Inside-terminal concierge</li>
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>Priority immigration &amp; customs escort</li>
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>Baggage assistance</li>
+              </ul>
+            </button>
+            <button type="button" role="radio" aria-checked="false" data-svc="tr" class="svc text-left rounded-2xl border border-slate-700 bg-slate-950/60 p-4 hover:border-amber-500/60 transition">
+              <i class="fa-solid fa-van-shuttle text-amber-500 text-xl mb-2"></i>
+              <div class="font-semibold text-white text-sm leading-snug">Private Airport Hotel Transfer</div>
+              <div class="text-[#D4AF37] font-bold text-2xl mt-1">$45 <span class="text-[11px] text-slate-500 font-normal">USD one way</span></div>
+              <ul class="mt-2 space-y-1 text-xs text-slate-400">
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>Direct, one-way to your hotel</li>
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>Spacious air-conditioned vehicle</li>
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>e.g. Hyundai H1 Van</li>
+              </ul>
+            </button>
+            <button type="button" role="radio" aria-checked="true" data-svc="combo" class="svc on text-left rounded-2xl border border-amber-500 bg-amber-500/10 p-4 relative transition">
+              <span class="absolute -top-2.5 right-3 text-[10px] uppercase tracking-wider font-bold bg-amber-500 text-slate-950 rounded-full px-2.5 py-0.5">Best value</span>
+              <i class="fa-solid fa-crown text-amber-500 text-xl mb-2"></i>
+              <div class="font-semibold text-white text-sm leading-snug">Combo Transfer Package</div>
+              <div class="text-[#D4AF37] font-bold text-2xl mt-1">$75 <span class="text-[11px] text-slate-500 font-normal">USD</span></div>
+              <ul class="mt-2 space-y-1 text-xs text-slate-400">
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>VIP Meet &amp; Greet</li>
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>Private hotel transfer</li>
+                <li><i class="fa-solid fa-check text-amber-500 mr-1.5"></i>One seamless arrival</li>
+              </ul>
+            </button>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+            <a id="airportCta" href="contact.html?topic=airport-transfer" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-amber-500 text-slate-950 font-bold tracking-wide hover:bg-amber-400 shadow-lg shadow-amber-500/20 transition">
+              <i class="fa-solid fa-paper-plane text-lg"></i><span>Request Booking: <b id="airportSel">Combo Package</b></span>
+            </a>
+            <a href="tours.html#airport" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-amber-500/50 text-amber-400 font-semibold hover:bg-amber-500 hover:text-slate-950 transition">All transfers &amp; tours <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+          <p class="text-xs text-slate-500 mt-3"><i class="fa-regular fa-comment-dots mr-1.5"></i>Opens our contact page with your choice filled in. Add your flight details there.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Private Tours & Guest Experiences ===== -->
+<section id="experiences" class="pt-14 scroll-mt-28">
+  <div>
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-[#D4AF37] uppercase tracking-widest text-xs font-semibold">Signature Cairo</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1 mb-2">Private Tours &amp; Guest Experiences</h2>
+      <p class="text-slate-400 text-sm">Private guide, air-conditioned transport and hotel pickup. Message us to book instantly.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="exp rounded-2xl overflow-hidden border border-amber-500/20 bg-slate-950 flex flex-col hover:border-amber-500/60 hover:-translate-y-1 transition-all duration-300" data-name="Pyramids &amp; Sphinx Private Access">
+        <div class="relative h-48 bg-gradient-to-br from-slate-800 to-slate-950">
+          <img src="01_photos/02_tourism/02_tourism_carousel/giza_pyramids_plateau_02.jpg" alt="Giza pyramids" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          <span class="absolute top-3 left-3 bg-slate-950/80 border border-amber-500/40 text-amber-300 text-xs font-semibold rounded-full px-3 py-1"><i class="fa-regular fa-clock mr-1.5"></i>4-5 hours</span>
+        </div>
+        <div class="p-5 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-white mb-3">Pyramids &amp; Sphinx Private Access</h3>
+          <ul class="space-y-2 text-sm text-slate-300 flex-1">
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Exclusive guided exploration of the Giza Plateau</li>
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Valley Temple of Khafre and the Great Sphinx</li>
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Interior access options</li>
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Private Egyptologist guide</li>
+          </ul>
+          <a class="mt-5 inline-flex items-center justify-center gap-2 py-3 rounded-full bg-amber-500 text-slate-950 text-sm font-bold hover:bg-amber-400 transition" href="contact.html?topic=tours&item=Pyramids%20%26%20Sphinx%20Private%20Access"><i class="fa-solid fa-paper-plane text-base"></i>Request Booking</a>
+        </div>
+      </article>
+      <article class="exp rounded-2xl overflow-hidden border border-amber-500/20 bg-slate-950 flex flex-col hover:border-amber-500/60 hover:-translate-y-1 transition-all duration-300" data-name="Sunset Nile Felucca Ride">
+        <div class="relative h-48 bg-gradient-to-br from-slate-800 to-slate-950">
+          <img src="01_photos/02_tourism/02_tourism_carousel/Felucca_nile_01.jpg" alt="Felucca on the Nile at sunset" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          <span class="absolute top-3 left-3 bg-slate-950/80 border border-amber-500/40 text-amber-300 text-xs font-semibold rounded-full px-3 py-1"><i class="fa-regular fa-clock mr-1.5"></i>1-2 hours</span>
+        </div>
+        <div class="p-5 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-white mb-3">Sunset Nile Felucca Ride</h3>
+          <ul class="space-y-2 text-sm text-slate-300 flex-1">
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Private traditional sailboat charter</li>
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Tea and snacks on board</li>
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Golden-hour skyline views</li>
+          </ul>
+          <a class="mt-5 inline-flex items-center justify-center gap-2 py-3 rounded-full bg-amber-500 text-slate-950 text-sm font-bold hover:bg-amber-400 transition" href="contact.html?topic=tours&item=Sunset%20Nile%20Felucca%20Ride"><i class="fa-solid fa-paper-plane text-base"></i>Request Booking</a>
+        </div>
+      </article>
+      <article class="exp rounded-2xl overflow-hidden border border-amber-500/20 bg-slate-950 flex flex-col hover:border-amber-500/60 hover:-translate-y-1 transition-all duration-300" data-name="Old Cairo &amp; Khan el-Khalili Bazaar">
+        <div class="relative h-48 bg-gradient-to-br from-slate-800 to-slate-950">
+          <img src="01_photos/02_tourism/02_tourism_carousel/khan_khalili.jpg" alt="Khan el-Khalili bazaar" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          <span class="absolute top-3 left-3 bg-slate-950/80 border border-amber-500/40 text-amber-300 text-xs font-semibold rounded-full px-3 py-1"><i class="fa-regular fa-clock mr-1.5"></i>5-6 hours</span>
+        </div>
+        <div class="p-5 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-white mb-3">Old Cairo &amp; Khan el-Khalili Bazaar</h3>
+          <ul class="space-y-2 text-sm text-slate-300 flex-1">
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Cultural walk through Islamic Cairo</li>
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Al-Mu'izz Street and its historic monuments</li>
+            <li class="flex gap-2"><i class="fa-solid fa-circle-check text-amber-500 mt-1 text-xs"></i>Vibrant markets and bazaars</li>
+          </ul>
+          <a class="mt-5 inline-flex items-center justify-center gap-2 py-3 rounded-full bg-amber-500 text-slate-950 text-sm font-bold hover:bg-amber-400 transition" href="contact.html?topic=tours&item=Old%20Cairo%20%26%20Khan%20el-Khalili%20Bazaar"><i class="fa-solid fa-paper-plane text-base"></i>Request Booking</a>
+        </div>
+      </article>
+    </div>
+    <p class="text-center mt-8"><a href="tours.html" class="text-sm text-amber-400 hover:text-amber-300 underline underline-offset-4">See the full catalog of private tours and VIP special access <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a></p>
+  </div>
+</section>
+
+  <!-- LOCAL -->
+  <section id="local" class="pt-12">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-bag-shopping text-gold mr-2 text-xl"></i>Local Shops &amp; Restaurants</h2>
+    <p class="text-slate-400 text-sm mb-5">Your host's hand-picked spots. Tap the heart to save your favorites.</p>
+    <div class="rounded-2xl border border-gold/30 bg-gold/5 p-4 mb-6 text-sm text-slate-300 leading-relaxed"><b class="text-white">Host tips:</b> check recent reviews and choose places that cater to visitors. Drink bottled water and go easy on ice. The cafes right across the street are best for a hot drink only. For the best strolling, take an Uber to <b class="text-white">Street 9</b>.</div>
+    <div class="relative mb-4"><i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i><input id="q" type="search" placeholder="Search restaurants, markets, cuisines..." class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-[#0f172a] border border-slate-700 focus:border-gold/60 focus:outline-none focus:ring-2 focus:ring-gold/40 text-white placeholder-slate-500"></div>
+    <div id="chips" class="flex gap-2 overflow-x-auto pb-3 -mx-4 px-4 mb-2"></div>
+    <p id="count" class="text-xs text-slate-500 mb-4"></p>
+    <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    <p id="empty" class="hidden text-center text-slate-400 py-16">Nothing matches that. Try another word or filter.</p>
+
+    <h3 class="font-serif text-xl font-bold mt-12 mb-1">Order In</h3>
+    <p class="text-slate-400 text-sm mb-4">Delivery apps and hotlines. Tap a number to call.</p>
+    <div class="flex flex-wrap gap-3 mb-5">
+      <a href="https://www.talabat.com/egypt" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-[#FF5A00]/90 hover:brightness-110 text-white text-sm font-semibold transition"><i class="fa-solid fa-motorcycle mr-2"></i>Talabat</a>
+      <a href="https://elmenus.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-[#E4002B]/90 hover:brightness-110 text-white text-sm font-semibold transition"><i class="fa-solid fa-bowl-food mr-2"></i>Elmenus</a>
+    </div>
+    <div id="hotlines" class="grid grid-cols-2 sm:grid-cols-4 gap-3"></div>
+
+    <!-- ===== Interactive Area Map ===== -->
+    <div id="areamap" class="mt-14">
+      <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#D4AF37] mb-1"><i class="fa-solid fa-map-location-dot mr-2 text-xl text-amber-500"></i>Interactive Area Map</h3>
+      <p class="text-slate-400 text-sm mb-4">Pinch, scroll or use the buttons to explore the neighborhood.</p>
+      <div class="rounded-2xl border border-amber-500/20 bg-slate-900 p-2 sm:p-3 shadow-xl shadow-black/30">
+        <div id="mapWrap" class="relative rounded-xl overflow-hidden bg-slate-950 h-[60vh] min-h-[340px] max-h-[640px] touch-none select-none">
+          <img id="mapImg" src="01_photos/01_apartment/Map-attractions-property.png" alt="Visual guide map of consolidated Cairo attractions near the property" draggable="false" class="absolute inset-0 w-full h-full object-contain">
+          <div class="absolute top-3 right-3 z-10 flex flex-col gap-2">
+            <button type="button" id="mapIn" aria-label="Zoom in" class="w-10 h-10 rounded-full bg-slate-900/90 border border-amber-500/40 text-amber-400 hover:bg-amber-500 hover:text-slate-950 backdrop-blur transition"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" id="mapOut" aria-label="Zoom out" class="w-10 h-10 rounded-full bg-slate-900/90 border border-amber-500/40 text-amber-400 hover:bg-amber-500 hover:text-slate-950 backdrop-blur transition"><i class="fa-solid fa-minus"></i></button>
+            <button type="button" id="mapReset" aria-label="Reset map" class="w-10 h-10 rounded-full bg-slate-900/90 border border-amber-500/40 text-amber-400 hover:bg-amber-500 hover:text-slate-950 backdrop-blur transition"><i class="fa-solid fa-rotate-left"></i></button>
+          </div>
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 pointer-events-none whitespace-nowrap text-[11px] sm:text-xs text-slate-200 bg-slate-950/75 backdrop-blur border border-slate-700 rounded-full px-4 py-1.5"><i class="fa-solid fa-hand mr-1.5 text-amber-500"></i>Drag to move &bull; Scroll to zoom</div>
+        </div>
+        <div id="mapMissing" class="hidden h-48 flex items-center justify-center text-center text-slate-400 text-sm px-6">The area map could not be loaded. Please refresh the page or try again in a moment.</div>
+      </div>
+    </div>
+
+
+    <h3 class="font-serif text-xl font-bold mt-12 mb-1">Nearby Landmarks</h3>
+    <p class="text-slate-400 text-sm mb-4">Approximate distances from the apartment.</p>
+    <div id="landmarks" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+  </section>
+
+  <!-- ADDRESS -->
+  <section id="address" class="pt-12"><h2 class="font-serif text-2xl sm:text-3xl font-bold mb-1"><i class="fa-solid fa-map-location-dot text-gold mr-2 text-xl"></i>Address &amp; GPS</h2><p class="text-slate-400 text-sm mb-5">Where to find us, with directions.</p><div data-lock="address"></div></section>
+
+  <!-- WIFI -->
+  <section id="wifi" class="pt-12"><h2 class="font-serif text-2xl sm:text-3xl font-bold mb-5"><i class="fa-solid fa-wifi text-gold mr-2 text-xl"></i>Wi-Fi</h2><div data-lock="wifi"></div></section>
+</main>
+
+<footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">Private guest page &middot; Please don't share this link or password &middot; <a href="contact.html" class="hover:text-gold">Contact</a> &middot; <a href="terms.html" class="hover:text-gold">Terms</a> &middot; <a href="privacy.html" class="hover:text-gold">Privacy</a> &middot; Maadi Nile View by Sam's Spots</footer>
+
+<div id="rules-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-3 sm:p-4 invisible opacity-0 transition-[opacity,visibility] duration-300" role="dialog" aria-modal="true" aria-labelledby="rules-title" aria-hidden="true">
+  <div id="rules-backdrop" class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+  <div id="rules-panel" class="relative w-full max-w-3xl max-h-[92vh] flex flex-col rounded-2xl border border-gold/30 bg-[#0f172a] shadow-2xl shadow-black/60 transform scale-95 translate-y-3 transition-all duration-300">
+    <div class="flex items-start justify-between gap-4 px-5 sm:px-6 pt-5 pb-4 border-b border-slate-800">
+      <div><span class="text-gold uppercase tracking-widest text-[11px] font-semibold">Quick reference</span><h2 id="rules-title" class="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">House Rules &amp; Terms</h2></div>
+      <button type="button" id="rules-close" aria-label="Close house rules" class="shrink-0 w-10 h-10 rounded-full border border-slate-700 text-slate-300 hover:border-gold hover:text-gold hover:bg-gold/10 transition flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="overflow-y-auto px-5 sm:px-6 py-5"><div class="grid sm:grid-cols-2 gap-3"><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-wifi text-sm"></i></span>Wi-Fi</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Wi-Fi is provided as a convenience. Your network details are in the Wi-Fi section once you unlock it.</li><li>Please use it for lawful purposes only.</li><li>No refunds for outages, speed or access issues, so download what you need in advance if you rely on it.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-shield-halved text-sm"></i></span>Building &amp; Security</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Keep the elevator key safe and do not lose it.</li><li>Make sure the apartment door is locked behind you every time you leave.</li><li>Only registered guests may stay overnight. Visitors are your responsibility.</li><li>Do not share your door code or the password to this page. Use the in-room safe for valuables.</li><li>Switch off and unplug heaters when you leave. Tell us if a smoke alarm chirps.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-trash-can text-sm"></i></span>Trash Disposal</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Leave garbage in the bin in the stairway, through the door in front of the middle elevator.</li><li>Collection is usually between <b class="text-white">2 AM and 6 AM</b>.</li><li>Please do not leave bags in the hallway or by the elevators.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-moon text-sm"></i></span>Quiet Hours</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Quiet hours run daily from <b class="text-white">10:00 PM to 8:00 AM</b>.</li><li>Keep outdoor and balcony noise to a minimum, and be considerate of neighbors.</li><li>Repeated disturbances may end the stay without refund.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-suitcase-rolling text-sm"></i></span>Checkout</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Check-out is by <b class="text-white">11:00 AM</b>. Please tell us your plans.</li><li>Early or late flight? You may need to self check-out. Tell us first and leave the elevator key with the front desk.</li><li>Reset the safe, switch off heaters, take out the garbage and check for your belongings.</li></ul></div><div class="rounded-xl bg-black/25 border border-slate-800 p-4"><h3 class="flex items-center gap-2 font-semibold text-white text-sm mb-2"><span class="w-8 h-8 rounded-lg bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-file-contract text-sm"></i></span>Damage &amp; Terms</h3><ul class="list-disc ml-5 space-y-1 text-[13px] text-slate-300 leading-relaxed"><li>Guests are responsible for damage to or loss of the property and contents.</li><li>Damage, breakage and missing items are charged at full replacement value.</li><li>No smoking indoors (balconies and terraces only), and no parties or subletting.</li></ul></div></div>
+      <p class="text-xs text-slate-500 mt-4">Questions or problems during your stay? Contact your host. Thank you for taking care of our home.</p></div>
+    <div class="px-5 sm:px-6 py-4 border-t border-slate-800 flex flex-wrap items-center gap-3 justify-end"><div class="mr-auto self-center flex flex-wrap gap-x-3 gap-y-1 text-xs"><a href="terms.html" target="_blank" rel="noopener" class="text-gold hover:underline">Full terms</a><a href="Maadi-Nile-View-Rental-Agreement-EN.pdf" download class="text-gold hover:underline"><i class="fa-solid fa-file-pdf mr-1"></i>English PDF</a><a href="Maadi-Nile-View-Rental-Agreement-AR.pdf" download class="text-gold hover:underline"><i class="fa-solid fa-file-pdf mr-1"></i><span dir="rtl" lang="ar">العربية</span></a></div><button type="button" data-close-rules class="px-6 py-2.5 rounded-full bg-gold text-black text-sm font-semibold hover:bg-gold-light transition">Got it</button></div>
+  </div>
+</div>
+
+<div id="vm" class="hidden fixed inset-0 z-[70] bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4" role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="w-full max-w-3xl rounded-2xl border border-amber-500/30 bg-slate-900 shadow-2xl shadow-black/60 overflow-hidden">
+    <div class="flex items-center justify-between gap-3 px-4 py-3 border-b border-slate-800">
+      <span class="text-[#D4AF37] text-xs uppercase tracking-widest font-semibold"><i class="fa-brands fa-youtube mr-2"></i>How-to video</span>
+      <button id="vc" type="button" class="px-4 py-1.5 rounded-full border border-slate-600 text-slate-200 text-sm hover:border-amber-500 hover:text-amber-400 transition">Close <i class="fa-solid fa-xmark ml-1"></i></button>
+    </div>
+    <div class="aspect-video bg-black"><iframe id="vf" class="w-full h-full" title="Video player" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-3 text-xs text-slate-400"><span>Video not playing?</span><a id="vy" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full bg-amber-500 text-slate-950 font-semibold hover:bg-amber-400 transition"><i class="fa-brands fa-youtube mr-1.5"></i>Watch directly on YouTube</a></div>
+  </div>
+</div>
+<button id="top" aria-label="Back to top" class="fixed bottom-5 right-5 w-11 h-11 rounded-full bg-gold text-black shadow-xl opacity-0 pointer-events-none transition"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+(function(){
+const maps=n=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(n+' Maadi Cairo');
+const C={
+  walk:{l:'Walkable',i:'🚶',c:'from-emerald-500/30'},
+  dine:{l:'Restaurants',i:'🍽️',c:'from-amber-500/30'},
+  fine:{l:'Fine Dining',i:'🥂',c:'from-fuchsia-500/30'},
+  healthy:{l:'Healthy',i:'🥗',c:'from-lime-500/30'},
+  market:{l:'Markets',i:'🛒',c:'from-sky-500/30'},
+  fit:{l:'Fitness & Spa',i:'💆',c:'from-rose-500/30'}
+};
+// n=name, k=category, d=distance/location, t=description, u=link (optional; Maps search used if missing), f=host pick, v=delivers, p=phone
+const S=[
+ {n:'The Platform',k:'walk',d:'3 min walk · ~230 m',t:'Right across the street. The easiest first dinner.',f:1},
+ {n:'Sun Market & Kiosk',k:'walk',d:'Across the street',t:'Small market across the road, plus a kiosk in the next building. Snacks and essentials.'},
+ {n:'Lucilles',k:'dine',d:'American diner',t:'Everyone loves it. Go in person; the host does not recommend delivery.',u:'https://goo.gl/maps/xLyWUSxPcmamAejA9',f:1},
+ {n:'Frank & Co',k:'dine',d:'~6.6 km · next to Ovio',t:'Host pick: the egg casserole.',f:1},
+ {n:'Sizzler Maadi',k:'dine',d:'17 Road 231, Degla · 4.7★ · $$',t:'Generous steak and potato dishes, plus pasta. Dine-in, takeaway, delivery.',u:'https://g.page/sizzlermaadi?share'},
+ {n:'Kazlak',k:'dine',d:'Steak house',t:'A hearty steak house in Maadi.',u:'https://g.page/kazlak?share'},
+ {n:'Crave',k:'dine',d:'Street 213 · 4.4★ · $$',t:'Western comfort food.',u:'https://goo.gl/maps/iaAgRZckNf3Zc4Ep6',v:1},
+ {n:"Vittorio's",k:'dine',d:'Street 231, Sarayat Al Gharbeyah',t:'Italian favorite in Maadi.',u:'https://g.page/vittorio-s-301?share'},
+ {n:'Tabla Luna',k:'dine',d:'Latin American · Street 231',t:'Latin American flavors and a lively vibe.',u:'https://goo.gl/maps/ca4hFBW298ieWwzS9'},
+ {n:'Villa Caracas',k:'dine',d:'Maadi',t:'A local favorite, also on the delivery apps.',u:'https://goo.gl/maps/M3kzY7kZAyxUPuSr6',v:1},
+ {n:'The Lebanese Bakery',k:'dine',d:'18 Street, Sarayat El Maadi',t:'Fresh Lebanese bakes and mezze.',u:'https://g.page/tlb-cairo?share',v:1},
+ {n:'Gaya',k:'dine',d:'Korean',t:'Korean cooking in Maadi.',u:'https://goo.gl/maps/xa98rQpg3ffy9oYx6',v:1},
+ {n:'Il Mulino',k:'dine',d:'7 Street 261, Ezbet Fahmy',t:'Italian dining.',u:'https://g.page/ilmulinoeg?share'},
+ {n:'Zulu',k:'dine',d:'South African · 9 Street 100',t:'Something different: South African grill and flavors.',u:'https://g.page/zuluincairo?share'},
+ {n:'Blue Nile Boat',k:'dine',d:'~4 km by car',t:'Dine on the water.'},
+ {n:'Bua Khao',k:'dine',d:'Thai',t:'Thai favorite. Delivers too.',v:1},
+ {n:'Estro Sicilian Rooftop',k:'dine',d:'~6.5 km by car',t:'Sicilian dining on a rooftop.'},
+ {n:'Ovio',k:'dine',d:'~6.6 km by car · Hotline 19801',t:'Delivers as well as dine-in.',v:1,p:'19801'},
+ {n:'Gringos Burrito',k:'dine',d:'Mexican',t:'Burritos, available on the delivery apps.',v:1},
+ {n:'Street 9',k:'dine',d:'~4 km · restaurants, shops, cafes',t:'The neighborhood hub. Take an Uber and explore on foot.',u:'https://goo.gl/maps/WQKvu335KmSxadmF7',f:1},
+ {n:'Pier 88',k:'fine',d:'Fine dining',t:'Special-occasion seafood on the Nile.',u:'https://g.co/kgs/pmBXq3'},
+ {n:'Le Deck',k:'fine',d:'Fine dining',t:'Elegant evening out.',u:'https://g.co/kgs/h62BaM'},
+ {n:'The Grill',k:'fine',d:'Fine dining',t:'Classic grill and steaks.',u:'https://g.co/kgs/QZTD53'},
+ {n:'Birdcage',k:'fine',d:'Fine dining',t:'A top-of-the-list favorite.',u:'https://g.co/kgs/jn89rA'},
+ {n:'JW Steakhouse',k:'fine',d:'Fine dining',t:'Premium steakhouse.',u:'https://g.co/kgs/U6DZhp'},
+ {n:'Koshary Abou Tarek',k:'fine',d:'Downtown Cairo',t:'The freshest koshary, a true Cairo icon.'},
+ {n:'Zooba',k:'fine',d:'Egyptian street food',t:'Modern Egyptian street food.'},
+ {n:'Naguib Mahfouz Cafe',k:'fine',d:'Khan el-Khalili',t:'Atmospheric Egyptian cafe and restaurant.'},
+ {n:'Diet House',k:'healthy',d:'Healthy eating',t:'Balanced, lighter meals.',u:'https://g.co/kgs/8kwMe3',v:1},
+ {n:"Let's Poke",k:'healthy',d:'Poke bowls',t:'Fresh and customizable bowls.',u:'https://g.co/kgs/KYpiMb',v:1},
+ {n:'Gourmet Egypt',k:'market',d:'Supermarket · online ordering',t:'Quality groceries and imported goods.',u:'https://gourmetegypt.com'},
+ {n:'Alpha Market',k:'market',d:'~1–1.5 km',t:'Supermarket for your groceries and bottled water.'},
+ {n:'Metro Market',k:'market',d:'~1.5 km',t:'Supermarket for a full grocery run.'},
+ {n:'Osana Wellness',k:'fit',d:'Spa & wellness',t:'Unwind after a day of sightseeing.',u:'https://g.co/kgs/FBbvhR'},
+ {n:'Curves',k:'fit',d:'Gym',t:'Fitness studio in Maadi.',u:'https://g.co/kgs/Jr8dzc'},
+ {n:'Fitzone',k:'fit',d:'Gym · ladies only',t:'Ladies-only fitness center in Maadi.',u:'https://g.co/kgs/3dYiid'}
+];
+const HOT=[['McDonald\'s','19991'],['KFC','19019'],['Pizza Hut','19000'],['Papa John\'s','19277'],['Domino\'s','19223'],['Burger King','16977'],['Hardee\'s','19066'],['Ovio','19801']];
+const LM=[['Supreme Constitutional Court','0.4 km'],['HSBC Bank Egypt','0.7 km'],['The District Mall','2.1 km'],['Coptic Museum','3.9 km'],['Mar Girgis Metro Station','3.9 km'],['Fustat Park','4.5 km'],['The First Mall','6.2 km'],['Cairo Citadel','6.8 km'],['Cairo Tower','8.4 km'],['Muizz Street','9.2 km'],['Great Sphinx','9.5 km'],['Cairo International Airport','22 km']];
+const ENC={"s": "aGOYsm0PlQDXRxeoSZqkZA==", "i": "5VhrKQh0kKKV73QR", "c": "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"};
+let fav=[];try{fav=JSON.parse(localStorage.getItem('mnv_fav')||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem('mnv_fav',JSON.stringify(fav))}catch(e){}};
+let cat='all',q='';
+const $=id=>document.getElementById(id);
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function ytOrigin(){return /^https?:$/.test(location.protocol)?'&origin='+encodeURIComponent(location.origin):''}
+function openVid(id,pl){
+  const q='autoplay=1&rel=0&enablejsapi=1&playsinline=1'+ytOrigin();
+  $('vf').src=pl?`https://www.youtube.com/embed/videoseries?list=${id}&${q}`:`https://www.youtube.com/embed/${id}?${q}`;
+  $('vy').href=pl?`https://www.youtube.com/playlist?list=${id}`:`https://youtu.be/${id}`;
+  $('vm').classList.remove('hidden');document.body.style.overflow='hidden';
+}
+function closeVid(){$('vm').classList.add('hidden');$('vf').src='';document.body.style.overflow=''}
+document.addEventListener('click',e=>{
+  const y=e.target.closest('[data-yt]');if(y){openVid(y.dataset.yt,0);return}
+  const p=e.target.closest('[data-pl]');if(p){openVid(p.dataset.pl,1);return}
+  const c=e.target.closest('[data-copy]');if(c){const t=c.dataset.copy;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).catch(()=>{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(_){}a.remove()});c.textContent='Copied';setTimeout(()=>c.textContent='Copy',1500);return}
+  if(e.target===$('vm')||e.target.closest('#vc'))closeVid();
+});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeVid()});
+
+/* ---- checkout checklist ---- */
+$('cklist').addEventListener('click',e=>{const li=e.target.closest('li');if(!li)return;li.classList.toggle('done');const i=li.querySelector('i');i.className=li.classList.contains('done')?'fa-solid fa-square-check mt-0.5 text-gold':'fa-regular fa-square mt-0.5 text-gold'});
+
+/* ---- locked sections ---- */
+const LABEL={checkin:'Check In details',howto:'How-To videos',address:'Address &amp; GPS',wifi:'Wi-Fi details'};
+function lockCard(k){return `<form class="lockf rounded-2xl border border-gold/30 bg-gold/5 p-6 max-w-xl" autocomplete="off">
+ <div class="flex items-center gap-3 mb-3"><div class="w-11 h-11 rounded-full bg-gold/15 text-gold flex items-center justify-center"><i class="fa-solid fa-lock"></i></div><div><div class="font-semibold text-white">${LABEL[k]} are private</div><div class="text-xs text-slate-400">Enter the guest password from your booking message.</div></div></div>
+ <div class="flex gap-2"><input type="password" name="pw" placeholder="Guest password" autocapitalize="none" class="flex-1 min-w-0 px-4 py-3 rounded-xl bg-[#0f172a] border border-slate-700 focus:border-gold/60 focus:outline-none focus:ring-2 focus:ring-gold/40 text-white placeholder-slate-500"><button class="px-5 py-3 rounded-xl bg-gold text-black font-semibold hover:bg-gold-light transition">Unlock</button></div>
+ <p class="err text-rose-400 text-xs mt-2 hidden"></p></form>`}
+document.querySelectorAll('[data-lock]').forEach(d=>d.innerHTML=lockCard(d.dataset.lock));
+const b64=x=>Uint8Array.from(atob(x),c=>c.charCodeAt(0));
+async function decrypt(pw){
+  const km=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw.toLowerCase().replace(/\s+/g,'')),'PBKDF2',false,['deriveKey']);
+  const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(ENC.s),iterations:600000,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);
+  const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(ENC.i)},key,b64(ENC.c));
+  return JSON.parse(new TextDecoder().decode(pt));
+}
+function unlock(data){
+  document.querySelectorAll('[data-lock]').forEach(d=>{d.innerHTML=data[d.dataset.lock]||''});
+  document.querySelectorAll('[data-l] i').forEach(i=>i.className='fa-solid fa-lock-open ml-1 text-[10px]');
+}
+async function tryPw(pw,form){
+  const err=form&&form.querySelector('.err'),btn=form&&form.querySelector('button');
+  if(!(window.crypto&&crypto.subtle)){if(err){err.textContent='Please open this page over https to unlock.';err.classList.remove('hidden')}return}
+  if(btn){btn.disabled=true;btn.textContent='Checking...'}
+  try{const data=await decrypt(pw);try{sessionStorage.setItem('mnv_pw',pw)}catch(e){}unlock(data)}
+  catch(e){if(err){err.textContent="That password didn't work. Check your booking message or ask your host.";err.classList.remove('hidden')}try{sessionStorage.removeItem('mnv_pw')}catch(_){}if(btn){btn.disabled=false;btn.textContent='Unlock'}}
+}
+document.addEventListener('submit',e=>{const f=e.target.closest('.lockf');if(!f)return;e.preventDefault();tryPw(f.pw.value,f)});
+try{const s=sessionStorage.getItem('mnv_pw');if(s)tryPw(s,null)}catch(e){}
+
+/* ---- local spots ---- */
+const chipDefs=[['all','All'],['fav','♥ My Picks'],['pick','⭐ Host Picks'],['deliv','🛵 Delivers'],...Object.entries(C).map(([k,v])=>[k,v.i+' '+v.l])];
+$('chips').innerHTML=chipDefs.map(c=>`<button data-c="${c[0]}" class="chip shrink-0 px-4 py-2 rounded-full border border-slate-700 text-sm text-slate-300 hover:border-gold/60 whitespace-nowrap ${c[0]==='all'?'on':''}">${c[1]}</button>`).join('');
+function render(){
+  const list=S.filter(s=>{
+    if(cat==='fav'&&!fav.includes(s.n))return false;
+    if(cat==='pick'&&!s.f)return false;
+    if(cat==='deliv'&&!s.v)return false;
+    if(C[cat]&&s.k!==cat)return false;
+    if(q&&!(s.n+' '+s.d+' '+s.t+' '+C[s.k].l).toLowerCase().includes(q))return false;
+    return true;
+  });
+  $('count').textContent=list.length+' spot'+(list.length===1?'':'s');
+  $('empty').classList.toggle('hidden',list.length>0);
+  $('grid').innerHTML=list.map((s,i)=>{
+    const m=C[s.k],link=s.u||maps(s.n),on=fav.includes(s.n);
+    return `<article class="card fade rounded-2xl overflow-hidden bg-[#0f172a] border border-slate-800 flex flex-col" style="animation-delay:${Math.min(i,12)*30}ms">
+      <div class="relative h-20 bg-gradient-to-br ${m.c} to-transparent flex items-center px-5"><span class="text-3xl">${m.i}</span>
+        <div class="ml-3 flex flex-wrap gap-1.5"><span class="text-[10px] uppercase tracking-wider font-semibold text-slate-200 bg-black/40 rounded-full px-2 py-0.5">${m.l}</span>${s.f?'<span class="text-[10px] uppercase tracking-wider font-semibold text-black bg-gold rounded-full px-2 py-0.5">Host pick</span>':''}${s.v?'<span class="text-[10px] uppercase tracking-wider font-semibold text-slate-200 bg-black/40 rounded-full px-2 py-0.5">Delivers</span>':''}</div>
+        <button class="heart ${on?'on':''} absolute top-3 right-3 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 flex items-center justify-center" data-fav="${esc(s.n)}" aria-label="Save ${esc(s.n)}"><i class="${on?'fa-solid':'fa-regular'} fa-heart"></i></button></div>
+      <div class="p-5 flex flex-col flex-1"><h3 class="font-serif text-lg font-bold text-white leading-snug">${esc(s.n)}</h3><p class="text-gold text-xs font-medium mt-0.5 mb-2">${esc(s.d)}</p><p class="text-slate-400 text-sm font-light flex-1">${esc(s.t)}</p>
+        <div class="mt-4 flex gap-2"><a href="${link}" target="_blank" rel="noopener noreferrer" class="flex-1 text-center text-sm font-semibold py-2.5 rounded-full bg-gold text-black hover:bg-gold-light transition"><i class="fa-solid fa-location-dot mr-1.5"></i>${s.u?'Open Link':'Find on Maps'}</a>${s.p?`<a href="tel:${s.p}" class="px-4 py-2.5 rounded-full border border-gold/50 text-gold hover:bg-gold hover:text-black transition" aria-label="Call"><i class="fa-solid fa-phone"></i></a>`:''}</div></div></article>`;
+  }).join('');
+}
+$('chips').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(!b)return;cat=b.dataset.c;document.querySelectorAll('#chips .chip').forEach(x=>x.classList.toggle('on',x.dataset.c===cat));render()});
+$('q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();render()});
+$('grid').addEventListener('click',e=>{const h=e.target.closest('[data-fav]');if(!h)return;const n=h.dataset.fav;fav=fav.includes(n)?fav.filter(x=>x!==n):[...fav,n];save();render()});
+$('hotlines').innerHTML=HOT.map(h=>`<a href="tel:${h[1]}" class="card rounded-xl bg-[#0f172a] border border-slate-800 p-4 flex items-center justify-between"><span class="text-sm font-medium">${esc(h[0])}</span><span class="text-gold text-sm font-semibold"><i class="fa-solid fa-phone text-xs mr-1"></i>${h[1]}</span></a>`).join('');
+$('landmarks').innerHTML=LM.map(l=>`<a href="${maps(l[0])}" target="_blank" rel="noopener noreferrer" class="card rounded-xl bg-[#0f172a] border border-slate-800 p-4 flex items-center justify-between gap-3"><span class="text-sm">${esc(l[0])}</span><span class="shrink-0 text-xs font-semibold text-gold bg-gold/10 rounded-full px-3 py-1">${l[1]}</span></a>`).join('');
+
+/* ---- house rules modal ---- */
+(function(){
+  const m=$('rules-modal'),p=$('rules-panel');let opener=null;
+  const isOpen=()=>m.getAttribute('aria-hidden')==='false';
+  function openR(from){opener=from||null;m.classList.remove('invisible','opacity-0');m.classList.add('opacity-100');p.classList.remove('scale-95','translate-y-3');p.classList.add('scale-100','translate-y-0');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';setTimeout(()=>$('rules-close').focus(),50)}
+  function closeR(){m.classList.remove('opacity-100');m.classList.add('opacity-0');p.classList.remove('scale-100','translate-y-0');p.classList.add('scale-95','translate-y-3');m.setAttribute('aria-hidden','true');document.body.style.overflow='';setTimeout(()=>m.classList.add('invisible'),300);if(opener)opener.focus()}
+  document.querySelectorAll('[data-open-rules]').forEach(b=>b.addEventListener('click',()=>openR(b)));
+  document.querySelectorAll('[data-close-rules]').forEach(b=>b.addEventListener('click',closeR));
+  $('rules-close').addEventListener('click',closeR);
+  $('rules-backdrop').addEventListener('click',closeR);
+  m.addEventListener('click',e=>{if(e.target===m)closeR()});
+  addEventListener('keydown',e=>{
+    if(!isOpen())return;
+    if(e.key==='Escape'){closeR();return}
+    if(e.key==='Tab'){const f=p.querySelectorAll('button,a[href]');const a=f[0],z=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}
+  });
+})();
+
+/* ---- clock, nav highlight, back-to-top ---- */
+function tick(){try{$('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Africa/Cairo'})}catch(e){}}
+tick();setInterval(tick,30000);
+const links=[...document.querySelectorAll('#nav a')];
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+en.target.id))}),{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
+const top=$('top');addEventListener('scroll',()=>{const on=scrollY>600;top.style.opacity=on?1:0;top.style.pointerEvents=on?'auto':'none'});
+top.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+render();
+})();
+</script>
+<script>
+(function () {
+  /* Airport service picker: builds the contact-page link for the selected service */
+  var SVC = {
+    mg:    { topic: 'meet-greet',       item: 'Airport VIP Meet & Greet',                                        label: 'VIP Meet & Greet', price: 30 },
+    tr:    { topic: 'airport-transfer', item: 'Private Airport Hotel Transfer (one way)',                        label: 'Hotel Transfer',   price: 45 },
+    combo: { topic: 'airport-transfer', item: 'Combo Transfer Package (Meet & Greet + one-way hotel transfer)',  label: 'Combo Package',    price: 75 }
+  };
+  var current = 'combo';
+  function paintAirport() {
+    var s = SVC[current], link = document.getElementById('airportCta');
+    if (!link) return;
+    document.querySelectorAll('#svcPick .svc').forEach(function (b) {
+      var on = b.dataset.svc === current;
+      b.setAttribute('aria-checked', on ? 'true' : 'false');
+      b.classList.toggle('on', on);
+      b.classList.toggle('border-amber-500', on);
+      b.classList.toggle('bg-amber-500/10', on);
+      b.classList.toggle('border-slate-700', !on);
+      b.classList.toggle('bg-slate-950/60', !on);
+    });
+    document.getElementById('airportSel').textContent = s.label + ' ($' + s.price + ')';
+    link.href = 'contact.html?topic=' + s.topic + '&item=' + encodeURIComponent(s.item) + '&price=' + encodeURIComponent('$' + s.price + ' USD');
+  }
+  var pick = document.getElementById('svcPick');
+  if (pick) pick.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-svc]'); if (!b) return;
+    current = b.dataset.svc; paintAirport();
+  });
+  paintAirport();
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+<script>
+(function () {
+  var img = document.getElementById('mapImg'), wrap = document.getElementById('mapWrap');
+  if (!img || !wrap) return;
+  var missing = document.getElementById('mapMissing');
+  function showMissing() { wrap.classList.add('hidden'); missing.classList.remove('hidden'); }
+  img.addEventListener('error', showMissing);
+  if (img.complete && img.naturalWidth === 0) showMissing();
+  if (typeof Panzoom !== 'function') return;
+  var pz = Panzoom(img, { maxScale: 6, minScale: 1, step: 0.35, cursor: 'grab', canvas: true, animate: true });
+  wrap.addEventListener('wheel', pz.zoomWithWheel, { passive: false });
+  document.getElementById('mapIn').addEventListener('click', function () { pz.zoomIn(); });
+  document.getElementById('mapOut').addEventListener('click', function () { pz.zoomOut(); });
+  document.getElementById('mapReset').addEventListener('click', function () { pz.reset(); });
+  wrap.addEventListener('pointerdown', function () { wrap.style.cursor = 'grabbing'; });
+  addEventListener('pointerup', function () { wrap.style.cursor = ''; });
+})();
+</script>
+</body>
+</html>
